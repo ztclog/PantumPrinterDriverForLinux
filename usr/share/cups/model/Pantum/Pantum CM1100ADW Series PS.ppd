@@ -1,0 +1,3384 @@
+*PPD-Adobe: "4.3"
+*% Adobe Systems PostScript(R) Printer Description File
+*% Copyright 1987-1996 Adobe Systems Incorporated.
+*% All Rights Reserved.
+*% Permission is granted for redistribution of this file as
+*% long as this copyright notice is intact and the contents
+*% of the file is not altered in any way from its original form.
+*% End of Copyright statement
+*FileVersion: "1.2"
+*FormatVersion: "4.3"
+*cupsManualCopies: True
+*LanguageEncoding: ISOLatin1
+*LanguageVersion: English
+*Manufacturer: "Pantum"
+*PCFileName: "CM1100ADW.PPD"
+*Product: "(Pantum CM1100ADW Series)"
+*PSVersion: "(3015.103) 1"
+*ShortNickName: "CM1100ADW Series PS"
+*ModelName: "Pantum CM1100ADW Series PS"
+*NickName: "Pantum CM1100ADW Series PS"
+*%cupsFilter:	"application/vnd.cups-postscript 0 ptps"
+*cupsFilter:	"application/vnd.cups-pdf 21 ptps"
+
+
+*% == Constraints (PageSize vs. Paper Source) ==
+*UIConstraints: *PageSize Postcard         *ptInputSlot AutoFeed
+*UIConstraints: *PageSize EnvMonarch       *ptInputSlot AutoFeed
+*UIConstraints: *PageSize EnvDL            *ptInputSlot AutoFeed
+*UIConstraints: *PageSize EnvC5            *ptInputSlot AutoFeed
+*UIConstraints: *PageSize Com10Envelope    *ptInputSlot AutoFeed
+*UIConstraints: *PageSize EnvC6            *ptInputSlot AutoFeed
+*UIConstraints: *PageSize ZL               *ptInputSlot AutoFeed
+*UIConstraints: *PageSize Yougata4         *ptInputSlot AutoFeed
+*UIConstraints: *PageSize JapanesePostcard *ptInputSlot AutoFeed
+*UIConstraints: *PageSize Younaga3         *ptInputSlot AutoFeed
+*UIConstraints: *PageSize Nagagata3        *ptInputSlot AutoFeed
+*UIConstraints: *PageSize Yougata2         *ptInputSlot AutoFeed
+
+
+*% == Constraints (Paper Source vs. PageSize) ==
+*UIConstraints: *ptInputSlot AutoFeed *PageSize Postcard
+*UIConstraints: *ptInputSlot AutoFeed *PageSize EnvMonarch
+*UIConstraints: *ptInputSlot AutoFeed *PageSize EnvDL
+*UIConstraints: *ptInputSlot AutoFeed *PageSize EnvC5
+*UIConstraints: *ptInputSlot AutoFeed *PageSize Com10Envelope
+*UIConstraints: *ptInputSlot AutoFeed *PageSize EnvC6
+*UIConstraints: *ptInputSlot AutoFeed *PageSize ZL
+*UIConstraints: *ptInputSlot AutoFeed *PageSize Yougata4
+*UIConstraints: *ptInputSlot AutoFeed *PageSize JapanesePostcard
+*UIConstraints: *ptInputSlot AutoFeed *PageSize Younaga3
+*UIConstraints: *ptInputSlot AutoFeed *PageSize Nagagata3
+*UIConstraints: *ptInputSlot AutoFeed *PageSize Yougata2
+
+
+*% == Constraints (PageSize vs. Paper Source) ==
+*UIConstraints: *PageSize Postcard         *ptInputSlot AutoSelect
+*UIConstraints: *PageSize EnvMonarch       *ptInputSlot AutoSelect
+*UIConstraints: *PageSize EnvDL            *ptInputSlot AutoSelect
+*UIConstraints: *PageSize EnvC5            *ptInputSlot AutoSelect
+*UIConstraints: *PageSize Com10Envelope    *ptInputSlot AutoSelect
+*UIConstraints: *PageSize EnvC6            *ptInputSlot AutoSelect
+*UIConstraints: *PageSize ZL               *ptInputSlot AutoSelect
+*UIConstraints: *PageSize Yougata4         *ptInputSlot AutoSelect
+*UIConstraints: *PageSize JapanesePostcard *ptInputSlot AutoSelect
+*UIConstraints: *PageSize Younaga3         *ptInputSlot AutoSelect
+*UIConstraints: *PageSize Nagagata3        *ptInputSlot AutoSelect
+*UIConstraints: *PageSize Yougata2         *ptInputSlot AutoSelect
+
+
+*% == Constraints (Paper Source vs. PageSize) ==
+*UIConstraints: *ptInputSlot AutoSelect *PageSize Postcard
+*UIConstraints: *ptInputSlot AutoSelect *PageSize EnvMonarch
+*UIConstraints: *ptInputSlot AutoSelect *PageSize EnvDL
+*UIConstraints: *ptInputSlot AutoSelect *PageSize EnvC5
+*UIConstraints: *ptInputSlot AutoSelect *PageSize Com10Envelope
+*UIConstraints: *ptInputSlot AutoSelect *PageSize EnvC6
+*UIConstraints: *ptInputSlot AutoSelect *PageSize ZL
+*UIConstraints: *ptInputSlot AutoSelect *PageSize Yougata4
+*UIConstraints: *ptInputSlot AutoSelect *PageSize JapanesePostcard
+*UIConstraints: *ptInputSlot AutoSelect *PageSize Younaga3
+*UIConstraints: *ptInputSlot AutoSelect *PageSize Nagagata3
+*UIConstraints: *ptInputSlot AutoSelect *PageSize Yougata2
+
+*% == Constraints (Booklet vs. Duplex) ==
+*UIConstraints: *Booklet True *Duplex DuplexNoTumble
+*UIConstraints: *Booklet True *Duplex None
+
+*% == Constraints (Duplex vs. Booklet) ==
+*UIConstraints: *Duplex DuplexNoTumble *Booklet True
+*UIConstraints: *Duplex None *Booklet True
+
+*% == Constraints (MediaType vs. Paper Source) ==
+*UIConstraints: *MediaType Thick        *ptInputSlot AutoFeed
+*UIConstraints: *MediaType Envelope     *ptInputSlot AutoFeed
+*UIConstraints: *MediaType Transparency *ptInputSlot AutoFeed
+*UIConstraints: *MediaType Cardstock    *ptInputSlot AutoFeed
+*UIConstraints: *MediaType Label        *ptInputSlot AutoFeed
+
+*% == Constraints (Paper Source vs. MediaType) ==
+*UIConstraints: *ptInputSlot AutoFeed *MediaType Thick
+*UIConstraints: *ptInputSlot AutoFeed *MediaType Envelope
+*UIConstraints: *ptInputSlot AutoFeed *MediaType Transparency
+*UIConstraints: *ptInputSlot AutoFeed *MediaType Cardstock
+*UIConstraints: *ptInputSlot AutoFeed *MediaType Label
+
+
+*% == Constraints (MediaType vs. Paper Source) ==
+*UIConstraints: *MediaType Thick        *ptInputSlot AutoSelect
+*UIConstraints: *MediaType Envelope     *ptInputSlot AutoSelect
+*UIConstraints: *MediaType Transparency *ptInputSlot AutoSelect
+*UIConstraints: *MediaType Cardstock    *ptInputSlot AutoSelect
+*UIConstraints: *MediaType Label        *ptInputSlot AutoSelect
+
+*% == Constraints (Paper Source vs. MediaType) ==
+*UIConstraints: *ptInputSlot AutoSelect *MediaType Thick
+*UIConstraints: *ptInputSlot AutoSelect *MediaType Envelope
+*UIConstraints: *ptInputSlot AutoSelect *MediaType Transparency
+*UIConstraints: *ptInputSlot AutoSelect *MediaType Cardstock
+*UIConstraints: *ptInputSlot AutoSelect *MediaType Label
+
+*% == Constraints (PageSize vs. Duplex) ==
+*UIConstraints: *PageSize A5               *Duplex DuplexNoTumble
+*UIConstraints: *PageSize A6               *Duplex DuplexNoTumble
+*UIConstraints: *PageSize B5               *Duplex DuplexNoTumble
+*UIConstraints: *PageSize ISOB5            *Duplex DuplexNoTumble
+*UIConstraints: *PageSize B6               *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Executive        *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Statement        *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Big32K           *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Big16K           *Duplex DuplexNoTumble
+*UIConstraints: *PageSize 32K              *Duplex DuplexNoTumble
+*UIConstraints: *PageSize 16K              *Duplex DuplexNoTumble
+*UIConstraints: *PageSize JapanesePostcard *Duplex DuplexNoTumble 
+*UIConstraints: *PageSize EnvMonarch       *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvDL            *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvC5            *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Com10Envelope    *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvC6            *Duplex DuplexNoTumble
+*UIConstraints: *PageSize ZL               *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Yougata4         *Duplex DuplexNoTumble 
+*UIConstraints: *PageSize Postcard         *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Younaga3         *Duplex DuplexNoTumble 
+*UIConstraints: *PageSize Nagagata3        *Duplex DuplexNoTumble 
+*UIConstraints: *PageSize Yougata2         *Duplex DuplexNoTumble 
+
+*% == Constraints (Duplex vs. PageSize) ==
+*UIConstraints: *Duplex DuplexNoTumble *PageSize A5
+*UIConstraints: *Duplex DuplexNoTumble *PageSize A6
+*UIConstraints: *Duplex DuplexNoTumble *PageSize B5
+*UIConstraints: *Duplex DuplexNoTumble *PageSize ISOB5
+*UIConstraints: *Duplex DuplexNoTumble *PageSize B6
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Executive
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Statement
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Big32K
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Big16K
+*UIConstraints: *Duplex DuplexNoTumble *PageSize 32K
+*UIConstraints: *Duplex DuplexNoTumble *PageSize 16K
+*UIConstraints: *Duplex DuplexNoTumble *PageSize JapanesePostcard
+*UIConstraints: *Duplex DuplexNoTumble *PageSize EnvMonarch
+*UIConstraints: *Duplex DuplexNoTumble *PageSize EnvDL
+*UIConstraints: *Duplex DuplexNoTumble *PageSize EnvC5
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Com10Envelope
+*UIConstraints: *Duplex DuplexNoTumble *PageSize EnvC6
+*UIConstraints: *Duplex DuplexNoTumble *PageSize ZL
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Yougata4
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Postcard
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Younaga3
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Nagagata3
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Yougata2
+
+*% == Constraints (MediaType vs. Duplex) ==
+*UIConstraints: *MediaType Thick        *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Envelope     *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Transparency *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Cardstock    *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Label        *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Kleenex      *Duplex DuplexNoTumble
+
+*% == Constraints (Duplex vs. MediaType) ==
+*UIConstraints: *Duplex DuplexNoTumble *MediaType Thick
+*UIConstraints: *Duplex DuplexNoTumble *MediaType Envelope
+*UIConstraints: *Duplex DuplexNoTumble *MediaType Transparency
+*UIConstraints: *Duplex DuplexNoTumble *MediaType Cardstock
+*UIConstraints: *Duplex DuplexNoTumble *MediaType Label
+*UIConstraints: *Duplex DuplexNoTumble *MediaType Kleenex
+
+*% == Constraints (PageSize vs. Duplex) ==
+*UIConstraints: *PageSize A5               *Duplex DuplexTumble
+*UIConstraints: *PageSize A6               *Duplex DuplexTumble
+*UIConstraints: *PageSize B5               *Duplex DuplexTumble
+*UIConstraints: *PageSize ISOB5            *Duplex DuplexTumble
+*UIConstraints: *PageSize B6               *Duplex DuplexTumble
+*UIConstraints: *PageSize Executive        *Duplex DuplexTumble
+*UIConstraints: *PageSize Statement        *Duplex DuplexTumble
+*UIConstraints: *PageSize Big32K           *Duplex DuplexTumble
+*UIConstraints: *PageSize Big16K           *Duplex DuplexTumble
+*UIConstraints: *PageSize 32K              *Duplex DuplexTumble
+*UIConstraints: *PageSize 16K              *Duplex DuplexTumble
+*UIConstraints: *PageSize JapanesePostcard *Duplex DuplexTumble 
+*UIConstraints: *PageSize EnvMonarch       *Duplex DuplexTumble
+*UIConstraints: *PageSize EnvDL            *Duplex DuplexTumble
+*UIConstraints: *PageSize EnvC5            *Duplex DuplexTumble
+*UIConstraints: *PageSize Com10Envelope    *Duplex DuplexTumble
+*UIConstraints: *PageSize EnvC6            *Duplex DuplexTumble
+*UIConstraints: *PageSize ZL               *Duplex DuplexTumble
+*UIConstraints: *PageSize Yougata4         *Duplex DuplexTumble 
+*UIConstraints: *PageSize Postcard         *Duplex DuplexTumble
+*UIConstraints: *PageSize Younaga3         *Duplex DuplexTumble 
+*UIConstraints: *PageSize Nagagata3        *Duplex DuplexTumble 
+*UIConstraints: *PageSize Yougata2         *Duplex DuplexTumble 
+
+*% == Constraints (Duplex vs. PageSize) ==
+*UIConstraints: *Duplex DuplexTumble *PageSize A5
+*UIConstraints: *Duplex DuplexTumble *PageSize A6
+*UIConstraints: *Duplex DuplexTumble *PageSize B5
+*UIConstraints: *Duplex DuplexTumble *PageSize ISOB5
+*UIConstraints: *Duplex DuplexTumble *PageSize B6
+*UIConstraints: *Duplex DuplexTumble *PageSize Executive
+*UIConstraints: *Duplex DuplexTumble *PageSize Statement
+*UIConstraints: *Duplex DuplexTumble *PageSize Big32K
+*UIConstraints: *Duplex DuplexTumble *PageSize Big16K
+*UIConstraints: *Duplex DuplexTumble *PageSize 32K
+*UIConstraints: *Duplex DuplexTumble *PageSize 16K
+*UIConstraints: *Duplex DuplexTumble *PageSize JapanesePostcard
+*UIConstraints: *Duplex DuplexTumble *PageSize EnvMonarch
+*UIConstraints: *Duplex DuplexTumble *PageSize EnvDL
+*UIConstraints: *Duplex DuplexTumble *PageSize EnvC5
+*UIConstraints: *Duplex DuplexTumble *PageSize Com10Envelope
+*UIConstraints: *Duplex DuplexTumble *PageSize EnvC6
+*UIConstraints: *Duplex DuplexTumble *PageSize ZL
+*UIConstraints: *Duplex DuplexTumble *PageSize Yougata4
+*UIConstraints: *Duplex DuplexTumble *PageSize Postcard
+*UIConstraints: *Duplex DuplexTumble *PageSize Younaga3
+*UIConstraints: *Duplex DuplexTumble *PageSize Nagagata3
+*UIConstraints: *Duplex DuplexTumble *PageSize Yougata2
+
+*% == Constraints (MediaType vs. Duplex) ==
+*UIConstraints: *MediaType Thick        *Duplex DuplexTumble
+*UIConstraints: *MediaType Envelope     *Duplex DuplexTumble
+*UIConstraints: *MediaType Transparency *Duplex DuplexTumble
+*UIConstraints: *MediaType Cardstock    *Duplex DuplexTumble
+*UIConstraints: *MediaType Label        *Duplex DuplexTumble
+*UIConstraints: *MediaType Kleenex      *Duplex DuplexTumble
+
+*% == Constraints (Duplex vs. MediaType) ==
+*UIConstraints: *Duplex DuplexTumble *MediaType Thick
+*UIConstraints: *Duplex DuplexTumble *MediaType Envelope
+*UIConstraints: *Duplex DuplexTumble *MediaType Transparency
+*UIConstraints: *Duplex DuplexTumble *MediaType Cardstock
+*UIConstraints: *Duplex DuplexTumble *MediaType Label
+*UIConstraints: *Duplex DuplexTumble *MediaType Kleenex
+
+*% == Constraints (FeedEdge vs. PageSize) ==
+*UIConstraints: *FeedEdge LongEdge *PageSize Letter
+*UIConstraints: *FeedEdge LongEdge *PageSize A4
+*UIConstraints: *FeedEdge LongEdge *PageSize A6
+*UIConstraints: *FeedEdge LongEdge *PageSize B5
+*UIConstraints: *FeedEdge LongEdge *PageSize ISOB5
+*UIConstraints: *FeedEdge LongEdge *PageSize B6
+*UIConstraints: *FeedEdge LongEdge *PageSize Executive
+*UIConstraints: *FeedEdge LongEdge *PageSize Statement
+*UIConstraints: *FeedEdge LongEdge *PageSize Folio
+*UIConstraints: *FeedEdge LongEdge *PageSize Oficio
+*UIConstraints: *FeedEdge LongEdge *PageSize JapanesePostcard
+*UIConstraints: *FeedEdge LongEdge *PageSize EnvMonarch
+*UIConstraints: *FeedEdge LongEdge *PageSize EnvDL
+*UIConstraints: *FeedEdge LongEdge *PageSize EnvC5
+*UIConstraints: *FeedEdge LongEdge *PageSize Com10Envelope
+*UIConstraints: *FeedEdge LongEdge *PageSize EnvC6
+*UIConstraints: *FeedEdge LongEdge *PageSize ZL
+*UIConstraints: *FeedEdge LongEdge *PageSize Legal
+*UIConstraints: *FeedEdge LongEdge *PageSize Big32K
+*UIConstraints: *FeedEdge LongEdge *PageSize Big16K
+*UIConstraints: *FeedEdge LongEdge *PageSize 32K
+*UIConstraints: *FeedEdge LongEdge *PageSize 16K
+*UIConstraints: *FeedEdge LongEdge *PageSize Yougata4
+*UIConstraints: *FeedEdge LongEdge *PageSize Postcard
+*UIConstraints: *FeedEdge LongEdge *PageSize Younaga3
+*UIConstraints: *FeedEdge LongEdge *PageSize Nagagata3
+*UIConstraints: *FeedEdge LongEdge *PageSize Yougata2
+
+
+*% == Constraints (PageSize vs. FeedEdge) ==
+*UIConstraints: *PageSize Letter           *FeedEdge LongEdge
+*UIConstraints: *PageSize A4               *FeedEdge LongEdge
+*UIConstraints: *PageSize A6               *FeedEdge LongEdge
+*UIConstraints: *PageSize B5               *FeedEdge LongEdge
+*UIConstraints: *PageSize ISOB5            *FeedEdge LongEdge
+*UIConstraints: *PageSize B6               *FeedEdge LongEdge
+*UIConstraints: *PageSize Executive        *FeedEdge LongEdge
+*UIConstraints: *PageSize Statement        *FeedEdge LongEdge
+*UIConstraints: *PageSize Folio            *FeedEdge LongEdge
+*UIConstraints: *PageSize Oficio           *FeedEdge LongEdge
+*UIConstraints: *PageSize JapanesePostcard *FeedEdge LongEdge 
+*UIConstraints: *PageSize EnvMonarch       *FeedEdge LongEdge
+*UIConstraints: *PageSize EnvDL            *FeedEdge LongEdge
+*UIConstraints: *PageSize EnvC5            *FeedEdge LongEdge
+*UIConstraints: *PageSize Com10Envelope    *FeedEdge LongEdge
+*UIConstraints: *PageSize EnvC6            *FeedEdge LongEdge
+*UIConstraints: *PageSize ZL               *FeedEdge LongEdge
+*UIConstraints: *PageSize Legal            *FeedEdge LongEdge
+*UIConstraints: *PageSize Big32K           *FeedEdge LongEdge
+*UIConstraints: *PageSize Big16K           *FeedEdge LongEdge
+*UIConstraints: *PageSize 32K              *FeedEdge LongEdge
+*UIConstraints: *PageSize 16K              *FeedEdge LongEdge
+*UIConstraints: *PageSize Yougata4         *FeedEdge LongEdge 
+*UIConstraints: *PageSize Postcard         *FeedEdge LongEdge
+*UIConstraints: *PageSize Younaga3         *FeedEdge LongEdge 
+*UIConstraints: *PageSize Nagagata3        *FeedEdge LongEdge 
+*UIConstraints: *PageSize Yougata2         *FeedEdge LongEdge 
+
+*% == Constraints (TonerMode vs. Density) ==
+*UIConstraints: *TonerMode True         *Density PrinterS
+*UIConstraints: *TonerMode True         *Density Dark
+*UIConstraints: *TonerMode True         *Density Normal
+
+*% == Constraints (Density vs. TonerMode) ==
+*UIConstraints: *Density PrinterS       *TonerMode True 
+*UIConstraints: *Density Dark           *TonerMode True
+*UIConstraints: *Density Normal         *TonerMode True
+
+
+*% == Constraints (RGBCorrection vs. Lightness) ==
+*UIConstraints: *RGBCorrection PrinterS           *Lightness Level1
+*UIConstraints: *RGBCorrection PrinterS           *Lightness Level2
+*UIConstraints: *RGBCorrection PrinterS           *Lightness Level3
+*UIConstraints: *RGBCorrection PrinterS           *Lightness Level4
+*UIConstraints: *RGBCorrection PrinterS           *Lightness Level5
+
+*% == Constraints (Lightness vs. RGBCorrection) ==
+*UIConstraints: *Lightness Level1           *RGBCorrection PrinterS
+*UIConstraints: *Lightness Level2           *RGBCorrection PrinterS
+*UIConstraints: *Lightness Level3           *RGBCorrection PrinterS
+*UIConstraints: *Lightness Level4           *RGBCorrection PrinterS
+*UIConstraints: *Lightness Level5           *RGBCorrection PrinterS
+
+*% == Constraints (RGBCorrection vs. Contrast) ==
+*UIConstraints: *RGBCorrection PrinterS           *Contrast Level1
+*UIConstraints: *RGBCorrection PrinterS           *Contrast Level2
+*UIConstraints: *RGBCorrection PrinterS           *Contrast Level3
+*UIConstraints: *RGBCorrection PrinterS           *Contrast Level4
+*UIConstraints: *RGBCorrection PrinterS           *Contrast Level5
+
+*% == Constraints (Contrast vs. RGBCorrection) ==
+*UIConstraints: *Contrast Level1           *RGBCorrection PrinterS
+*UIConstraints: *Contrast Level2           *RGBCorrection PrinterS
+*UIConstraints: *Contrast Level3           *RGBCorrection PrinterS
+*UIConstraints: *Contrast Level4           *RGBCorrection PrinterS
+*UIConstraints: *Contrast Level5           *RGBCorrection PrinterS
+
+*% == Constraints (RGBCorrection vs. Saturations) ==
+*UIConstraints: *RGBCorrection PrinterS           *Saturations Level1
+*UIConstraints: *RGBCorrection PrinterS           *Saturations Level2
+*UIConstraints: *RGBCorrection PrinterS           *Saturations Level3
+*UIConstraints: *RGBCorrection PrinterS           *Saturations Level4
+*UIConstraints: *RGBCorrection PrinterS           *Saturations Level5
+
+*% == Constraints (Saturations vs. RGBCorrection) ==
+*UIConstraints: *Saturations Level1           *RGBCorrection PrinterS
+*UIConstraints: *Saturations Level2           *RGBCorrection PrinterS
+*UIConstraints: *Saturations Level3           *RGBCorrection PrinterS
+*UIConstraints: *Saturations Level4           *RGBCorrection PrinterS
+*UIConstraints: *Saturations Level5           *RGBCorrection PrinterS
+
+*% == Constraints (RGBCorrection vs. Lightness) ==
+*%UIConstraints: *RGBCorrection Manual             *Lightness False
+
+*% == Constraints (Lightness vs. RGBCorrection) ==
+*%UIConstraints: *Lightness False                 *RGBCorrection Manual
+
+*% == Constraints (RGBCorrection vs. Contrast) ==
+*%UIConstraints: *RGBCorrection Manual            *Contrast False
+
+*% == Constraints (Contrast vs. RGBCorrection) ==
+*%UIConstraints: *Contrast False                  *RGBCorrection Manual
+
+*% == Constraints (RGBCorrection vs. Saturations) ==
+*%UIConstraints: *RGBCorrection Manual            *Saturations False
+
+*% == Constraints (Saturations vs. RGBCorrection) ==
+*%UIConstraints: *Saturations False               *RGBCorrection Manual
+
+*% == Constraints (Colorbalance vs. Cyan) ==
+*UIConstraints: *Colorbalance PrinterS            *Cyan Level1
+*UIConstraints: *Colorbalance PrinterS            *Cyan Level2
+*UIConstraints: *Colorbalance PrinterS            *Cyan Level3
+*UIConstraints: *Colorbalance PrinterS            *Cyan Level4
+*UIConstraints: *Colorbalance PrinterS            *Cyan Level5
+
+*% == Constraints (Cyan vs. Colorbalance) ==
+*UIConstraints: *Cyan Level1           *Colorbalance PrinterS
+*UIConstraints: *Cyan Level2           *Colorbalance PrinterS
+*UIConstraints: *Cyan Level3           *Colorbalance PrinterS
+*UIConstraints: *Cyan Level4           *Colorbalance PrinterS
+*UIConstraints: *Cyan Level5           *Colorbalance PrinterS
+
+*% == Constraints (Colorbalance vs. Magenta) ==
+*UIConstraints: *Colorbalance PrinterS           *Magenta Level1
+*UIConstraints: *Colorbalance PrinterS           *Magenta Level2
+*UIConstraints: *Colorbalance PrinterS           *Magenta Level3
+*UIConstraints: *Colorbalance PrinterS           *Magenta Level4
+*UIConstraints: *Colorbalance PrinterS           *Magenta Level5
+
+*% == Constraints (Magenta vs. Colorbalance) ==
+*UIConstraints: *Magenta Level1           *Colorbalance PrinterS
+*UIConstraints: *Magenta Level2           *Colorbalance PrinterS
+*UIConstraints: *Magenta Level3           *Colorbalance PrinterS
+*UIConstraints: *Magenta Level4           *Colorbalance PrinterS
+*UIConstraints: *Magenta Level5           *Colorbalance PrinterS
+
+*% == Constraints (Colorbalance vs. Yellow) ==
+*UIConstraints: *Colorbalance PrinterS           *Yellow Level1
+*UIConstraints: *Colorbalance PrinterS           *Yellow Level2
+*UIConstraints: *Colorbalance PrinterS           *Yellow Level3
+*UIConstraints: *Colorbalance PrinterS           *Yellow Level4
+*UIConstraints: *Colorbalance PrinterS           *Yellow Level5
+
+*% == Constraints (Yellow vs. Colorbalance) ==
+*UIConstraints: *Yellow Level1           *Colorbalance PrinterS
+*UIConstraints: *Yellow Level2           *Colorbalance PrinterS
+*UIConstraints: *Yellow Level3           *Colorbalance PrinterS
+*UIConstraints: *Yellow Level4           *Colorbalance PrinterS
+*UIConstraints: *Yellow Level5           *Colorbalance PrinterS
+
+*% == Constraints (Colorbalance vs. Black) ==
+*UIConstraints: *Colorbalance PrinterS           *Black Level1
+*UIConstraints: *Colorbalance PrinterS           *Black Level2
+*UIConstraints: *Colorbalance PrinterS           *Black Level3
+*UIConstraints: *Colorbalance PrinterS           *Black Level4
+*UIConstraints: *Colorbalance PrinterS           *Black Level5
+
+*% == Constraints (Black vs. Colorbalance) ==
+*UIConstraints: *Black Level1           *Colorbalance PrinterS
+*UIConstraints: *Black Level2           *Colorbalance PrinterS
+*UIConstraints: *Black Level3           *Colorbalance PrinterS
+*UIConstraints: *Black Level4           *Colorbalance PrinterS
+*UIConstraints: *Black Level5           *Colorbalance PrinterS
+
+*% == Constraints (Colorbalance vs. Cyan) ==
+*%UIConstraints: *Colorbalance Manual            *Cyan False
+
+*% == Constraints (Cyan vs. Colorbalance) ==
+*%UIConstraints: *Cyan False                     *Colorbalance Manual
+
+*% == Constraints (Colorbalance vs. Magenta) ==
+*%UIConstraints: *Colorbalance Manual            *Magenta False
+
+*% == Constraints (Magenta vs. Colorbalance) ==
+*%UIConstraints: *Magenta False                  *Colorbalance Manual
+
+*% == Constraints (Colorbalance vs. Yellow) ==
+*%UIConstraints: *Colorbalance Manual            *Yellow False
+
+*% == Constraints (Yellow vs. Colorbalance) ==
+*%UIConstraints: *Yellow False                   *Colorbalance Manual
+
+*% == Constraints (Colorbalance vs. Black) ==
+*%UIConstraints: *Colorbalance Manual            *Black False
+
+*% == Constraints (Black vs. Colorbalance) ==
+*%UIConstraints: *Black False                    *Colorbalance Manual
+
+*% == Constraints (CustomPageSize vs. Duplex) ==
+*NonUIConstraints: *CustomPageSize True          *Duplex DuplexNoTumble
+*NonUIConstraints: *CustomPageSize True          *Duplex DuplexTumble
+
+*% == Constraints (Duplex vs. CustomPageSize) ==
+*NonUIConstraints: *Duplex DuplexNoTumble        *CustomPageSize True
+*NonUIConstraints: *Duplex DuplexTumble          *CustomPageSize True
+
+*% == Constraints (CustomPageSize vs. PaperType) ==
+*NonUIConstraints: *CustomPageSize True	    	 *MediaType Envelope
+
+*% == Constraints (PaperType vs. CustomPageSize) ==
+*NonUIConstraints: *MediaType Envelope	         *CustomPageSize True
+
+
+*% == Constraints (CustomPageSize vs. FeedEdge) ==
+*NonUIConstraints: *CustomPageSize True	    	 *FeedEdge LongEdge
+
+*% == Constraints (FeedEdge vs. CustomPageSize) ==
+*NonUIConstraints: *FeedEdge LongEdge	         *CustomPageSize True
+
+
+*% ==== Device Capabilities ===============
+*LanguageLevel: "3"
+*Protocols: TBCP PJL
+*1284Modes Parallel: Compat Nibble ECP
+*1284DeviceID: "CMD:PS3;MFG:Pantum;MDL:CM1100ADW series;"
+*End
+
+*ColorDevice:	True
+*DefaultColorSpace: RGB
+*VariablePaperSize: True
+*LandscapeOrientation: Plus90
+*TTRasterizer: Type42
+*?TTRasterizer: "
+save
+    42 /FontType resourcestatus
+    {pop pop (Type42)}{(No Type42)} ifelse = flush
+restore
+"
+*End
+*FileSystem: True
+*?FileSystem: "
+  save false
+   (%disk?%)
+   { currentdevparams dup /Writeable known
+      { /Writeable get {pop true} if }  { pop } ifelse
+    } 10 string /IODevice resourceforall
+    {(True)}{(False)} ifelse = flush
+ restore
+"
+*End
+
+*Throughput: "30"
+*Password: "()"
+*ExitServer: "
+ count 0 eq
+ { false } { true exch startjob } ifelse
+ not {
+     (WARNING: Cannot modify initial VM.) =
+     (Missing or invalid password.) =
+     (Please contact the author of this software.) = flush quit
+     } if
+"
+*End
+*Reset: "
+ count 0 eq
+ { false } { true exch startjob } ifelse
+ not {
+    (WARNING: Cannot reset printer.) =
+    (Missing or invalid password.) =
+    (Please contact the author of this software.) = flush quit
+    } if
+ systemdict /quit get exec
+ (WARNING : Printer Reset Failed.) = flush
+"
+*End
+
+*AccurateScreensSupport: True
+*SuggestedJobTimeout: "0"
+*SuggestedWaitTimeout: "300"
+*PrintPSErrors: True
+
+*OpenGroup: Graphics/Basic
+*% Paper Handling ===================
+*OpenUI *PageSize/Paper Size: PickOne
+*OrderDependency: 60.0 AnySetup *PageSize
+*DefaultPageSize: A4
+*PageSize Letter/Letter (8.5 x 11): "<</DeferredMediaSelection true/PageSize [612 792]/ImagingBBox null>>setpagedevice"
+*PageSize A4/A4 (210 x 297mm): "<</DeferredMediaSelection true/PageSize [595 842]/ImagingBBox null>>setpagedevice"
+*PageSize A5/A5 (148 x 210mm): "<</DeferredMediaSelection true/PageSize [420 595]/ImagingBBox null>>setpagedevice"
+*PageSize A6/A6 (105 x 148mm): "<</DeferredMediaSelection true/PageSize [298 420]/ImagingBBox null>>setpagedevice"
+*PageSize B5/JIS B5 (182 x 257mm): "<</DeferredMediaSelection true/PageSize [516 729]/ImagingBBox null>>setpagedevice"
+*PageSize ISOB5/ISO B5 (176 x 250mm): "<</DeferredMediaSelection true/PageSize [499 709]/ImagingBBox null>>setpagedevice"
+*PageSize B6/B6 (125 x 176mm): "<</DeferredMediaSelection true/PageSize [354 499]/ImagingBBox null>>setpagedevice"
+*PageSize Executive/Executive (7.25 x 10.5): "<</DeferredMediaSelection true/PageSize [522 756]/ImagingBBox null>>setpagedevice"
+*PageSize Statement/Statement (5.5 x 8.5): "<</DeferredMediaSelection true/PageSize [396 612]/ImagingBBox null>>setpagedevice"
+*PageSize Folio/Folio (8.5 x 13): "<</DeferredMediaSelection true/PageSize [612 936]/ImagingBBox null>>setpagedevice"
+*PageSize Oficio/Oficio (216 x 343mm): "<</DeferredMediaSelection true/PageSize [612 964]/ImagingBBox null>>setpagedevice"
+*PageSize Postcard/Japanese Postcard (100x148mm): "<</DeferredMediaSelection true/PageSize [283 420]/ImagingBBox null>>setpagedevice"
+*PageSize EnvMonarch/Monarch Env (3.875 x 7.5): "<</DeferredMediaSelection true/PageSize [279 540]/ImagingBBox null>>setpagedevice"
+*PageSize EnvDL/DL Env (110 x 220mm): "<</DeferredMediaSelection true/PageSize [312 624]/ImagingBBox null>>setpagedevice"
+*PageSize EnvC5/C5 Env (162 x 229mm): "<</DeferredMediaSelection true/PageSize [459 649]/ImagingBBox null>>setpagedevice"
+*PageSize Com10Envelope/No.10 Env (4.125 x 9.5): "<</DeferredMediaSelection true/PageSize [297 684]/ImagingBBox null>>setpagedevice"
+*PageSize EnvC6/C6 Env (114 x 162mm): "<</DeferredMediaSelection true/PageSize [323 459]/ImagingBBox null>>setpagedevice"
+*PageSize ZL/ZL (120 x 230mm): "<</DeferredMediaSelection true/PageSize [340 652]/ImagingBBox null>>setpagedevice"
+*PageSize Legal/Legal (8.5 x 14): "<</DeferredMediaSelection true/PageSize [612 1008]/ImagingBBox null>>setpagedevice"
+*PageSize Big32K/Big 32K (135 x 195mm): "<</DeferredMediaSelection true/PageSize [383 553]/ImagingBBox null>>setpagedevice"
+*PageSize Big16K/Big 16K (195 x 270mm): "<</DeferredMediaSelection true/PageSize [553 765]/ImagingBBox null>>setpagedevice"
+*PageSize 32K/32K (130 x 185mm): "<</DeferredMediaSelection true/PageSize [369 524]/ImagingBBox null>>setpagedevice"
+*PageSize 16K/16K (185 x 260mm): "<</DeferredMediaSelection true/PageSize [524 737]/ImagingBBox null>>setpagedevice"
+*PageSize Yougata4/Yougata4 (105 x 235mm): "<</DeferredMediaSelection true/PageSize [297 666]/ImagingBBox null>>setpagedevice"
+*PageSize JapanesePostcard/Postcard (148 x 200mm): "<</DeferredMediaSelection true/PageSize [419 566]/ImagingBBox null>>setpagedevice"
+*PageSize Younaga3/Younaga3 (120 x 235mm): "<</DeferredMediaSelection true/PageSize [340 666]/ImagingBBox null>>setpagedevice"
+*PageSize Nagagata3/Nagagata3 (120 x 235mm): "<</DeferredMediaSelection true/PageSize [348 666]/ImagingBBox null>>setpagedevice"
+*PageSize Yougata2/Yougata2 (114 x 162mm): "<</DeferredMediaSelection true/PageSize [331 467]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion:  PickOne
+*OrderDependency: 80.0 AnySetup *PageRegion
+*DefaultPageRegion: A4
+*PageRegion Letter/Letter (8.5 x 11): "<</DeferredMediaSelection true/PageSize [612 792]/ImagingBBox null>>setpagedevice"
+*PageRegion A4/A4 (210 x 297mm): "<</DeferredMediaSelection true/PageSize [595 842]/ImagingBBox null>>setpagedevice"
+*PageRegion A5/A5 (148 x 210mm): "<</DeferredMediaSelection true/PageSize [420 595]/ImagingBBox null>>setpagedevice"
+*PageRegion A6/A6 (105 x 148mm): "<</DeferredMediaSelection true/PageSize [298 420]/ImagingBBox null>>setpagedevice"
+*PageRegion B5/JIS B5 (182 x 257mm): "<</DeferredMediaSelection true/PageSize [516 729]/ImagingBBox null>>setpagedevice"
+*PageRegion ISOB5/ISO B5 (176 x 250mm): "<</DeferredMediaSelection true/PageSize [499 709]/ImagingBBox null>>setpagedevice"
+*PageRegion B6/B6 (125 x 176mm): "<</DeferredMediaSelection true/PageSize [354 499]/ImagingBBox null>>setpagedevice"
+*PageRegion Executive/Executive (7.25 x 10.5): "<</DeferredMediaSelection true/PageSize [522 756]/ImagingBBox null>>setpagedevice"
+*PageRegion Statement/Statement (5.5 x 8.5): "<</DeferredMediaSelection true/PageSize [396 612]/ImagingBBox null>>setpagedevice"
+*PageRegion Folio/Folio (8.5 x 13): "<</DeferredMediaSelection true/PageSize [612 936]/ImagingBBox null>>setpagedevice"
+*PageRegion Oficio/Oficio (216 x 343mm): "<</DeferredMediaSelection true/PageSize [612 964]/ImagingBBox null>>setpagedevice"
+*PageRegion Postcard/Japanese Postcard (100 x 148mm): "<</DeferredMediaSelection true/PageSize [283 420]/ImagingBBox null>>setpagedevice"
+*PageRegion EnvMonarch/Monarch Env (3.875 x 7.5): "<</DeferredMediaSelection true/PageSize [279 540]/ImagingBBox null>>setpagedevice"
+*PageRegion EnvDL/DL Env (110 x 220mm): "<</DeferredMediaSelection true/PageSize [312 624]/ImagingBBox null>>setpagedevice"
+*PageRegion EnvC5/C5 Env (162 x 229mm): "<</DeferredMediaSelection true/PageSize [459 649]/ImagingBBox null>>setpagedevice"
+*PageRegion Com10Envelope/No.10 Env (4.125 x 9.5): "<</DeferredMediaSelection true/PageSize [297 684]/ImagingBBox null>>setpagedevice"
+*PageRegion EnvC6/C6 Env (114 x 162mm): "<</DeferredMediaSelection true/PageSize [323 459]/ImagingBBox null>>setpagedevice"
+*PageRegion ZL/ZL (120 x 230mm): "<</DeferredMediaSelection true/PageSize [340 652]/ImagingBBox null>>setpagedevice"
+*PageRegion Legal/Legal (8.5 x 14): "<</DeferredMediaSelection true/PageSize [612 1008]/ImagingBBox null>>setpagedevice"
+*PageRegion Big32K/Big 32K (135 x 195mm): "<</DeferredMediaSelection true/PageSize [383 553]/ImagingBBox null>>setpagedevice"
+*PageRegion Big16K/Big 16K (195 x 270mm): "<</DeferredMediaSelection true/PageSize [553 765]/ImagingBBox null>>setpagedevice"
+*PageRegion 32K/32K (130 x 185mm): "<</DeferredMediaSelection true/PageSize [369 524]/ImagingBBox null>>setpagedevice"
+*PageRegion 16K/16K (185 x 260mm): "<</DeferredMediaSelection true/PageSize [524 737]/ImagingBBox null>>setpagedevice"
+*PageRegion Yougata4/Yougata4 (105 x 235mm): "<<DeferredMediaSelection true/PageSize [297 666]/ImagingBBox null>>setpagedevice"
+*PageRegion JapanesePostcard/Postcard (148 x 200mm): "<<DeferredMediaSelection true/PageSize [419 566]/ImagingBBox null>>setpagedevice"
+*PageRegion Younaga3/Younaga3 (120 x 235mm): "<<DeferredMediaSelection true/PageSize [340 666]/ImagingBBox null>>setpagedevice"
+*PageRegion Nagagata3/Nagagata3 (120 x 235mm): "<<DeferredMediaSelection true/PageSize [348 666]/ImagingBBox null>>setpagedevice"
+*PageRegion Yougata2/Yougata2 (114 x 162mm): "<<DeferredMediaSelection true/PageSize [331 467]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+
+*% The following entries provide information about specific paper keywords.
+*DefaultImageableArea: A4
+*ImageableArea Letter/Letter (8.5 x 11): "14.17 14.17 597.83 777.83"
+*ImageableArea A4/A4 (210 x 297mm): "14.17 14.17 580.83 827.83"
+*ImageableArea A5/A5 (148 x 210mm): "14.17 14.17 405.83 580.83"
+*ImageableArea A6/A6 (105 x 148mm): "14.17 14.17 283.83 405.83"
+*ImageableArea B5/JIS B5 (182 x 257mm): "14.17 14.17 501.83 714.83"
+*ImageableArea ISOB5/ISO B5 (176 x 250mm): "14.17 14.17 484.83 694.83"
+*ImageableArea B6/B6 (125 x 176mm): "14.17 14.17 339.83 484.83"
+*ImageableArea Executive/Executive (7.25 x 10.5): "14.17 14.17 507.83 741.83"
+*ImageableArea Statement/Statement (5.5 x 8.5): "14.17 14.17 381.83 597.83"
+*ImageableArea Folio/Folio (8.5 x 13): "14.17 14.17 597.83 921.83"
+*ImageableArea Oficio/Oficio (216 x 343mm): "14.17 14.17 597.83 949.83"
+*ImageableArea Postcard/Japanese Postcard (100 x 148mm): "14.17 14.17 268.83 405.83"
+*ImageableArea EnvMonarch/Monarch Env (3.875 x 7.5): "14.17 14.17 264.83 525.83"
+*ImageableArea EnvDL/DL Env (110 x 220mm): "14.17 14.17 297.83 609.83"
+*ImageableArea EnvC5/C5 Env (162 x 229mm): "14.17 14.17 444.83 634.83"
+*ImageableArea Com10Envelope/No.10 Env (4.125 x 9.5): "14.17 14.17 282.83 669.83"
+*ImageableArea EnvC6/C6 Env (114 x 162mm): "14.17 14.17 308.83 444.83"
+*ImageableArea ZL/ZL (120 x 230mm): "14.17 14.17 325.83 637.83"
+*ImageableArea Legal/Legal (8.5 x 14): "14.17 14.17 597.83 993.83"
+*ImageableArea Big32K/Big 32K (135 x 195mm): "14.17 14.17 368.83 538.83"
+*ImageableArea Big16K/Big 16K (195 x 270mm): "14.17 14.17 538.83 750.83"
+*ImageableArea 32K/32K (130 x 185mm): "14.17 14.17 354.83 509.83"
+*ImageableArea 16K/16K (185 x 260mm): "14.17 14.17 509.83 722.83"
+*ImageableArea Yougata4/Yougata4 (105 x 235mm): "14.17 14.17 282.83 651.83"
+*ImageableArea JapanesePostcard/Postcard (148 x 200mm): "14.17 14.17 404.83 551.83"
+*ImageableArea Younaga3/Younaga3 (120 x 235mm): "14.17 14.17 325.83 651.83"
+*ImageableArea Nagagata3/Nagagata3 (120 x 235mm): "14.17 14.17 333.83 651.83"
+*ImageableArea Yougata2/Yougata2 (114 x 162mm): "14.17 14.17 316.83 452.83"
+
+*% These provide the physical dimensions of the paper (by keyword)
+*DefaultPaperDimension: A4
+*PaperDimension Letter/Letter (8.5 x 11): "612 792"
+*PaperDimension A4/A4 (210 x 297mm): "595 842"
+*PaperDimension A5/A5 (148 x 210mm): "420 595"
+*PaperDimension A6/A6 (105 x 148mm): "298 420"
+*PaperDimension B5/JIS B5 (182 x 257mm): "516 729"
+*PaperDimension ISOB5/ISO B5 (176 x 250mm): "499 709"
+*PaperDimension B6/B6 (125 x 176mm): "354 499"
+*PaperDimension Executive/Executive (7.25 x 10.5): "522 756"
+*PaperDimension Statement/Statement (5.5 x 8.5): "396 612"
+*PaperDimension Folio/Folio (8.5 x 13): "612 936"
+*PaperDimension Oficio/Oficio (216 x 343mm): "612 964"
+*PaperDimension Postcard/Japanese Postcard (100 x 148mm): "283 420"
+*PaperDimension EnvMonarch/Monarch Env (3.875 x 7.5"): "279 540"
+*PaperDimension EnvDL/DL Env (110 x 220mm): "312 624"
+*PaperDimension EnvC5/C5 Env (162 x 229mm): "459 649"
+*PaperDimension Com10Envelope/No.10 Env (4.125 x 9.5): "297 684"
+*PaperDimension EnvC6/C6 Env (114 x 162mm): "323 459"
+*PaperDimension ZL/ZL (120 x 230mm): "340 652"
+*PaperDimension Legal/Legal (8.5 x 14): "612 1008"
+*PaperDimension Big32K/Big 32K (135 x 195mm): "383 553"
+*PaperDimension Big16K/Big 16K (195 x 270mm): "553 765"
+*PaperDimension 32K/32K (130 x 185mm): "369 524"
+*PaperDimension 16K/16K (185 x 260mm): "524 737"
+*PaperDimension Yougata4/Yougata4 (105 x 235mm): "297 666"
+*PaperDimension JapanesePostcard/Postcard (148 x 200mm): "419 566"
+*PaperDimension Younaga3/Younaga3 (120 x 235mm): "340 666"
+*PaperDimension Nagagata3/Nagagata3 (120 x 235mm): "348 666"
+*PaperDimension Yougata2/Yougata2 (114 x 162mm): "331 467"
+
+*HWMargins: 14.17 14.17 14.17 14.17
+*LeadingEdge Short: ""
+*DefaultLeadingEdge: Short
+*MaxMediaWidth: "618"
+*MaxMediaHeight: "1021"
+
+*CustomPageSize True: "pop pop pop <</PageSize [5 -2 roll] /ImagingBBox null /Policies <</PageSize 2 /MediaType 2>> /DeferredMediaSelection true>> setpagedevice"
+*ParamCustomPageSize Width:  1 points 255 618
+*ParamCustomPageSize Height: 2 points 340 1020
+*ParamCustomPageSize WidthOffset: 3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation: 5 int 1 1
+
+*RequiresPageRegion All: True
+
+*%=== JCL Features ==========================
+*JCLBegin:           "<1B>%-12345X@PJL JOB<0A>"
+*JCLToPSInterpreter: "@PJL ENTER LANGUAGE=POSTSCRIPT<0A>"
+*JCLEnd:             "<04><1B>%-12345X@PJL EOJ<0D><0A><1B>%-12345X"
+
+*OpenUI *ColorModel/Color Mode: PickOne
+*OrderDependency: 10 JCLSetup * ColorModel
+*DefaultColorModel:Color
+*ColorModel Color/Color: "@PJL SET LCOLORMODEL=CMYK<0D><0A>@PJL SET RENDERMODE=COLOR<0D><0A>"
+*ColorModel GrayScale/Monochrome: "@PJL SET LCOLORMODEL=BLACK<0D><0A>@PJL SET RENDERMODE=GRAYSCALE<0D><0A>"
+*CloseUI: *ColorModel
+
+*OpenUI *PrintModel/Print Mode: PickOne
+*OrderDependency: 11 JCLSetup * PrintModel
+*DefaultPrintModel:Model2
+*PrintModel Model1/Model1: "@PJL SET PRINTMODE=1<0D><0A>"
+*PrintModel Model2/Model2: "@PJL SET PRINTMODE=2<0D><0A>"
+*PrintModel Model3/Model3: "@PJL SET PRINTMODE=3<0D><0A>"
+*CloseUI: *PrintModel
+
+*OpenUI *Resolution/Resolution: PickOne
+*OrderDependency: 10 JCLSetup *Resolution
+*DefaultResolution: 600dpi
+*Resolution 600dpi/600 dpi: "@PJL SET JOBTYPE=OFF<0D><0A>@PJL SET RESOLUTION=600<0D><0A>@PJL SET BITSPERPIXEL=1<0D><0A>"
+*Resolution 1200dpi/600 dpi: "@PJL SET JOBTYPE=OFF<0D><0A>@PJL SET RESOLUTION=600<0D><0A>@PJL SET BITSPERPIXEL=2<0D><0A>"
+*CloseUI: *Resolution
+*CloseGroup: Graphics
+
+*OpenGroup: PaperGroup/Paper
+
+*OpenUI *Duplex/Two-Sided: PickOne
+*OrderDependency: 10 AnySetup *Duplex
+*DefaultDuplex: None
+*Duplex None/Off: "<</Duplex false /Tumble false>>setpagedevice"
+*Duplex DuplexNoTumble/Long Edge: "<</Duplex true /Tumble false>>setpagedevice"
+*Duplex DuplexTumble/Short Edge: "<</Duplex true /Tumble true>>setpagedevice"
+*CloseUI: *Duplex
+
+*OpenUI *MediaType/Paper Type: PickOne
+*OrderDependency: 10 JCLSetup *MediaType
+*DefaultMediaType: Plain
+*MediaType Plain/Plain:	"@PJL SET PAPERTYPE=PLAIN<0D><0A>"
+*MediaType Thick/Thick: "@PJL SET PAPERTYPE=TOUGH<0D><0A>"
+*MediaType Envelope/Envelope: "@PJL SET PAPERTYPE=ENVELOPE<0D><0A>"
+*MediaType Transparency/Transparency: "@PJL SET PAPERTYPE=TRANSPARENCY<0D><0A>"
+*MediaType Cardstock/Cardstock: "@PJL SET PAPERTYPE=CARDSTOCK<0D><0A>"
+*MediaType Label/Label: "@PJL SET PAPERTYPE=LABELS<0D><0A>"
+*MediaType Kleenex/Thin paper: "@PJL SET PAPERTYPE=TISSUE<0D><0A>"
+*CloseUI: *MediaType
+
+*% Media Input Source
+*OpenUI *ptInputSlot/Paper Source: PickOne
+*OrderDependency: 20 JCLSetup *ptInputSlot
+*DefaultptInputSlot: AutoSelect
+*ptInputSlot AutoSelect/Auto-selected by the printer: ""
+*ptInputSlot ManualFeed/Manual Feeder Tray: "@PJL SET MANUALFEED=ON<0D><0A>"
+*ptInputSlot AutoFeed/Automatic Feeder Tray: "@PJL SET MPFFEED=ON<0D><0A>" 
+*CloseUI: *ptInputSlot
+
+*% FeedEdge
+*OpenUI *FeedEdge/Feed Orientation: PickOne
+*OrderDependency: 15.0 JCLSetup *FeedEdge
+*DefaultFeedEdge: ShortEdge
+*FeedEdge ShortEdge/Short Edge Feed: ""
+*FeedEdge LongEdge/Long Edge Feed: "@PJL SET PAPER=A5L<0D><0A>"
+*CloseUI: *FeedEdge
+
+*% ================================================
+*% Booklet
+*% ================================================
+*% Booklet printing is not allowed without Auto Duplex turned on
+*OpenUI *Booklet/Format Output as Booklet: PickOne
+*OrderDependency: 60 AnySetup *Booklet
+*DefaultBooklet: False
+*Booklet True/Yes: ""
+*Booklet False/No: ""
+*CloseUI: *Booklet
+*CloseGroup: PaperGroup
+
+*OpenGroup: ColorGroup/color
+
+*% ================================================
+*% RGBCorrection
+*% ================================================
+*OpenUI *RGBCorrection/RGBCorrection: PickOne
+*OrderDependency: 51 JCLSetup *RGBCorrection
+*DefaultRGBCorrection: PrinterS
+*RGBCorrection PrinterS/Printer Setting: "@PJL SET IMAGERGB=USEPRINTERCOF<0D><0A>"
+*RGBCorrection Manual/manual : "@PJL SET IMAGERGB=MANUAL<0D><0A>"
+*CloseUI: *RGBCorrection
+
+*% ================================================
+*% Contrast
+*% ================================================
+*OpenUI *Contrast/Contrast: PickOne
+*OrderDependency: 52 JCLSetup *Contrast
+*DefaultContrast: False
+*Contrast False/Off: ""
+*Contrast Level1/Level1: "@PJL SET IMAGECONTRAST=1<0D><0A>"
+*Contrast Level2/Level2: "@PJL SET IMAGECONTRAST=2<0D><0A>"
+*Contrast Level3/Level3: "@PJL SET IMAGECONTRAST=3<0D><0A>"
+*Contrast Level4/Level4: "@PJL SET IMAGECONTRAST=4<0D><0A>"
+*Contrast Level5/Level5: "@PJL SET IMAGECONTRAST=5<0D><0A>"
+*CloseUI: *Contrast
+
+*% ================================================
+*% Saturations
+*% ================================================
+*OpenUI *Saturations/Saturations: PickOne
+*OrderDependency: 53 JCLSetup *Saturations
+*DefaultSaturations: False
+*Saturations False/Off: ""
+*Saturations Level1/Level1: "@PJL SET IMAGESATURATION=1<0D><0A>"
+*Saturations Level2/Level2: "@PJL SET IMAGESATURATION=2<0D><0A>"
+*Saturations Level3/Level3: "@PJL SET IMAGESATURATION=3<0D><0A>"
+*Saturations Level4/Level4: "@PJL SET IMAGESATURATION=4<0D><0A>"
+*Saturations Level5/Level5: "@PJL SET IMAGESATURATION=5<0D><0A>"
+*CloseUI: *Saturations
+
+*% ================================================
+*% Lightness
+*% ================================================
+*OpenUI *Lightness/Lightness: PickOne
+*OrderDependency: 54 JCLSetup *Lightness
+*DefaultLightness: False
+*Lightness False/Off: ""
+*Lightness Level1/Level1: "@PJL SET IMAGEBRIGHTNESS=1<0D><0A>"
+*Lightness Level2/Level2: "@PJL SET IMAGEBRIGHTNESS=2<0D><0A>"
+*Lightness Level3/Level3: "@PJL SET IMAGEBRIGHTNESS=3<0D><0A>"
+*Lightness Level4/Level4: "@PJL SET IMAGEBRIGHTNESS=4<0D><0A>"
+*Lightness Level5/Level5: "@PJL SET IMAGEBRIGHTNESS=5<0D><0A>"
+*CloseUI: *Lightness
+
+*% ================================================
+*% Colorbalance
+*% ================================================
+*OpenUI *Colorbalance/Output Bins: PickOne
+*OrderDependency: 55 JCLSetup *Colorbalance
+*DefaultColorbalance: PrinterS
+*Colorbalance PrinterS/Printer Setting: "@PJL SET COLORBALANCE=USEPRINTERCOF<0D><0A>"
+*Colorbalance Manual/manual : "@PJL SET COLORBALANCE=MANUAL<0D><0A>"
+*CloseUI: *Colorbalance
+
+*% ================================================
+*% Cyan
+*% ================================================
+*OpenUI *Cyan/Cyan: PickOne
+*OrderDependency: 56 JCLSetup *Cyan
+*DefaultCyan: False
+*Cyan False/Off: ""
+*Cyan Level1/Level1: "@PJL SET COLORBALANCECYAN=1<0D><0A>"
+*Cyan Level2/Level2: "@PJL SET COLORBALANCECYAN=2<0D><0A>"
+*Cyan Level3/Level3: "@PJL SET COLORBALANCECYAN=3<0D><0A>"
+*Cyan Level4/Level4: "@PJL SET COLORBALANCECYAN=4<0D><0A>"
+*Cyan Level5/Level5: "@PJL SET COLORBALANCECYAN=5<0D><0A>"
+*CloseUI: *Cyan
+
+*% ================================================
+*% Magenta
+*% ================================================
+*OpenUI *Magenta/Magenta: PickOne
+*OrderDependency: 57 JCLSetup *Magenta
+*DefaultMagenta: False
+*Magenta False/Off: ""
+*Magenta Level1/Level1: "@PJL SET COLORBALANCEMAGENTA=1<0D><0A>"
+*Magenta Level2/Level2: "@PJL SET COLORBALANCEMAGENTA=2<0D><0A>"
+*Magenta Level3/Level3: "@PJL SET COLORBALANCEMAGENTA=3<0D><0A>"
+*Magenta Level4/Level4: "@PJL SET COLORBALANCEMAGENTA=4<0D><0A>"
+*Magenta Level5/Level5: "@PJL SET COLORBALANCEMAGENTA=5<0D><0A>"
+*CloseUI: *Magenta
+
+*% ================================================
+*% Yellow
+*% ================================================
+*OpenUI *Yellow/Yellow: PickOne
+*OrderDependency: 58 JCLSetup *Yellow
+*DefaultYellow: False
+*Yellow False/Off: ""
+*Yellow Level1/Level1: "@PJL SET COLORBALANCEYELLOW=1<0D><0A>"
+*Yellow Level2/Level2: "@PJL SET COLORBALANCEYELLOW=2<0D><0A>"
+*Yellow Level3/Level3: "@PJL SET COLORBALANCEYELLOW=3<0D><0A>"
+*Yellow Level4/Level4: "@PJL SET COLORBALANCEYELLOW=4<0D><0A>"
+*Yellow Level5/Level5: "@PJL SET COLORBALANCEYELLOW=5<0D><0A>"
+*CloseUI: *Yellow
+
+*% ================================================
+*% Black
+*% ================================================
+*OpenUI *Black/Black: PickOne
+*OrderDependency: 59 JCLSetup *Black
+*DefaultBlack: False
+*Black False/Off: ""
+*Black Level1/Level1: "@PJL SET COLORBALANCEBLACK=1<0D><0A>"
+*Black Level2/Level2: "@PJL SET COLORBALANCEBLACK=2<0D><0A>"
+*Black Level3/Level3: "@PJL SET COLORBALANCEBLACK=3<0D><0A>"
+*Black Level4/Level4: "@PJL SET COLORBALANCEBLACK=4<0D><0A>"
+*Black Level5/Level5: "@PJL SET COLORBALANCEBLACK=5<0D><0A>"
+*CloseUI: *Black
+
+*OpenUI *Density/Density: PickOne
+*OrderDependency: 64 JCLSetup *Density
+*DefaultDensity: PrinterS
+*Density PrinterS/Printer Setting: "@PJL SET DENSITY=USEPRINTERCOF<0D><0A>"
+*Density Dark/Dark: "@PJL SET DENSITY=LEVEL4<0D><0A>"
+*Density Normal/Normal: "@PJL SET DENSITY=LEVEL2<0D><0A>"
+*Density Light/Light: "@PJL SET DENSITY=LEVEL0<0D><0A>"
+*CloseUI: *Density
+
+*% ================================================
+*% TonerMode
+*% ================================================
+*OpenUI *TonerMode/TonerMode: Boolean
+*OrderDependency: 65 JCLSetup *TonerMode
+*DefaultTonerMode: False
+*TonerMode False/Off: ""
+*TonerMode True/On: "@PJL SET DENSITY=LEVEL0<0D><0A>"
+*CloseUI: *TonerMode
+
+*CloseGroup: ColorGroup
+
+
+*% Input Sources (format: %%[ status: <stat>; source: <one of these> ]%% )
+*Source: "USB"
+*Source: "EtherTalk"
+*% ===============================================================================
+*% PrintPSErrors
+*% ===============================================================================
+*PrintPSErrors: True
+*% ===============================================================================
+*% Font Info
+*% ===============================================================================
+*DefaultFont: Courier
+*Font CourierHP: Standard "(001.006S)" Standard ROM
+*Font CGTimes: Standard "(001.006S)" Standard ROM
+*Font CGTimes-Bold: Standard "(001.007S)" Standard ROM
+*Font CGTimes-Italic: Standard "(001.007S)" Standard ROM
+*Font CGTimes-BoldItalic: Standard "(001.003S)" Standard ROM
+*Font CGOmega: Standard "(001.003S)" Standard ROM
+*Font CGOmega-Bold: Standard "(001.003S)" Standard ROM
+*Font CGOmega-Italic: Standard "(001.003S)" Standard ROM
+*Font CGOmega-BOLDItalic: Standard "(002.004S)" Standard ROM
+*Font Coronet: Standard "(002.004S)" Standard ROM
+*Font Clarendon-Condensed-Bold: Standard "(002.004S)" Standard ROM
+*Font Univers-Medium: Standard "(002.004S)" Standard ROM
+*Font Univers-Bold: Standard "(001.006S)" Standard ROM
+*Font Univers-MediumItalic: Standard "(001.007S)" Standard ROM
+*Font Univers-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font Univers-Condensed-Medium: Standard "(001.006S)" Standard ROM
+*Font Univers-Condensed-Bold: Standard "(001.006S)" Standard ROM
+*Font Univers-Condensed-MediumItalic: Standard "(001.007S)" Standard ROM
+*Font Univers-Condensed-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font AntiqueOlive: Standard "(001.006S)" Standard ROM
+*Font AntiqueOlive-Bold: Standard "(001.009S)" Standard ROM
+*Font AntiqueOlive-Italic: Standard "(001.007S)" Standard ROM
+*Font Garamond-Antiqua: Standard "(001.006S)" Standard ROM
+*Font Garamond-Halbfett: Standard "(001.007S)" Standard ROM
+*Font Garamond-Kursiv: Standard "(001.005S)" Standard ROM
+*Font Garamond-KursivHalbfett: Standard "(001.005S)" Standard ROM
+*Font Marigold: Standard "(001.005S)" Standard ROM
+*Font Albertus-Medium: Standard "(001.005S)" Standard ROM
+*Font Albertus-ExtraBold: Special "(001.007S)" Special ROM
+*Font Ryadh: Standard "(001.007S)" Standard ROM
+*Font Ryadh-Bold: Standard "(001.009S)" Standard ROM
+*Font Malka: Standard "(001.007S)" Standard ROM
+*Font Malka-Bold: Standard "(001.007S)" Standard ROM
+*Font Malka-Italic: Standard "(001.007S)" Standard ROM
+*Font Dorit: Standard "(001.006S)" Standard ROM
+*Font Dorit-Bold: Standard "(001.006S)" Standard ROM
+*Font Naamit: Standard "(001.007S)" Standard ROM
+*Font Naamit-Bold: Standard "(001.007S)" Standard ROM
+*Font Arial: Standard "(001.003S)" Standard ROM
+*Font Arial-Bold: Standard "(001.003S)" Standard ROM
+*Font Arial-Italic: Standard "(001.003S)" Standard ROM
+*Font Arial-BoldItalic: Standard "(001.003S)" Standard ROM
+*Font TimesNewRoman: Standard "(002.004S)" Standard ROM
+*Font TimesNewRoman-Bold: Standard "(002.004S)" Standard ROM
+*Font TimesNewRoman-Italic: Standard "(002.004S)" Standard ROM
+*Font TimesNewRoman-BoldItalic: Standard "(002.004S)" Standard ROM
+*Font Symbol: Standard "(001.006S)" Standard ROM
+*Font Palatino-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font Palatino-Roman: Standard "(001.007S)" Standard ROM
+*Font Palatino-Bold: Standard "(001.006S)" Standard ROM
+*Font Palatino-Italic: Standard "(001.006S)" Standard ROM
+*Font Bookman-LightItalic: Standard "(001.007S)" Standard ROM
+*Font Bookman-Light: Standard "(001.007S)" Standard ROM
+*Font Bookman-Demi: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(001.009S)" Standard ROM
+*Font NewCenturySchlbk-Italic: Standard "(001.007S)" Standard ROM
+*Font NewCenturySchlbk-Roman: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Bold: Standard "(001.007S)" Standard ROM
+*Font Times-Roman: Standard "(001.005S)" Standard ROM
+*Font Times-Bold: Standard "(001.005S)" Standard ROM
+*Font Times-Italic: Standard "(001.005S)" Standard ROM
+*Font Times-BoldItalic: Standard "(001.005S)" Standard ROM
+*Font Helvetica: Special "(001.007S)" Special ROM
+*Font Helvetica-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Oblique: Standard "(001.009S)" Standard ROM
+*Font Helvetica-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Bookman-DemiItalic: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-Oblique: Standard "(001.007S)" Standard ROM
+*Font Helbetica-Narrow: Standard "(001.005S)" Standard ROM
+*Font Helbetica-Narrow-Bold: Standard "(001.005S)" Standard ROM
+*Font AvantGarde-Book: Standard "(001.005S)" Standard ROM
+*Font AvantGarde-Demi: Special "(001.007S)" Special ROM
+*Font AvantGarde-BookOblique: Standard "(001.007S)" Standard ROM
+*Font AvantGarde-DemiOblique: Standard "(001.009S)" Standard ROM
+*Font ZapfChancery-MediumItalic: Standard "(001.007S)" Standard ROM
+*Font SymbolMT: Standard "(001.007S)" Standard ROM
+*Font NewCenturySchlbk-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font Wingdings-Regular: Standard "(001.007S)" Standard ROM
+*Font ZapfDingbats: Standard "(001.007S)" Standard ROM
+*Font CourierHP-Bold: Standard "(001.007S)" Standard ROM
+*Font CourierHP-Italic: Standard "(001.007S)" Standard ROM
+*Font CourierHP-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font LetterGothic: Standard "(001.007S)" Standard ROM
+*Font LetterGothic-Italic: Standard "(001.007S)" Standard ROM
+*Font LetterGothic-Bold: Standard "(001.007S)" Standard ROM
+*Font Naskh: Standard "(001.007S)" Standard ROM
+*Font Naskh-Bold: Standard "(001.007S)" Standard ROM
+*Font Koufi: Standard "(001.007S)" Standard ROM
+*Font Koufi-Bold: Standard "(001.007S)" Standard ROM
+*Font Courier: Standard "(001.007S)" Standard ROM
+*Font Courier-Bold: Standard "(001.007S)" Standard ROM
+*Font Courier-Oblique: Standard "(001.007S)" Standard ROM
+*Font Courier-BoldOblique: Standard "(001.007S)" Standard ROM
+*?FontList: "
+        save
+                (*) { cvn == } 128 string /Font resourceforall
+                (*) = flush
+        restore
+"
+*End
+*?FontQuery: "
+        save
+                { count 1 gt
+                  { exch dup 127 string cvs (/) print print (:) print
+                    /Font resourcestatus { pop pop (Yes) } { (No) } ifelse =
+                  } { exit } ifelse
+                } bind loop
+                (*) = flush
+        restore
+"
+*End
+*%cupsLanguages: "en zh_CN zh_TW ru fr es it ar no sv ja de tr pl"
+
+*% === English ===
+*en.Translation Graphics/Basic: ""
+*en.Translation PaperGroup/Paper: ""
+*en.Translation ColorGroup/Color: ""
+
+*% === Resolution ===
+*en.Translation Resolution/Resolution: ""
+*en.Resolution 600dpi/600 dpi: ""
+*en.Resolution 1200dpi/1200 dpi: ""
+
+*% === ColorModel ===
+*en.Translation ColorModel/Color Mode: ""
+*en.ColorModel Color/Color printing: ""
+*en.ColorModel GrayScale/Black & white printing: ""
+
+*% === PrintModel ===
+*en.Translation PrintModel/Print Mode: ""
+*en.PrintModel Model1/Mode 1: ""
+*en.PrintModel Model2/Mode 2: ""
+*en.PrintModel Model3/Mode 3: ""
+
+*% === Density ===
+*en.Translation Density/Density: ""
+*en.Density PrinterS/Printer Setup: ""
+*en.Density Dark/Dark: ""
+*en.Density Normal/Normal: ""
+*en.Density Light/Light: ""
+
+*% === Toner Save ===
+*en.Translation TonerMode/Toner Save: ""
+*en.TonerMode False/Off: ""
+*en.TonerMode True/On: ""
+
+*% Paper Handling ===================
+*en.Translation PageSize/Paper Size: ""
+*en.PageSize Letter/Letter (8.5 x 11): ""
+*en.PageSize A4/A4 (210 x 297mm): ""
+*en.PageSize A5/A5 (148 x 210mm): ""
+*en.PageSize A6/A6 (105 x 148mm): ""
+*en.PageSize B5/JIS B5 (182 x 257mm): ""
+*en.PageSize ISOB5/ISO B5 (176 x 250mm): ""
+*en.PageSize B6/B6 (125 x 176mm): ""
+*en.PageSize Executive/Executive (7.25 x 10.5): ""
+*en.PageSize Statement/Statement (5.5 x 8.5): ""
+*en.PageSize Folio/Folio (8.5 x 13): ""
+*en.PageSize Oficio/Oficio (216 x 343mm): ""
+*en.PageSize Postcard/Japanese Postcard (100x148mm): ""
+*en.PageSize EnvMonarch/Monarch Env (3.875 x 7.5): ""
+*en.PageSize EnvDL/DL Env (110 x 220mm): ""
+*en.PageSize EnvC5/C5 Env (162 x 229mm): ""
+*en.PageSize Com10Envelope/No.10 Env (4.125 x 9.5): ""
+*en.PageSize EnvC6/C6 Env (114 x 162mm): ""
+*en.PageSize ZL/ZL (120 x 230mm): ""
+*en.PageSize Legal/Legal (8.5 x 14): ""
+*en.PageSize Big32K/Big 32K (135 x 195mm): ""
+*en.PageSize Big16K/Big 16K (195 x 270mm): ""
+*en.PageSize 32K/32K (130 x 185mm): ""
+*en.PageSize 16K/16K (185 x 260mm): ""
+*en.PageSize Yougata4/Yougata4 (105 x 235mm): ""
+*en.PageSize JapanesePostcard/Postcard (148 x 200mm): ""
+*en.PageSize Younaga3/Younaga3 (120 x 235mm): ""
+*en.PageSize Nagagata3/Nagagata3 (120 x 235mm): ""
+*en.PageSize Yougata2/Yougata2 (114 x 162mm): ""
+*en.CustomPageSize True/Custom: ""
+
+*% === Duplex ===
+*en.Translation Duplex/Duplex: ""
+*en.Duplex None/None (Simplex): ""
+*en.Duplex DuplexNoTumble/Long Edge: ""
+*en.Duplex DuplexTumble/Short Edge: ""
+
+*% === MediaType ===
+*en.Translation MediaType/Media: ""
+*en.MediaType Plain/Plain: ""
+*en.MediaType Thick/Thick: ""
+*en.MediaType Envelope/Envelope: ""
+*en.MediaType Transparency/Transparency: ""
+*en.MediaType Cardstock/Cardstock: ""
+*en.MediaType Label/Label: ""
+*en.MediaType Kleenex/Thin paper: ""
+
+*%=== ptInputSlot ===
+*en.Translation ptInputSlot/Paper Source : ""
+*en.ptInputSlot AutoSelect/Auto Select: ""
+*en.ptInputSlot ManualFeed/Manual Feeder Tray: ""
+*en.ptInputSlot AutoFeed/Automatic Feeder Tray: ""
+
+*% FeedEdge ===============
+*en.Translation FeedEdge/Feed Orientation: ""
+*en.FeedEdge ShortEdge/Short Edge: ""
+*en.FeedEdge LongEdge/Long Edge: ""
+
+*% Booklet ===============
+*en.Translation Booklet/Booklet: ""
+*en.Booklet True/On: ""
+*en.Booklet False/Off: ""
+
+*% Contrast ===============
+*en.Translation Contrast/Contrast: ""
+*en.Contrast False/Off: ""
+*en.Contrast Level1/Level 1: ""
+*en.Contrast Level2/Level 2: ""
+*en.Contrast Level3/Level 3: ""
+*en.Contrast Level4/Level 4: ""
+*en.Contrast Level5/Level 5: ""
+
+*% Saturations ===============
+*en.Translation Saturations/Saturability: ""
+*en.Saturations False/Off: ""
+*en.Saturations Level1/Level 1: ""
+*en.Saturations Level2/Level 2: ""
+*en.Saturations Level3/Level 3: ""
+*en.Saturations Level4/Level 4: ""
+*en.Saturations Level5/Level 5: ""
+
+*% Lightness ===============
+*en.Translation Lightness/Brightness: ""
+*en.Lightness False/Off: ""
+*en.Lightness Level1/Level 1: ""
+*en.Lightness Level2/Level 2: ""
+*en.Lightness Level3/Level 3: ""
+*en.Lightness Level4/Level 4: ""
+*en.Lightness Level5/Level 5: ""
+
+*% RGBCorrection ===============
+*en.Translation RGBCorrection/RGB correction: ""
+*en.RGBCorrection PrinterS/Printer Setup: ""
+*en.RGBCorrection Manual/Manual: ""
+
+*% Colorbalance ===============
+*en.Translation Colorbalance/Color balance: ""
+*en.Colorbalance PrinterS/Printer Setup: ""
+*en.Colorbalance Manual/Manual: ""
+
+*% Cyan ===============
+*en.Translation Cyan/Cyan Balance: ""
+*en.Cyan False/Off: ""
+*en.Cyan Level1/Level 1: ""
+*en.Cyan Level2/Level 2: ""
+*en.Cyan Level3/Level 3: ""
+*en.Cyan Level4/Level 4: ""
+*en.Cyan Level5/Level 5: ""
+
+*% Magenta ===============
+*en.Translation Magenta/Magenta Balance: ""
+*en.Magenta False/Off: ""
+*en.Magenta Level1/Level 1: ""
+*en.Magenta Level2/Level 2: ""
+*en.Magenta Level3/Level 3: ""
+*en.Magenta Level4/Level 4: ""
+*en.Magenta Level5/Level 5: ""
+
+*% Yellow ===============
+*en.Translation Yellow/Yellow Balance: ""
+*en.Yellow False/Off: ""
+*en.Yellow Level1/Level 1: ""
+*en.Yellow Level2/Level 2: ""
+*en.Yellow Level3/Level 3: ""
+*en.Yellow Level4/Level 4: ""
+*en.Yellow Level5/Level 5: ""
+
+*% Black ===============
+*en.Translation Black/Black Balance: ""
+*en.Black False/Off: ""
+*en.Black Level1/Level 1: ""
+*en.Black Level2/Level 2: ""
+*en.Black Level3/Level 3: ""
+*en.Black Level4/Level 4: ""
+*en.Black Level5/Level 5: ""
+
+*% === Chinese ===
+*zh_CN.Translation Graphics/基本: ""
+*zh_CN.Translation PaperGroup/纸张: ""
+*zh_CN.Translation ColorGroup/色彩: ""
+
+*% === Resolution ===
+*zh_CN.Translation Resolution/分辨率: ""
+*zh_CN.Resolution 600dpi/600 dpi: ""
+*zh_CN.Resolution 1200dpi/1200 dpi: ""
+
+*% === ColorModel ===
+*zh_CN.Translation ColorModel/色彩模式: ""
+*zh_CN.ColorModel Color/彩色打印: ""
+*zh_CN.ColorModel GrayScale/黑白打印: ""
+
+*% === PrintModel ===
+*zh_CN.Translation PrintModel/打印模式: ""
+*zh_CN.PrintModel Model1/模式1: ""
+*zh_CN.PrintModel Model2/模式2: ""
+*zh_CN.PrintModel Model3/模式3: ""
+
+*% === Density ===
+*zh_CN.Translation Density/浓度: ""
+*zh_CN.Density PrinterS/打印机设置: ""
+*zh_CN.Density Dark/较浓: ""
+*zh_CN.Density Normal/正常: ""
+*zh_CN.Density Light/较淡: ""
+
+*% === Toner Save ===
+*zh_CN.Translation TonerMode/省墨: ""
+*zh_CN.TonerMode False/无: ""
+*zh_CN.TonerMode True/有: ""
+
+*% Paper Handling ===================
+*zh_CN.Translation PageSize/纸张尺寸: ""
+*zh_CN.PageSize Letter/Letter (8.5 x 11): ""
+*zh_CN.PageSize A4/A4 (210 x 297mm): ""
+*zh_CN.PageSize A5/A5 (148 x 210mm): ""
+*zh_CN.PageSize A6/A6 (105 x 148mm): ""
+*zh_CN.PageSize B5/JIS B5 (182 x 257mm): ""
+*zh_CN.PageSize ISOB5/ISO B5 (176 x 250mm): ""
+*zh_CN.PageSize B6/B6 (125 x 176mm): ""
+*zh_CN.PageSize Executive/Executive (7.25 x 10.5): ""
+*zh_CN.PageSize Statement/Statement (5.5 x 8.5): ""
+*zh_CN.PageSize Folio/Folio (8.5 x 13): ""
+*zh_CN.PageSize Oficio/Oficio (216 x 343mm): ""
+*zh_CN.PageSize Postcard/Japanese Postcard (100x148mm): ""
+*zh_CN.PageSize EnvMonarch/Monarch Env (3.875 x 7.5): ""
+*zh_CN.PageSize EnvDL/DL Env (110 x 220mm): ""
+*zh_CN.PageSize EnvC5/C5 Env (162 x 229mm): ""
+*zh_CN.PageSize Com10Envelope/No.10 Env (4.125 x 9.5): ""
+*zh_CN.PageSize EnvC6/C6 Env (114 x 162mm): ""
+*zh_CN.PageSize ZL/ZL (120 x 230mm): ""
+*zh_CN.PageSize Legal/Legal (8.5 x 14): ""
+*zh_CN.PageSize Big32K/Big 32K (135 x 195mm): ""
+*zh_CN.PageSize Big16K/Big 16K (195 x 270mm): ""
+*zh_CN.PageSize 32K/32K (130 x 185mm): ""
+*zh_CN.PageSize 16K/16K (185 x 260mm): ""
+*zh_CN.PageSize Yougata4/Yougata4 (105 x 235mm): ""
+*zh_CN.PageSize JapanesePostcard/Postcard (148 x 200mm): ""
+*zh_CN.PageSize Younaga3/Younaga3 (120 x 235mm): ""
+*zh_CN.PageSize Nagagata3/Nagagata3 (120 x 235mm): ""
+*zh_CN.PageSize Yougata2/Yougata2 (114 x 162mm): ""
+*zh_CN.CustomPageSize True/自定义:""
+
+*% === Duplex ===
+*zh_CN.Translation Duplex/双面打印: ""
+*zh_CN.Duplex None/无（单面）: ""
+*zh_CN.Duplex DuplexNoTumble/长边: ""
+*zh_CN.Duplex DuplexTumble/短边: ""
+
+*% === MediaType ===
+*zh_CN.Translation MediaType/介质: ""
+*zh_CN.MediaType Plain/普通纸: ""
+*zh_CN.MediaType Thick/厚纸: ""
+*zh_CN.MediaType Envelope/信封: ""
+*zh_CN.MediaType Transparency/透明胶片: ""
+*zh_CN.MediaType Cardstock/卡片纸: ""
+*zh_CN.MediaType Label/标签纸: ""
+*zh_CN.MediaType Kleenex/薄纸: ""
+
+*%=== ptInputSlot ===
+*zh_CN.Translation ptInputSlot/纸张来源: ""
+*zh_CN.ptInputSlot AutoSelect/自动选择: ""
+*zh_CN.ptInputSlot ManualFeed/手动进纸盒: ""
+*zh_CN.ptInputSlot AutoFeed/自动进纸盒: ""
+
+*% FeedEdge ===============
+*zh_CN.Translation FeedEdge/进纸方向: ""
+*zh_CN.FeedEdge ShortEdge/短边: ""
+*zh_CN.FeedEdge LongEdge/长边: ""
+
+*% Booklet ===============
+*zh_CN.Translation Booklet/小册子: ""
+*zh_CN.Booklet True/开: ""
+*zh_CN.Booklet False/关: ""
+
+*% Contrast ===============
+*zh_CN.Translation Contrast/对比度: ""
+*zh_CN.Contrast False/关: ""
+*zh_CN.Contrast Level1/1级: ""
+*zh_CN.Contrast Level2/2级: ""
+*zh_CN.Contrast Level3/3级: ""
+*zh_CN.Contrast Level4/4级: ""
+*zh_CN.Contrast Level5/5级: ""
+
+*% Saturations ===============
+*zh_CN.Translation Saturations/饱和度: ""
+*zh_CN.Saturations False/关: ""
+*zh_CN.Saturations Level1/1级: ""
+*zh_CN.Saturations Level2/2级: ""
+*zh_CN.Saturations Level3/3级: ""
+*zh_CN.Saturations Level4/4级: ""
+*zh_CN.Saturations Level5/5级: ""
+
+*% Lightness ===============
+*zh_CN.Translation Lightness/明亮度: ""
+*zh_CN.Lightness False/关: ""
+*zh_CN.Lightness Level1/1级: ""
+*zh_CN.Lightness Level2/2级: ""
+*zh_CN.Lightness Level3/3级: ""
+*zh_CN.Lightness Level4/4级: ""
+*zh_CN.Lightness Level5/5级: ""
+
+*% RGBCorrection ===============
+*zh_CN.Translation RGBCorrection/RGB校正: ""
+*zh_CN.RGBCorrection PrinterS/打印机设置: ""
+*zh_CN.RGBCorrection Manual/手动: ""
+
+*% Colorbalance ===============
+*zh_CN.Translation Colorbalance/色彩平衡: ""
+*zh_CN.Colorbalance PrinterS/打印机设置: ""
+*zh_CN.Colorbalance Manual/手动: ""
+
+*% Cyan ===============
+*zh_CN.Translation Cyan/青色平衡: ""
+*zh_CN.Cyan False/关: ""
+*zh_CN.Cyan Level1/1级: ""
+*zh_CN.Cyan Level2/2级: ""
+*zh_CN.Cyan Level3/3级: ""
+*zh_CN.Cyan Level4/4级: ""
+*zh_CN.Cyan Level5/5级: ""
+
+*% Magenta ===============
+*zh_CN.Translation Magenta/品红色平衡: ""
+*zh_CN.Magenta False/关: ""
+*zh_CN.Magenta Level1/1级: ""
+*zh_CN.Magenta Level2/2级: ""
+*zh_CN.Magenta Level3/3级: ""
+*zh_CN.Magenta Level4/4级: ""
+*zh_CN.Magenta Level5/5级: ""
+
+*% Yellow ===============
+*zh_CN.Translation Yellow/黄色平衡: ""
+*zh_CN.Yellow False/关: ""
+*zh_CN.Yellow Level1/1级: ""
+*zh_CN.Yellow Level2/2级: ""
+*zh_CN.Yellow Level3/3级: ""
+*zh_CN.Yellow Level4/4级: ""
+*zh_CN.Yellow Level5/5级: ""
+
+*% Black ===============
+*zh_CN.Translation Black/黑色平衡: ""
+*zh_CN.Black False/关: ""
+*zh_CN.Black Level1/1级: ""
+*zh_CN.Black Level2/2级: ""
+*zh_CN.Black Level3/3级: ""
+*zh_CN.Black Level4/4级: ""
+*zh_CN.Black Level5/5级: ""
+
+*% === Chinese(TW) ===
+*zh_TW.Translation Graphics/基本: ""
+*zh_TW.Translation PaperGroup/紙張: ""
+*zh_TW.Translation ColorGroup/色彩: ""
+
+*% === Resolution ===
+*zh_TW.Translation Resolution/解析度: ""
+*zh_TW.Resolution 600dpi/600 dpi: ""
+*zh_TW.Resolution 1200dpi/1200 dpi: ""
+
+*% === ColorModel ===
+*zh_TW.Translation ColorModel/色彩模式: ""
+*zh_TW.ColorModel Color/彩色打印: ""
+*zh_TW.ColorModel GrayScale/黑白打印: ""
+
+*% === PrintModel ===
+*zh_TW.Translation PrintModel/打印模式: ""
+*zh_TW.PrintModel Model1/模式1: ""
+*zh_TW.PrintModel Model2/模式2: ""
+*zh_TW.PrintModel Model3/模式3: ""
+
+*% === Density ===
+*zh_TW.Translation Density/濃度: ""
+*zh_TW.Density PrinterS/打印机设置: ""
+*zh_TW.Density Dark/較濃: ""
+*zh_TW.Density Normal/正常: ""
+*zh_TW.Density Light/較淡: ""
+
+*% === Toner Save ===
+*zh_TW.Translation TonerMode/省墨: ""
+*zh_TW.TonerMode False/無: ""
+*zh_TW.TonerMode True/有: ""
+
+*% Paper Handling ===================
+*zh_TW.Translation PageSize/紙張大小: ""
+*zh_TW.PageSize Letter/Letter (8.5 x 11): ""
+*zh_TW.PageSize A4/A4 (210 x 297mm): ""
+*zh_TW.PageSize A5/A5 (148 x 210mm): ""
+*zh_TW.PageSize A6/A6 (105 x 148mm): ""
+*zh_TW.PageSize B5/JIS B5 (182 x 257mm): ""
+*zh_TW.PageSize ISOB5/ISO B5 (176 x 250mm): ""
+*zh_TW.PageSize B6/B6 (125 x 176mm): ""
+*zh_TW.PageSize Executive/Executive (7.25 x 10.5): ""
+*zh_TW.PageSize Statement/Statement (5.5 x 8.5): ""
+*zh_TW.PageSize Folio/Folio (8.5 x 13): ""
+*zh_TW.PageSize Oficio/Oficio (216 x 343mm): ""
+*zh_TW.PageSize Postcard/Japanese Postcard (100x148mm): ""
+*zh_TW.PageSize EnvMonarch/Monarch Env (3.875 x 7.5): ""
+*zh_TW.PageSize EnvDL/DL Env (110 x 220mm): ""
+*zh_TW.PageSize EnvC5/C5 Env (162 x 229mm): ""
+*zh_TW.PageSize Com10Envelope/No.10 Env (4.125 x 9.5): ""
+*zh_TW.PageSize EnvC6/C6 Env (114 x 162mm): ""
+*zh_TW.PageSize ZL/ZL (120 x 230mm): ""
+*zh_TW.PageSize Legal/Legal (8.5 x 14): ""
+*zh_TW.PageSize Big32K/Big 32K (135 x 195mm): ""
+*zh_TW.PageSize Big16K/Big 16K (195 x 270mm): ""
+*zh_TW.PageSize 32K/32K (130 x 185mm): ""
+*zh_TW.PageSize 16K/16K (185 x 260mm): ""
+*zh_TW.PageSize Yougata4/Yougata4 (105 x 235mm): ""
+*zh_TW.PageSize JapanesePostcard/Postcard (148 x 200mm): ""
+*zh_TW.PageSize Younaga3/Younaga3 (120 x 235mm): ""
+*zh_TW.PageSize Nagagata3/Nagagata3 (120 x 235mm): ""
+*zh_TW.PageSize Yougata2/Yougata2 (114 x 162mm): ""
+*zh_TW.CustomPageSize True/自訂: ""
+
+*% === Duplex ===
+*zh_TW.Translation Duplex/雙面列印: ""
+*zh_TW.Duplex None/無（單面）: ""
+*zh_TW.Duplex DuplexNoTumble/長邊: ""
+*zh_TW.Duplex DuplexTumble/短邊: ""
+
+*% === MediaType ===
+*zh_TW.Translation MediaType/介質: ""
+*zh_TW.MediaType Plain/普通紙: ""
+*zh_TW.MediaType Thick/厚紙: ""
+*zh_TW.MediaType Envelope/信封: ""
+*zh_TW.MediaType Transparency/透明膠片: ""
+*zh_TW.MediaType Cardstock/卡片紙: ""
+*zh_TW.MediaType Label/標籤紙: ""
+*zh_TW.MediaType Kleenex/薄紙: ""
+
+*%=== ptInputSlot ===
+*zh_TW.Translation ptInputSlot/紙張來源: ""
+*zh_TW.ptInputSlot AutoSelect/印表機自動選擇: ""
+*zh_TW.ptInputSlot ManualFeed/手動進紙匣: ""
+*zh_TW.ptInputSlot AutoFeed/自動進紙匣: ""
+
+*% FeedEdge ===============
+*zh_TW.Translation FeedEdge/進紙方向: ""
+*zh_TW.FeedEdge ShortEdge/短邊: ""
+*zh_TW.FeedEdge LongEdge/長邊: ""
+
+*% Contrast ===============
+*zh_TW.Translation Contrast/对比度: ""
+*zh_TW.Contrast False/关: ""
+*zh_TW.Contrast Level1/1级: ""
+*zh_TW.Contrast Level2/2级: ""
+*zh_TW.Contrast Level3/3级: ""
+*zh_TW.Contrast Level4/4级: ""
+*zh_TW.Contrast Level5/5级: ""
+
+*% Saturations ===============
+*zh_TW.Translation Saturations/饱和度: ""
+*zh_TW.Saturations False/关: ""
+*zh_TW.Saturations Level1/1级: ""
+*zh_TW.Saturations Level2/2级: ""
+*zh_TW.Saturations Level3/3级: ""
+*zh_TW.Saturations Level4/4级: ""
+*zh_TW.Saturations Level5/5级: ""
+
+*% Lightness ===============
+*zh_TW.Translation Lightness/明亮度: ""
+*zh_TW.Lightness False/关: ""
+*zh_TW.Lightness Level1/1级: ""
+*zh_TW.Lightness Level2/2级: ""
+*zh_TW.Lightness Level3/3级: ""
+*zh_TW.Lightness Level4/4级: ""
+*zh_TW.Lightness Level5/5级: ""
+
+*% RGBCorrection ===============
+*zh_TW.Translation RGBCorrection/RGB校正: ""
+*zh_TW.RGBCorrection PrinterS/打印机设置: ""
+*zh_TW.RGBCorrection Manual/手动: ""
+
+*% Colorbalance ===============
+*zh_TW.Translation Colorbalance/色彩平衡: ""
+*zh_TW.Colorbalance PrinterS/打印机设置: ""
+*zh_TW.Colorbalance Manual/手动: ""
+
+*% Cyan ===============
+*zh_TW.Translation Cyan/青色平衡: ""
+*zh_TW.Cyan False/关: ""
+*zh_TW.Cyan Level1/1级: ""
+*zh_TW.Cyan Level2/2级: ""
+*zh_TW.Cyan Level3/3级: ""
+*zh_TW.Cyan Level4/4级: ""
+*zh_TW.Cyan Level5/5级: ""
+
+*% Magenta ===============
+*zh_TW.Translation Magenta/品红色平衡: ""
+*zh_TW.Magenta False/关: ""
+*zh_TW.Magenta Level1/1级: ""
+*zh_TW.Magenta Level2/2级: ""
+*zh_TW.Magenta Level3/3级: ""
+*zh_TW.Magenta Level4/4级: ""
+*zh_TW.Magenta Level5/5级: ""
+
+*% Yellow ===============
+*zh_TW.Translation Yellow/黄色平衡: ""
+*zh_TW.Yellow False/关: ""
+*zh_TW.Yellow Level1/1级: ""
+*zh_TW.Yellow Level2/2级: ""
+*zh_TW.Yellow Level3/3级: ""
+*zh_TW.Yellow Level4/4级: ""
+*zh_TW.Yellow Level5/5级: ""
+
+*% Black ===============
+*zh_TW.Translation Black/黑色平衡: ""
+*zh_TW.Black False/关: ""
+*zh_TW.Black Level1/1级: ""
+*zh_TW.Black Level2/2级: ""
+*zh_TW.Black Level3/3级: ""
+*zh_TW.Black Level4/4级: ""
+*zh_TW.Black Level5/5级: ""
+
+*% === Russian ===
+*ru.Translation Graphics/Базовые: ""
+*ru.Translation PaperGroup/Бумага: ""
+*ru.Translation ColorGroup/Цвет: ""
+
+*% === Resolution ===
+*ru.Translation Resolution/Разрешение: ""
+*ru.Resolution 600dpi/600 DPI: ""
+*ru.Resolution 1200dpi/1200 DPI: ""
+
+*% === ColorModel ===
+*ru.Translation ColorModel/Цветовой режим: ""
+*ru.ColorModel Color/Цветная печать: ""
+*ru.ColorModel GrayScale/Черно-белая печать: ""
+
+*% === PrintModel ===
+*ru.Translation PrintModel/Режим печати: ""
+*ru.PrintModel Model1/Режим 1: ""
+*ru.PrintModel Model2/Режим 2: ""
+*ru.PrintModel Model3/Режим 3: ""
+
+*% === Density ===
+*ru.Translation Density/Плотность: ""
+*ru.Density PrinterS/Настройка принтера: ""
+*ru.Density Dark/Темный: ""
+*ru.Density Normal/Нормальный: ""
+*ru.Density Light/Светлый: ""
+
+*% === Toner Save ===
+*ru.Translation TonerMode/Экономия тонера: ""
+*ru.TonerMode False/Выкл: ""
+*ru.TonerMode True/Вкл: ""
+
+*% Paper Handling ===================
+*ru.Translation PageSize/Размер бумаги: ""
+*ru.PageSize Letter/Letter (8,5 x 11): ""
+*ru.PageSize A4/A4 (210 x 297 мм): ""
+*ru.PageSize A5/A5 (148 x 210 мм): ""
+*ru.PageSize A6/A6 (105 x 148 мм): ""
+*ru.PageSize B5/JIS B5 (182 x 257 мм): ""
+*ru.PageSize ISOB5/ISO B5 (176 x 250 мм): ""
+*ru.PageSize B6/B6 (125 x 176 мм): ""
+*ru.PageSize Executive/Executive (7,25 x 10,5): ""
+*ru.PageSize Statement/Statement (5,5 x 8,5): ""
+*ru.PageSize Folio/Folio (8,5 x 13): ""
+*ru.PageSize Oficio/Oficio (216 x 343 мм): ""
+*ru.PageSize Postcard/Japanese Postcard (100x148 мм): ""
+*ru.PageSize EnvMonarch/Конверт Monarch (3,875 x 7,5): ""
+*ru.PageSize EnvDL/Конверт DL (110 x 220 мм): ""
+*ru.PageSize EnvC5/Конверт C5 (162 x 229 мм): ""
+*ru.PageSize Com10Envelope/Конверт №10 (4,125 x 9,5): ""
+*ru.PageSize EnvC6/Конверт C6 (114 x 162 мм): ""
+*ru.PageSize ZL/ZL (120 x 230 мм): ""
+*ru.PageSize Legal/Legal (8,5 x 14): ""
+*ru.PageSize Big32K/Большой 32K (135 x 195 мм): ""
+*ru.PageSize Big16K/Большой 16K (195 x 270 мм): ""
+*ru.PageSize 32K/32K (130 x 185 мм): ""
+*ru.PageSize 16K/16K (185 x 260 мм): ""
+*ru.PageSize Yougata4/Yougata4 (105 x 235mm): ""
+*ru.PageSize JapanesePostcard/Открытка (148 x 200mm): ""
+*ru.PageSize Younaga3/Younaga3 (120 x 235mm): ""
+*ru.PageSize Nagagata3/Nagagata3 (120 x 235mm): ""
+*ru.PageSize Yougata2/Yougata2 (114 x 162mm): ""
+*ru.CustomPageSize True/Настраиваемый:""
+
+*% === Duplex ===
+*ru.Translation Duplex/Двусторонняя: ""
+*ru.Duplex None/Нет (односторонняя): ""
+*ru.Duplex DuplexNoTumble/Длинным краем: ""
+*ru.Duplex DuplexTumble/Коротким краем: ""
+
+*% === MediaType ===
+*ru.Translation MediaType/Носители: ""
+*ru.MediaType Plain/Обычная: ""
+*ru.MediaType Thick/Плотная: ""
+*ru.MediaType Envelope/Конверт: ""
+*ru.MediaType Transparency/Прозрачная пленка: ""
+*ru.MediaType Cardstock/Открытка: ""
+*ru.MediaType Label/Этикетка: ""
+*ru.MediaType Kleenex/Тонкая бумага: ""
+
+*%=== ptInputSlot ===
+*ru.Translation ptInputSlot/Источник бумаги: ""
+*ru.ptInputSlot AutoSelect/Автоматический выбор: ""
+*ru.ptInputSlot ManualFeed/Лоток ручной подачи: ""
+*ru.ptInputSlot AutoFeed/Лоток автоматической подачи: ""
+
+*% FeedEdge ===============
+*ru.Translation FeedEdge/Ориентация подачи: ""
+*ru.FeedEdge ShortEdge/Коротким краем: ""
+*ru.FeedEdge LongEdge/Длинным краем: ""
+
+*% Booklet ===============
+*ru.Translation Booklet/Буклет: ""
+*ru.Booklet True/Вкл.: ""
+*ru.Booklet False/Выкл: ""
+
+*% Contrast ===============
+*ru.Translation Contrast/Контрастность: ""
+*ru.Contrast False/Выкл: ""
+*ru.Contrast Level1/Уровень 1: ""
+*ru.Contrast Level2/Уровень 2: ""
+*ru.Contrast Level3/Уровень 3: ""
+*ru.Contrast Level4/Уровень 4: ""
+*ru.Contrast Level5/Уровень 5: ""
+
+*% Saturations ===============
+*ru.Translation Saturations/Насыщенность: ""
+*ru.Saturations False/Выкл: ""
+*ru.Saturations Level1/Уровень 1: ""
+*ru.Saturations Level2/Уровень 2: ""
+*ru.Saturations Level3/Уровень 3: ""
+*ru.Saturations Level4/Уровень 4: ""
+*ru.Saturations Level5/Уровень 5: ""
+
+*% Lightness ===============
+*ru.Translation Lightness/Яркость: ""
+*ru.Lightness False/Выкл: ""
+*ru.Lightness Level1/Уровень 1: ""
+*ru.Lightness Level2/Уровень 2: ""
+*ru.Lightness Level3/Уровень 3: ""
+*ru.Lightness Level4/Уровень 4: ""
+*ru.Lightness Level5/Уровень 5: ""
+
+*% RGBCorrection ===============
+*ru.Translation RGBCorrection/Коррекция RGB: ""
+*ru.RGBCorrection PrinterS/Настройка принтера: ""
+*ru.RGBCorrection Manual/Ручная: ""
+
+*% Colorbalance ===============
+*ru.Translation Colorbalance/Цветовой баланс: ""
+*ru.Colorbalance PrinterS/Настройка принтера: ""
+*ru.Colorbalance Manual/Ручная: ""
+
+*% Cyan ===============
+*ru.Translation Cyan/Баланс голубого: ""
+*ru.Cyan False/Выкл: ""
+*ru.Cyan Level1/Уровень 1: ""
+*ru.Cyan Level2/Уровень 2: ""
+*ru.Cyan Level3/Уровень 3: ""
+*ru.Cyan Level4/Уровень 4: ""
+*ru.Cyan Level5/Уровень 5: ""
+
+*% Magenta ===============
+*ru.Translation Magenta/Баланс пурпурного: ""
+*ru.Magenta False/Выкл: ""
+*ru.Magenta Level1/Уровень 1: ""
+*ru.Magenta Level2/Уровень 2: ""
+*ru.Magenta Level3/Уровень 3: ""
+*ru.Magenta Level4/Уровень 4: ""
+*ru.Magenta Level5/Уровень 5: ""
+
+*% Yellow ===============
+*ru.Translation Yellow/Баланс желтого: ""
+*ru.Yellow False/Выкл: ""
+*ru.Yellow Level1/Уровень 1: ""
+*ru.Yellow Level2/Уровень 2: ""
+*ru.Yellow Level3/Уровень 3: ""
+*ru.Yellow Level4/Уровень 4: ""
+*ru.Yellow Level5/Уровень 5: ""
+
+*% Black ===============
+*ru.Translation Black/Баланс черного: ""
+*ru.Black False/Выкл: ""
+*ru.Black Level1/Уровень 1: ""
+*ru.Black Level2/Уровень 2: ""
+*ru.Black Level3/Уровень 3: ""
+*ru.Black Level4/Уровень 4: ""
+*ru.Black Level5/Уровень 5: ""
+
+*% === French ===
+*fr.Translation Graphics/Basique: ""
+*fr.Translation PaperGroup/Papier: ""
+*fr.Translation ColorGroup/Couleur: ""
+
+*% === Resolution ===
+*fr.Translation Resolution/Résolution : ""
+*fr.Resolution 600dpi/600 PPP: ""
+*fr.Resolution 1200dpi/1200 PPP: ""
+
+*% === ColorModel ===
+*fr.Translation ColorModel/Mode couleur: ""
+*fr.ColorModel Color/Impression couleur: ""
+*fr.ColorModel GrayScale/Impression en noir et blanc: ""
+
+*% === PrintModel ===
+*fr.Translation PrintModel/Mode d'impression: ""
+*fr.PrintModel Model1/Mode 1: ""
+*fr.PrintModel Model2/Mode 2: ""
+*fr.PrintModel Model3/Mode 3: ""
+
+*% === Density ===
+*fr.Translation Density/Densité : ""
+*fr.Density PrinterS/Configuration de l'imprimante: ""
+*fr.Density Dark/Sombre: ""
+*fr.Density Normal/Normale: ""
+*fr.Density Light/Légère: ""
+
+*% === Toner Save ===
+*fr.Translation TonerMode/Économie de toner: ""
+*fr.TonerMode False/Désactivé: ""
+*fr.TonerMode True/Activé: ""
+
+*% Paper Handling ===================
+*fr.Translation PageSize/Format de papier: ""
+*fr.PageSize Letter/Lettre (8,5 x 11): ""
+*fr.PageSize A4/A4 (210 x 297 mm): ""
+*fr.PageSize A5/A5 (148 x 210 mm): ""
+*fr.PageSize A6/A6 (105 x 148 mm): ""
+*fr.PageSize B5/JIS B5 (182 x 257 mm): ""
+*fr.PageSize ISOB5/ISO B5 (176 x 250 mm): ""
+*fr.PageSize B6/B6 (125 x 176 mm): ""
+*fr.PageSize Executive/Executive (7,25 x 10,5): ""
+*fr.PageSize Statement/Statement (5,5 x 8,5): ""
+*fr.PageSize Folio/Folio (8,5 x 13): ""
+*fr.PageSize Oficio/Oficio (216 x 343 mm): ""
+*fr.PageSize Postcard/Carte postale (100 x 148 mm): ""
+*fr.PageSize EnvMonarch/Env. Monarch (3,875 x 7,5): ""
+*fr.PageSize EnvDL/Env. DL (110 x 220 mm): ""
+*fr.PageSize EnvC5/Env. C5 (162 x 229 mm): ""
+*fr.PageSize Com10Envelope/Env. N° 10 (4,125 x 9,5): ""
+*fr.PageSize EnvC6/Env. C6 (114 x 162 mm): ""
+*fr.PageSize ZL/ZL (120 x 230 mm): ""
+*fr.PageSize Legal/Légal (8,5 x 14): ""
+*fr.PageSize Big32K/Big 32K (135 x 195 mm): ""
+*fr.PageSize Big16K/Big 16K (195 x 270 mm): ""
+*fr.PageSize 32K/32K (130 x 185 mm): ""
+*fr.PageSize 16K/16K (185 x 260 mm): ""
+*fr.PageSize Yougata4/Yougata4 (105 x 235mm): ""
+*fr.PageSize JapanesePostcard/Postcard (148 x 200mm): ""
+*fr.PageSize Younaga3/Younaga3 (120 x 235mm): ""
+*fr.PageSize Nagagata3/Nagagata3 (120 x 235mm): ""
+*fr.PageSize Yougata2/Yougata2 (114 x 162mm): ""
+*fr.CustomPageSize True/Personnalisé:""
+
+*% === Duplex ===
+*fr.Translation Duplex/Recto verso : ""
+*fr.Duplex None/Aucun (Simplex): ""
+*fr.Duplex DuplexNoTumble/Bord long: ""
+*fr.Duplex DuplexTumble/Bord court: ""
+
+*% === MediaType ===
+*fr.Translation MediaType/Médias : ""
+*fr.MediaType Plain/Normal: ""
+*fr.MediaType Thick/Épais: ""
+*fr.MediaType Envelope/Enveloppe: ""
+*fr.MediaType Transparency/Transparent: ""
+*fr.MediaType Cardstock/Bristol: ""
+*fr.MediaType Label/Étiquette: ""
+*fr.MediaType Kleenex/Papier fin: ""
+
+*%=== ptInputSlot ===
+*fr.Translation ptInputSlot/Source papier : ""
+*fr.ptInputSlot AutoSelect/Sélection automatique: ""
+*fr.ptInputSlot ManualFeed/Bac de chargement manuel: ""
+*fr.ptInputSlot AutoFeed/Bac de chargement automatique: ""
+
+*% FeedEdge ===============
+*fr.Translation FeedEdge/Orientation du chargement : ""
+*fr.FeedEdge ShortEdge/Bord court: ""
+*fr.FeedEdge LongEdge/Bord long: ""
+
+*% Booklet ===============
+*fr.Translation Booklet/Livret: ""
+*fr.Booklet True/Activé: ""
+*fr.Booklet False/Désactivé: ""
+
+*% Contrast ===============
+*fr.Translation Contrast/Contraste: ""
+*fr.Contrast False/Désactivé: ""
+*fr.Contrast Level1/Niveau 1: ""
+*fr.Contrast Level2/Niveau 2: ""
+*fr.Contrast Level3/Niveau 3: ""
+*fr.Contrast Level4/Niveau 4: ""
+*fr.Contrast Level5/Niveau 5: ""
+
+*% Saturations ===============
+*fr.Translation Saturations/Saturabilité: ""
+*fr.Saturations False/Désactivé: ""
+*fr.Saturations Level1/Niveau 1: ""
+*fr.Saturations Level2/Niveau 2: ""
+*fr.Saturations Level3/Niveau 3: ""
+*fr.Saturations Level4/Niveau 4: ""
+*fr.Saturations Level5/Niveau 5: ""
+
+*% Lightness ===============
+*fr.Translation Lightness/Luminosité: ""
+*fr.Lightness False/Désactivé: ""
+*fr.Lightness Level1/Niveau 1: ""
+*fr.Lightness Level2/Niveau 2: ""
+*fr.Lightness Level3/Niveau 3: ""
+*fr.Lightness Level4/Niveau 4: ""
+*fr.Lightness Level5/Niveau 5: ""
+
+*% RGBCorrection ===============
+*fr.Translation RGBCorrection/Correction RGB: ""
+*fr.RGBCorrection PrinterS/Configuration de l'imprimante: ""
+*fr.RGBCorrection Manual/Manuel: ""
+
+*% Colorbalance ===============
+*fr.Translation Colorbalance/Balance des couleurs: ""
+*fr.Colorbalance PrinterS/Configuration de l'imprimante: ""
+*fr.Colorbalance Manual/Manuel: ""
+
+*% Cyan ===============
+*fr.Translation Cyan/Balance du cyan: ""
+*fr.Cyan False/Désactivé: ""
+*fr.Cyan Level1/Niveau 1: ""
+*fr.Cyan Level2/Niveau 2: ""
+*fr.Cyan Level3/Niveau 3: ""
+*fr.Cyan Level4/Niveau 4: ""
+*fr.Cyan Level5/Niveau 5: ""
+
+*% Magenta ===============
+*fr.Translation Magenta/Balance Magenta: ""
+*fr.Magenta False/Désactivé: ""
+*fr.Magenta Level1/Niveau 1: ""
+*fr.Magenta Level2/Niveau 2: ""
+*fr.Magenta Level3/Niveau 3: ""
+*fr.Magenta Level4/Niveau 4: ""
+*fr.Magenta Level5/Niveau 5: ""
+
+*% Yellow ===============
+*fr.Translation Yellow/Balance jaune: ""
+*fr.Yellow False/Désactivé: ""
+*fr.Yellow Level1/Niveau 1: ""
+*fr.Yellow Level2/Niveau 2: ""
+*fr.Yellow Level3/Niveau 3: ""
+*fr.Yellow Level4/Niveau 4: ""
+*fr.Yellow Level5/Niveau 5: ""
+
+*% Black ===============
+*fr.Translation Black/Balance des Noirs: ""
+*fr.Black False/Désactivé: ""
+*fr.Black Level1/Niveau 1: ""
+*fr.Black Level2/Niveau 2: ""
+*fr.Black Level3/Niveau 3: ""
+*fr.Black Level4/Niveau 4: ""
+*fr.Black Level5/Niveau 5: ""
+
+*% === Spanish ===
+*es.Translation Graphics/Opciones básicas: ""
+*es.Translation PaperGroup/Papel: ""
+*es.Translation ColorGroup/Color: ""
+
+*% === Resolution ===
+*es.Translation Resolution/Resolución: ""
+*es.Resolution 600dpi/600 DPI: ""
+*es.Resolution 1200dpi/1200 DPI: ""
+
+*% === ColorModel ===
+*es.Translation ColorModel/Modo de color: ""
+*es.ColorModel Color/Impresión a color: ""
+*es.ColorModel GrayScale/Impresión en blanco y negro: ""
+
+*% === PrintModel ===
+*es.Translation PrintModel/Modo de impresión: ""
+*es.PrintModel Model1/Modo 1: ""
+*es.PrintModel Model2/Modo 2: ""
+*es.PrintModel Model3/Modo 3: ""
+
+*% === Density ===
+*es.Translation Density/Densidad: ""
+*es.Density PrinterS/Configuración de la impresora: ""
+*es.Density Dark/Oscura: ""
+*es.Density Normal/Normal: ""
+*es.Density Light/Clara: ""
+
+*% === Toner Save ===
+*es.Translation TonerMode/Ahorro tóner: ""
+*es.TonerMode False/Desactivado: ""
+*es.TonerMode True/Activado: ""
+
+*% Paper Handling ===================
+*es.Translation PageSize/Tamaño papel: ""
+*es.PageSize Letter/Carta (8.5 x 11): ""
+*es.PageSize A4/A4 (210 x 297 mm): ""
+*es.PageSize A5/A5 (148 x 210 mm): ""
+*es.PageSize A6/A6 (105 x 148 mm): ""
+*es.PageSize B5/JIS B5 (182 x 257 mm): ""
+*es.PageSize ISOB5/ISO B5 (176 x 250 mm): ""
+*es.PageSize B6/B6 (125 x 176 mm): ""
+*es.PageSize Executive/Ejecutivo (7.25 x 10.5): ""
+*es.PageSize Statement/Declaración (5.5 x 8.5): ""
+*es.PageSize Folio/Folio (8.5 x 13): ""
+*es.PageSize Oficio/Oficio (216 x 343 mm): ""
+*es.PageSize Postcard/Japanese Postcard (100 x 148 mm): ""
+*es.PageSize EnvMonarch/Sobre Monarca (3.875 x 7.5): ""
+*es.PageSize EnvDL/Sobre DL (110 x 220 mm): ""
+*es.PageSize EnvC5/Sobre C5 (162 x 229 mm): ""
+*es.PageSize Com10Envelope/Sobre n.º 10 (4.125 x 9.5): ""
+*es.PageSize EnvC6/Sobre C6 (114 x 162 mm): ""
+*es.PageSize ZL/Sobre ZL (120 x 230 mm): ""
+*es.PageSize Legal/Legal (8.5 x 14): ""
+*es.PageSize Big32K/32K grande (135 x 195 mm): ""
+*es.PageSize Big16K/16K grande (195 x 270 mm): ""
+*es.PageSize 32K/32K (130 x 185 mm): ""
+*es.PageSize 16K/16 K (185 x 260 mm): ""
+*es.PageSize Yougata4/Yougata4 (105 x 235mm): ""
+*es.PageSize JapanesePostcard/Postal (148 x 200mm): ""
+*es.PageSize Younaga3/Younaga3 (120 x 235mm): ""
+*es.PageSize Nagagata3/Nagagata3 (120 x 235mm): ""
+*es.PageSize Yougata2/Yougata2 (114 x 162mm): ""
+*es.CustomPageSize True/Personalizado: ""
+
+*% === Duplex ===
+*es.Translation Duplex/Doble cara: ""
+*es.Duplex None/Ninguna (una cara): ""
+*es.Duplex DuplexNoTumble/Por el lado más largo: ""
+*es.Duplex DuplexTumble/Por el lado más corto: ""
+
+*% === MediaType ===
+*es.Translation MediaType/Medios: ""
+*es.MediaType Plain/Normal: ""
+*es.MediaType Thick/Grueso: ""
+*es.MediaType Envelope/Sobre: ""
+*es.MediaType Transparency/Transparencia: ""
+*es.MediaType Cardstock/Cartulina: ""
+*es.MediaType Label/Etiqueta: ""
+*es.MediaType Kleenex/Papel fino: ""
+
+*%=== ptInputSlot ===
+*es.Translation ptInputSlot/Origen del papel: ""
+*es.ptInputSlot AutoSelect/Selección automática: ""
+*es.ptInputSlot ManualFeed/Bandeja de alimentación manual: ""
+*es.ptInputSlot AutoFeed/Bandeja de alimentación automática: ""
+
+*% FeedEdge ===============
+*es.Translation FeedEdge/Orientación de alimentación: ""
+*es.FeedEdge ShortEdge/Por el lado más corto: ""
+*es.FeedEdge LongEdge/Por el lado más largo: ""
+
+*% Booklet ===============
+*es.Translation Booklet/Cuadernillo: ""
+*es.Booklet True/Encender: ""
+*es.Booklet False/Apagado: ""
+
+*% Contrast ===============
+*es.Translation Contrast/Contraste: ""
+*es.Contrast False/Apagado: ""
+*es.Contrast Level1/Nivel 1: ""
+*es.Contrast Level2/Nivel 2: ""
+*es.Contrast Level3/Nivel 3: ""
+*es.Contrast Level4/Nivel 4: ""
+*es.Contrast Level5/Nivel 5: ""
+
+*% Saturations ===============
+*es.Translation Saturations/Saturabilidad: ""
+*es.Saturations False/Apagado: ""
+*es.Saturations Level1/Nivel 1: ""
+*es.Saturations Level2/Nivel 2: ""
+*es.Saturations Level3/Nivel 3: ""
+*es.Saturations Level4/Nivel 4: ""
+*es.Saturations Level5/Nivel 5: ""
+
+*% Lightness ===============
+*es.Translation Lightness/Brillo: ""
+*es.Lightness False/Apagado: ""
+*es.Lightness Level1/Nivel 1: ""
+*es.Lightness Level2/Nivel 2: ""
+*es.Lightness Level3/Nivel 3: ""
+*es.Lightness Level4/Nivel 4: ""
+*es.Lightness Level5/Nivel 5: ""
+
+*% RGBCorrection ===============
+*es.Translation RGBCorrection/Corrección RGB: ""
+*es.RGBCorrection PrinterS/Configuración de la impresora: ""
+*es.RGBCorrection Manual/Manual: ""
+
+*% Colorbalance ===============
+*es.Translation Colorbalance/Equilibrio de color: ""
+*es.Colorbalance PrinterS/Configuración de la impresora: ""
+*es.Colorbalance Manual/Manual: ""
+
+*% Cyan ===============
+*es.Translation Cyan/Balance de turquesa: ""
+*es.Cyan False/Apagado: ""
+*es.Cyan Level1/Nivel 1: ""
+*es.Cyan Level2/Nivel 2: ""
+*es.Cyan Level3/Nivel 3: ""
+*es.Cyan Level4/Nivel 4: ""
+*es.Cyan Level5/Nivel 5: ""
+
+*% Magenta ===============
+*es.Translation Magenta/Balance de magenta: ""
+*es.Magenta False/Apagado: ""
+*es.Magenta Level1/Nivel 1: ""
+*es.Magenta Level2/Nivel 2: ""
+*es.Magenta Level3/Nivel 3: ""
+*es.Magenta Level4/Nivel 4: ""
+*es.Magenta Level5/Nivel 5: ""
+
+*% Yellow ===============
+*es.Translation Yellow/Balance de amarillo: ""
+*es.Yellow False/Apagado: ""
+*es.Yellow Level1/Nivel 1: ""
+*es.Yellow Level2/Nivel 2: ""
+*es.Yellow Level3/Nivel 3: ""
+*es.Yellow Level4/Nivel 4: ""
+*es.Yellow Level5/Nivel 5: ""
+
+*% Black ===============
+*es.Translation Black/Balance de negro: ""
+*es.Black False/Apagado: ""
+*es.Black Level1/Nivel 1: ""
+*es.Black Level2/Nivel 2: ""
+*es.Black Level3/Nivel 3: ""
+*es.Black Level4/Nivel 4: ""
+*es.Black Level5/Nivel 5: ""
+
+*% === Italy ===
+*it.Translation Graphics/Di base: ""
+*it.Translation PaperGroup/Carta: ""
+*it.Translation ColorGroup/Colore: ""
+
+*% === Resolution ===
+*it.Translation Resolution/Risoluzione: ""
+*it.Resolution 600dpi/600 DPI: ""
+*it.Resolution 1200dpi/1200 DPI: ""
+
+*% === ColorModel ===
+*it.Translation ColorModel/Modalità colore: ""
+*it.ColorModel Color/Stampa a colori: ""
+*it.ColorModel GrayScale/Stampa in bianco e nero: ""
+
+*% === PrintModel ===
+*it.Translation PrintModel/Modalità di stampa: ""
+*it.PrintModel Model1/Modalità 1: ""
+*it.PrintModel Model2/Modalità 2: ""
+*it.PrintModel Model3/Modalità 3: ""
+
+*% === Density ===
+*it.Translation Density/Densità: ""
+*it.Density PrinterS/Impostazione della stampante: ""
+*it.Density Dark/Scuro: ""
+*it.Density Normal/Normale: ""
+*it.Density Light/Chiaro: ""
+
+*% === Toner Save ===
+*it.Translation TonerMode/Risparmio toner: ""
+*it.TonerMode False/Disattivato: ""
+*it.TonerMode True/Attivato: ""
+
+*% Paper Handling ===================
+*it.Translation PageSize/Formato carta: ""
+*it.PageSize Letter/Lettera (215,9 x 279,4 mm): ""
+*it.PageSize A4/A4 (210 x 297 mm): ""
+*it.PageSize A5/A5 (148 x 210 mm): ""
+*it.PageSize A6/A6 (105 x 148 mm): ""
+*it.PageSize B5/JIS B5 (182 x 257 mm): ""
+*it.PageSize ISOB5/ISO B5 (176 x 250 mm): ""
+*it.PageSize B6/B6 (125 x 176 mm): ""
+*it.PageSize Executive/Executive (184,2 x 266,7 mm): ""
+*it.PageSize Statement/Statement (139,7 x 215,9 mm): ""
+*it.PageSize Folio/Folio (216 x 330 mm): ""
+*it.PageSize Oficio/Oficio (216 x 343 mm): ""
+*it.PageSize Postcard/Japanese Postcard (100 x 148 mm): ""
+*it.PageSize EnvMonarch/Busta Monarch (98,3 x 190,5 mm): ""
+*it.PageSize EnvDL/Busta DL (110 x 220 mm): ""
+*it.PageSize EnvC5/Busta C5 (162 x 229 mm): ""
+*it.PageSize Com10Envelope/Busta n.10 (147,8 x 241,3 mm): ""
+*it.PageSize EnvC6/Busta C6 (114 x 162 mm): ""
+*it.PageSize ZL/ZL (120 x 230 mm): ""
+*it.PageSize Legal/Legale (215,9 x 355,6 mm): ""
+*it.PageSize Big32K/32K grande (135 x 195 mm): ""
+*it.PageSize Big16K/16K grande (195 x 270 mm): ""
+*it.PageSize 32K/32K (130 x 185 mm): ""
+*it.PageSize 16K/16K (185 x 260 mm): ""
+*it.PageSize Yougata4/Yougata4 (105 x 235mm): ""
+*it.PageSize JapanesePostcard/Cartolina (148 x 200mm): ""
+*it.PageSize Younaga3/Younaga3 (120 x 235mm): ""
+*it.PageSize Nagagata3/Nagagata3 (120 x 235mm): ""
+*it.PageSize Yougata2/Yougata2 (114 x 162mm): ""
+*it.CustomPageSize True/Personalizzato: ""
+
+*% === Duplex ===
+*it.Translation Duplex/Fronte/retro: ""
+*it.Duplex None/Nessuno (facciata singola): ""
+*it.Duplex DuplexNoTumble/Lato lungo: ""
+*it.Duplex DuplexTumble/Lato corto: ""
+
+*% === MediaType ===
+*it.Translation MediaType/Media : ""
+*it.MediaType Plain/Carta comune: ""
+*it.MediaType Thick/Spessa: ""
+*it.MediaType Envelope/Busta: ""
+*it.MediaType Transparency/Trasparenza: ""
+*it.MediaType Cardstock/Cartoncino: ""
+*it.MediaType Label/Etichetta: ""
+*it.MediaType Kleenex/Carta sottile: ""
+
+*%=== ptInputSlot ===
+*it.Translation ptInputSlot/Alimentazione carta: ""
+*it.ptInputSlot AutoSelect/Selezione automatica: ""
+*it.ptInputSlot ManualFeed/Vassoio di alimentazione manuale: ""
+*it.ptInputSlot AutoFeed/Vassoio di alimentazione automatico: ""
+
+*% FeedEdge ===============
+*it.Translation FeedEdge/Orientamento alimentazione: ""
+*it.FeedEdge ShortEdge/Lato corto: ""
+*it.FeedEdge LongEdge/Lato lungo: ""
+
+*% Booklet ===============
+*it.Translation Booklet/Opuscolo: ""
+*it.Booklet True/Aperto: ""
+*it.Booklet False/Spento: ""
+
+*% Contrast ===============
+*it.Translation Contrast/Contrasto: ""
+*it.Contrast False/Spento: ""
+*it.Contrast Level1/Livello 1: ""
+*it.Contrast Level2/Livello 2: ""
+*it.Contrast Level3/Livello 3: ""
+*it.Contrast Level4/Livello 4: ""
+*it.Contrast Level5/Livello 5: ""
+
+*% Saturations ===============
+*it.Translation Saturations/Saturazione: ""
+*it.Saturations False/Spento: ""
+*it.Saturations Level1/Livello 1: ""
+*it.Saturations Level2/Livello 2: ""
+*it.Saturations Level3/Livello 3: ""
+*it.Saturations Level4/Livello 4: ""
+*it.Saturations Level5/Livello 5: ""
+
+*% Lightness ===============
+*it.Translation Lightness/Luminosità: ""
+*it.Lightness False/Spento: ""
+*it.Lightness Level1/Livello 1: ""
+*it.Lightness Level2/Livello 2: ""
+*it.Lightness Level3/Livello 3: ""
+*it.Lightness Level4/Livello 4: ""
+*it.Lightness Level5/Livello 5: ""
+
+*% RGBCorrection ===============
+*it.Translation RGBCorrection/Correzione RGB: ""
+*it.RGBCorrection PrinterS/Impostazione della stampante: ""
+*it.RGBCorrection Manual/Manuale: ""
+
+*% Colorbalance ===============
+*it.Translation Colorbalance/Bilanciamento del colore: ""
+*it.Colorbalance PrinterS/Impostazione della stampante: ""
+*it.Colorbalance Manual/Manuale: ""
+
+*% Cyan ===============
+*it.Translation Cyan/Bilanciamento ciano: ""
+*it.Cyan False/Spento: ""
+*it.Cyan Level1/Livello 1: ""
+*it.Cyan Level2/Livello 2: ""
+*it.Cyan Level3/Livello 3: ""
+*it.Cyan Level4/Livello 4: ""
+*it.Cyan Level5/Livello 5: ""
+
+*% Magenta ===============
+*it.Translation Magenta/Bilanciamento magenta: ""
+*it.Magenta False/Spento: ""
+*it.Magenta Level1/Livello 1: ""
+*it.Magenta Level2/Livello 2: ""
+*it.Magenta Level3/Livello 3: ""
+*it.Magenta Level4/Livello 4: ""
+*it.Magenta Level5/Livello 5: ""
+
+*% Yellow ===============
+*it.Translation Yellow/Bilanciamento giallo: ""
+*it.Yellow False/Spento: ""
+*it.Yellow Level1/Livello 1: ""
+*it.Yellow Level2/Livello 2: ""
+*it.Yellow Level3/Livello 3: ""
+*it.Yellow Level4/Livello 4: ""
+*it.Yellow Level5/Livello 5: ""
+
+*% Black ===============
+*it.Translation Black/Bilanciamento nero: ""
+*it.Black False/Spento: ""
+*it.Black Level1/Livello 1: ""
+*it.Black Level2/Livello 2: ""
+*it.Black Level3/Livello 3: ""
+*it.Black Level4/Livello 4: ""
+*it.Black Level5/Livello 5: ""
+
+*% === Arabic ===
+*ar.Translation Graphics/أساسي: ""
+*ar.Translation PaperGroup/ورق: ""
+*ar.Translation ColorGroup/اللون: ""
+
+*% === Resolution ===
+*ar.Translation Resolution/الدقة: ""
+*ar.Resolution 600dpi/600 DPI: ""
+*ar.Resolution 1200dpi/1200 DPI: ""
+
+*% === ColorModel ===
+*ar.Translation ColorModel/وضع اللون: ""
+*ar.ColorModel Color/طباعة ملونة: ""
+*ar.ColorModel GrayScale/طباعة بالأبيض والأسود: ""
+
+*% === PrintModel ===
+*ar.Translation PrintModel/وضع الطباعة: ""
+*ar.PrintModel Model1/الوضع 1: ""
+*ar.PrintModel Model2/الوضع 2: ""
+*ar.PrintModel Model3/الوضع 3: ""
+
+*% === Density ===
+*ar.Translation Density/الكثافة: ""
+*ar.Density PrinterS/إعدادات الطابعة: ""
+*ar.Density Dark/غامق: ""
+*ar.Density Normal/عادي: ""
+*ar.Density Light/خفيف: ""
+
+*% === Toner Save ===
+*ar.Translation TonerMode/توفير الحبر: ""
+*ar.TonerMode False/إيقاف التشغيل: ""
+*ar.TonerMode True/تشغيل: ""
+
+*% Paper Handling ===================
+*ar.Translation PageSize/حجم الورقة: ""
+*ar.PageSize Letter/Letter (8.5 × 11): ""
+*ar.PageSize A4/A4 (210 × 297mm): ""
+*ar.PageSize A5/A5 (148 × 210mm): ""
+*ar.PageSize A6/A6 (105 × 148mm): ""
+*ar.PageSize B5/JIS B5 (182 × 257mm): ""
+*ar.PageSize ISOB5/ISO B5 (176 × 250mm): ""
+*ar.PageSize B6/B6 (125 × 176mm): ""
+*ar.PageSize Executive/Executive (7.25 × 10.5): ""
+*ar.PageSize Statement/Statement (5.5 × 8.5): ""
+*ar.PageSize Folio/Folio (8.5 × 13): ""
+*ar.PageSize Oficio/Oficio (216 × 343mm): ""
+*ar.PageSize Postcard/Japanese Postcard (100×148mm): ""
+*ar.PageSize EnvMonarch/Monarch Env (3.875 × 7.5): ""
+*ar.PageSize EnvDL/DL Env (110 × 220mm): ""
+*ar.PageSize EnvC5/C5 Env (162 × 229mm): ""
+*ar.PageSize Com10Envelope/No.10 Env (4.125 × 9.5): ""
+*ar.PageSize EnvC6/C6 Env (114 × 162mm): ""
+*ar.PageSize ZL/ZL (120 × 230mm): ""
+*ar.PageSize Legal/Legal (8.5 × 14): ""
+*ar.PageSize Big32K/Big 32K (135 × 195mm): ""
+*ar.PageSize Big16K/Big 16K (195 × 270mm): ""
+*ar.PageSize 32K/32K (130 × 185mm): ""
+*ar.PageSize 16K/16K (185 × 260mm): ""
+*ar.PageSize Yougata4/Yougata4 (105 x 235mm): ""
+*ar.PageSize JapanesePostcard/Postcard (148 x 200mm): ""
+*ar.PageSize Younaga3/Younaga3 (120 x 235mm): ""
+*ar.PageSize Nagagata3/Nagagata3 (120 x 235mm): ""
+*ar.PageSize Yougata2/Yougata2 (114 x 162mm): ""
+*ar.CustomPageSize True/مخصص: ""
+
+*% === Duplex ===
+*ar.Translation Duplex/طباعة على الوجهين: ""
+*ar.Duplex None/(بدون (مفرد): ""
+*ar.Duplex DuplexNoTumble/حافة طويلة: ""
+*ar.Duplex DuplexTumble/حافة قصيرة: ""
+
+*% === MediaType ===
+*ar.Translation MediaType/الوسائط: ""
+*ar.MediaType Plain/عادي: ""
+*ar.MediaType Thick/سميك: ""
+*ar.MediaType Envelope/ظرف: ""
+*ar.MediaType Transparency/الشفافية: ""
+*ar.MediaType Cardstock/بطاقات: ""
+*ar.MediaType Label/ملصق: ""
+*ar.MediaType Kleenex/ورقة رقيقة : ""
+
+*%=== ptInputSlot ===
+*ar.Translation ptInputSlot/مصدر الورق: ""
+*ar.ptInputSlot AutoSelect/تحديد تلقائي: ""
+*ar.ptInputSlot ManualFeed/علبة مغذي يدوي: ""
+*ar.ptInputSlot AutoFeed/علبة مغذي تلقائي: ""
+
+*% FeedEdge ===============
+*ar.Translation FeedEdge/اتجاه التغذية: ""
+*ar.FeedEdge ShortEdge/حافة قصيرة: ""
+*ar.FeedEdge LongEdge/حافة طويلة: ""
+
+*% Booklet ===============
+*ar.Translation Booklet/كتيب: ""
+*ar.Booklet True/تشغيل: ""
+*ar.Booklet False/إيقاف: ""
+
+*% Contrast ===============
+*ar.Translation Contrast/التباين: ""
+*ar.Contrast False/إيقاف: ""
+*ar.Contrast Level1/مستوى1: ""
+*ar.Contrast Level2/مستوى2: ""
+*ar.Contrast Level3/مستوى3: ""
+*ar.Contrast Level4/مستوى4: ""
+*ar.Contrast Level5/مستوى5: ""
+
+*% Saturations ===============
+*ar.Translation Saturations/قابلية التشبع: ""
+*ar.Saturations False/إيقاف: ""
+*ar.Saturations Level1/مستوى1: ""
+*ar.Saturations Level2/مستوى2: ""
+*ar.Saturations Level3/مستوى3: ""
+*ar.Saturations Level4/مستوى4: ""
+*ar.Saturations Level5/مستوى5: ""
+
+*% Lightness ===============
+*ar.Translation Lightness/سطوع: ""
+*ar.Lightness False/إيقاف: ""
+*ar.Lightness Level1/مستوى1: ""
+*ar.Lightness Level2/مستوى2: ""
+*ar.Lightness Level3/مستوى3: ""
+*ar.Lightness Level4/مستوى4: ""
+*ar.Lightness Level5/مستوى5: ""
+
+*% RGBCorrection ===============
+*ar.Translation RGBCorrection/تصحيح النموذج اللوني أحمر أخضر أزرق: ""
+*ar.RGBCorrection PrinterS/إعدادات الطابعة: ""
+*ar.RGBCorrection Manual/كتيب: ""
+
+*% Colorbalance ===============
+*ar.Translation Colorbalance/توازن الالوان: ""
+*ar.Colorbalance PrinterS/إعدادات الطابعة: ""
+*ar.Colorbalance Manual/كتيب: ""
+
+*% Cyan ===============
+*ar.Translation Cyan/توازن سماوي: ""
+*ar.Cyan False/إيقاف: ""
+*ar.Cyan Level1/مستوى1: ""
+*ar.Cyan Level2/مستوى2: ""
+*ar.Cyan Level3/مستوى3: ""
+*ar.Cyan Level4/مستوى4: ""
+*ar.Cyan Level5/مستوى5: ""
+
+*% Magenta ===============
+*ar.Translation Magenta/توازن أرجواني: ""
+*ar.Magenta False/إيقاف: ""
+*ar.Magenta Level1/مستوى1: ""
+*ar.Magenta Level2/مستوى2: ""
+*ar.Magenta Level3/مستوى3: ""
+*ar.Magenta Level4/مستوى4: ""
+*ar.Magenta Level5/مستوى5: ""
+
+*% Yellow ===============
+*ar.Translation Yellow/توازن أصفر: ""
+*ar.Yellow False/إيقاف: ""
+*ar.Yellow Level1/مستوى1: ""
+*ar.Yellow Level2/مستوى2: ""
+*ar.Yellow Level3/مستوى3: ""
+*ar.Yellow Level4/مستوى4: ""
+*ar.Yellow Level5/مستوى5: ""
+
+*% Black ===============
+*ar.Translation Black/توازن أسود: ""
+*ar.Black False/إيقاف: ""
+*ar.Black Level1/مستوى1: ""
+*ar.Black Level2/مستوى2: ""
+*ar.Black Level3/مستوى3: ""
+*ar.Black Level4/مستوى4: ""
+*ar.Black Level5/مستوى5: ""
+
+*% === Norwegian (Bokmal) ===
+*no.Translation Graphics/Grunnleggende: ""
+*no.Translation PaperGroup/Papir: ""
+
+*% === Resolution ===
+*no.Translation Resolution/Oppløsning: ""
+*no.Resolution 600dpi/600 ppt: ""
+*no.Resolution 1200dpi/1200 ppt: ""
+
+*% === Density ===
+*no.Translation Density/Tetthet: ""
+*no.Density Dark/Mørk: ""
+*no.Density Normal/Normal: ""
+*no.Density Light/Lys: ""
+
+*% === Toner Save ===
+*no.Translation TonerMode/Tonersparing: ""
+*no.TonerMode False/Av: ""
+*no.TonerMode True/På: ""
+
+*% Paper Handling ===================
+*no.Translation PageSize/Papirstørrelse: ""
+*no.PageSize Letter/Letter (8,5 x 11): ""
+*no.PageSize A4/A4 (210 x 297 mm): ""
+*no.PageSize A5/A5 (148 x 210 mm): ""
+*no.PageSize A6/A6 (105 x 148 mm): ""
+*no.PageSize B5/JIS B5 (182 x 257 mm): ""
+*no.PageSize ISOB5/ISO B5 (176 x 250 mm): ""
+*no.PageSize B6/B6 (125 x 176 mm): ""
+*no.PageSize Executive/Executive (7,25 x 10,5): ""
+*no.PageSize Statement/Statement (5,5 x 8,5): ""
+*no.PageSize Folio/Folio (8,5 x 13): ""
+*no.PageSize Oficio/Oficio (216 x 343 mm): ""
+*no.PageSize Postcard/Japanese Postcard (100 x 148 mm): ""
+*no.PageSize EnvMonarch/Monarch-konvolutt (3,875 x 7,5): ""
+*no.PageSize EnvDL/DL-konvolutt (110 x 220 mm): ""
+*no.PageSize EnvC5/C5-konvolutt (162 x 229 mm): ""
+*no.PageSize Com10Envelope/No.10-konvolutt (4,125 x 9,5): ""
+*no.PageSize EnvC6/C6-konvolutt (114 x 162 mm): ""
+*no.PageSize ZL/ZL (120 x 230 mm): ""
+*no.PageSize Legal/Legal (8,5 x 14): ""
+*no.PageSize Big32K/Big 32K (135 x 195 mm): ""
+*no.PageSize Big16K/Big 16K (195 x 270 mm): ""
+*no.PageSize 32K/32K (130 x 185 mm): ""
+*no.PageSize 16K/16K (185 x 260 mm): ""
+*no.PageSize Yougata4/Yougata4 (105 x 235mm): ""
+*no.PageSize JapanesePostcard/Postkort (148 x 200mm): ""
+*no.PageSize Younaga3/Younaga3 (120 x 235mm): ""
+*no.PageSize Nagagata3/Nagagata3 (120 x 235mm): ""
+*no.PageSize Yougata2/Yougata2 (114 x 162mm): ""
+
+*% === Duplex ===
+*no.Translation Duplex/Dupleks: ""
+*no.Duplex None/Ingen (simpleks): ""
+*no.Duplex DuplexNoTumble/Langside: ""
+*no.Duplex DuplexTumble/Kortside: ""
+
+*% === MediaType ===
+*no.Translation MediaType/Papirtype: ""
+*no.MediaType Plain/Vanlig: ""
+*no.MediaType Thick/Tykk: ""
+*no.MediaType Envelope/Konvolutt: ""
+*no.MediaType Transparency/Gjennomsiktighet: ""
+*no.MediaType Cardstock/Kartong: ""
+*no.MediaType Label/Etikett: ""
+*no.MediaType Kleenex/Tynt papir: ""
+
+*%=== ptInputSlot ===
+*no.Translation ptInputSlot/Papirkilde: ""
+*no.ptInputSlot AutoSelect/Velges automatisk av skriveren: ""
+*no.ptInputSlot ManualFeed/Skuff for manuell arkmating: ""
+*no.ptInputSlot AutoFeed/Skuff for automatisk arkmating: ""
+
+*% FeedEdge ===============
+*no.Translation FeedEdge/Materetning: ""
+*no.FeedEdge ShortEdge/Kortside: ""
+*no.FeedEdge LongEdge/Langside: ""
+
+*% === Swedish ===
+*sv.Translation Graphics/Allmänt: ""
+*sv.Translation PaperGroup/Papper: ""
+
+*% === Resolution ===
+*sv.Translation Resolution/Upplösning: ""
+*sv.Resolution 600dpi/600 dpi: ""
+*sv.Resolution 1200dpi/1200 dpi: ""
+
+*% === Density ===
+*sv.Translation Density/Täthet: ""
+*sv.Density Dark/Tjock: ""
+*sv.Density Normal/Normal: ""
+*sv.Density Light/Tunn: ""
+
+*% === Toner Save ===
+*sv.Translation TonerMode/Tonerbesparing: ""
+*sv.TonerMode False/Av: ""
+*sv.TonerMode True/På: ""
+
+*% Paper Handling ===================
+*sv.Translation PageSize/Pappersformat: ""
+*sv.PageSize Letter/Letter (8,5 x 11): ""
+*sv.PageSize A4/A4 (210 x 297 mm): ""
+*sv.PageSize A5/A5 (148 x 210 mm): ""
+*sv.PageSize A6/A6 (105 x 148 mm): ""
+*sv.PageSize B5/JIS B5 (182 x 257 mm): ""
+*sv.PageSize ISOB5/ISO B5 (176 x 250 mm): ""
+*sv.PageSize B6/B6 (125 x 176 mm): ""
+*sv.PageSize Executive/Executive (7,25 x 10,5): ""
+*sv.PageSize Statement/Statement (5,5 x 8,5): ""
+*sv.PageSize Folio/Folio (8,5 x 13): ""
+*sv.PageSize Oficio/Oficio (216 x 343 mm): ""
+*sv.PageSize Postcard/Japanese Postcard (100 x 148 mm): ""
+*sv.PageSize EnvMonarch/Monarch-kuvert (3,875 x 7,5): ""
+*sv.PageSize EnvDL/DL-kuvert (110 x 220 mm): ""
+*sv.PageSize EnvC5/C5-kuvert (162 x 229 mm): ""
+*sv.PageSize Com10Envelope/No.10-kuvert (4,125 x 9,5): ""
+*sv.PageSize EnvC6/C6-kuvert (114 x 162 mm): ""
+*sv.PageSize ZL/ZL (120 x 230 mm): ""
+*sv.PageSize Legal/Legal (8,5 x 14): ""
+*sv.PageSize Big32K/Big 32K (135 x 195 mm): ""
+*sv.PageSize Big16K/Big 16K (195 x 270 mm): ""
+*sv.PageSize 32K/32K (130 x 185 mm): ""
+*sv.PageSize 16K/16K (185 x 260 mm): ""
+*sv.PageSize Yougata4/Yougata4 (105 x 235mm): ""
+*sv.PageSize JapanesePostcard/Vykort (148 x 200mm): ""
+*sv.PageSize Younaga3/Younaga3 (120 x 235mm): ""
+*sv.PageSize Nagagata3/Nagagata3 (120 x 235mm): ""
+*sv.PageSize Yougata2/Yougata2 (114 x 162mm): ""
+
+*% === Duplex ===
+*sv.Translation Duplex/Dubbelsidig: ""
+*sv.Duplex None/Ingen (enkelsidig): ""
+*sv.Duplex DuplexNoTumble/Långsida: ""
+*sv.Duplex DuplexTumble/Kortsida: ""
+
+*% === MediaType ===
+*sv.Translation MediaType/Papperstyp: ""
+*sv.MediaType Plain/Vanligt: ""
+*sv.MediaType Thick/Tjockt: ""
+*sv.MediaType Envelope/Kuvert: ""
+*sv.MediaType Transparency/Genomskinlighet: ""
+*sv.MediaType Cardstock/Kartong: ""
+*sv.MediaType Label/Etikett: ""
+*sv.MediaType Kleenex/Tunt papper: ""
+
+*%=== ptInputSlot ===
+*sv.Translation ptInputSlot/Papperskälla: ""
+*sv.ptInputSlot AutoSelect/Väljs automatiskt av skrivaren: ""
+*sv.ptInputSlot ManualFeed/Manuellt matningsfack: ""
+*sv.ptInputSlot AutoFeed/Automatiskt matningsfack: ""
+
+*% FeedEdge ===============
+*sv.Translation FeedEdge/Matningsorientering: ""
+*sv.FeedEdge ShortEdge/Kortsida: ""
+*sv.FeedEdge LongEdge/Långsida: ""
+
+*% === Japanese ===
+*ja.Translation Graphics/基本: ""
+*ja.Translation PaperGroup/用紙: ""
+
+*% === Resolution ===
+*ja.Translation Resolution/解像度: ""
+*ja.Resolution 600dpi/600 DPI: ""
+*ja.Resolution 1200dpi/1200 DPI: ""
+
+*% === Density ===
+*ja.Translation Density/濃度: ""
+*ja.Density Dark/濃い: ""
+*ja.Density Normal/標準: ""
+*ja.Density Light/薄い: ""
+
+*% === Toner Save ===
+*ja.Translation TonerMode/トナー節約: ""
+*ja.TonerMode False/オフ: ""
+*ja.TonerMode True/オン: ""
+
+*% Paper Handling ===================
+*ja.Translation PageSize/用紙サイズ: ""
+*ja.PageSize Letter/レター (8.5 x 11): ""
+*ja.PageSize A4/A4 (210 x 297mm): ""
+*ja.PageSize A5/A5 (148 x 210mm): ""
+*ja.PageSize A6/A6 (105 x 148mm): ""
+*ja.PageSize B5/JIS B5 (182 x 257mm): ""
+*ja.PageSize ISOB5/ISO B5 (176 x 250mm): ""
+*ja.PageSize B6/B6 (125 x 176mm): ""
+*ja.PageSize Executive/エグゼクティブ (7.25 x 10.5): ""
+*ja.PageSize Statement/ステートメント (5.5 x 8.5): ""
+*ja.PageSize Folio/フォリオ (8.5 x 13): ""
+*ja.PageSize Oficio/オフィシオ (216 x 343mm): ""
+*ja.PageSize Postcard/ポストカード (100x148mm): ""
+*ja.PageSize EnvMonarch/Monarch 封筒 (3.875 x 7.5): ""
+*ja.PageSize EnvDL/DL 封筒 (110 x 220mm): ""
+*ja.PageSize EnvC5/C5 封筒 (162 x 229mm): ""
+*ja.PageSize Com10Envelope/No.10 封筒 (4.125 x 9.5): ""
+*ja.PageSize EnvC6/C6 封筒 (114 x 162mm): ""
+*ja.PageSize ZL/ZL (120 x 230mm): ""
+*ja.PageSize Legal/リーガル (8.5 x 14): ""
+*ja.PageSize Big32K/Big 32K (135 x 195mm): ""
+*ja.PageSize Big16K/Big 16K (195 x 270mm): ""
+*ja.PageSize 32K/32K (130 x 185mm): ""
+*ja.PageSize 16K/16K (185 x 260mm): ""
+*ja.PageSize Yougata4/封筒 洋形4号 (105 x 235mm): ""
+*ja.PageSize JapanesePostcard/往復はがき (148 x 200mm): ""
+*ja.PageSize Younaga3/封筒 洋形長3号 (120 x 235mm): ""
+*ja.PageSize Nagagata3/封筒 長形3号 (120 x 235mm): ""
+*ja.PageSize Yougata2/封筒 洋形2号 (114 x 162mm): ""
+
+*% === Duplex ===
+*ja.Translation Duplex/両面印刷: ""
+*ja.Duplex None/なし (片面印刷): ""
+*ja.Duplex DuplexNoTumble/長辺: ""
+*ja.Duplex DuplexTumble/短辺: ""
+
+*% === MediaType ===
+*ja.Translation MediaType/用紙の種類: ""
+*ja.MediaType Plain/普通紙: ""
+*ja.MediaType Thick/厚紙: ""
+*ja.MediaType Envelope/封筒: ""
+*ja.MediaType Transparency/透明度: ""
+*ja.MediaType Cardstock/カードストック: ""
+*ja.MediaType Label/ラベル: ""
+*ja.MediaType Kleenex/薄紙: ""
+
+*%=== ptInputSlot ===
+*ja.Translation ptInputSlot/給紙方法: ""
+*ja.ptInputSlot AutoSelect/プリンターによって自動的に選択: ""
+*ja.ptInputSlot ManualFeed/手差し用紙トレイ: ""
+*ja.ptInputSlot AutoFeed/自動用紙トレイ: ""
+
+*% FeedEdge ===============
+*ja.Translation FeedEdge/給紙の向き: ""
+*ja.FeedEdge ShortEdge/短辺: ""
+*ja.FeedEdge LongEdge/長辺: ""
+
+*% === German ===
+*de.Translation Graphics/Grundlegend: ""
+*de.Translation PaperGroup/Papier: ""
+*de.Translation ColorGroup/Farbe: ""
+
+*% === Resolution ===
+*de.Translation Resolution/Auflösung: ""
+*de.Resolution 600dpi/600 dpi: ""
+*de.Resolution 1200dpi/1200 dpi: ""
+
+*% === ColorModel ===
+*de.Translation ColorModel/Farbmodus: ""
+*de.ColorModel Color/Farbdruck: ""
+*de.ColorModel GrayScale/Schwarzweiß-Druck: ""
+
+*% === PrintModel ===
+*de.Translation PrintModel/Druckmodus: ""
+*de.PrintModel Model1/Modus 1: ""
+*de.PrintModel Model2/Modus 2: ""
+*de.PrintModel Model3/Modus 3: ""
+
+*% === Density ===
+*de.Translation Density/Dichte: ""
+*de.Density PrinterS/Drucker-Einrichtung: ""
+*de.Density Dark/Dunkel: ""
+*de.Density Normal/Normal: ""
+*de.Density Light/Hell: ""
+
+*% === Toner Save ===
+*de.Translation TonerMode/Tonersparmodus: ""
+*de.TonerMode False/Aus: ""
+*de.TonerMode True/Ein: ""
+
+*% Paper Handling ===================
+*de.Translation PageSize/Papiergröße: ""
+*de.PageSize Letter/Letter (8,5 x 11 Zoll): ""
+*de.PageSize A4/A4 (210 x 297 mm): ""
+*de.PageSize A5/A5 (148 x 210 mm): ""
+*de.PageSize A6/A6 (105 x 148 mm): ""
+*de.PageSize B5/B5 (JIS) (182 x 257 mm): ""
+*de.PageSize ISOB5/B5 (ISO) (176 x 250 mm): ""
+*de.PageSize B6/B6 (125 x 176 mm): ""
+*de.PageSize Executive/Executive (7,25 x 10,5 Zoll): ""
+*de.PageSize Statement/Statement (5,5 x 8,5 Zoll): ""
+*de.PageSize Folio/Folio (8,5 x 13 Zoll): ""
+*de.PageSize Oficio/Oficio (216 x 343 mm): ""
+*de.PageSize Postcard/Japanese Postcard (100 x 148 mm): ""
+*de.PageSize EnvMonarch/Umschlag Monarch (3,875 x 7,5 Zoll): ""
+*de.PageSize EnvDL/Umschlag DL (110 x 220 mm): ""
+*de.PageSize EnvC5/C5-Umschlag (162 x 229 mm): ""
+*de.PageSize Com10Envelope/Umschlag 10 (4,125 x 9,5 Zoll): ""
+*de.PageSize EnvC6/C6-Umschlag (114 x 162 mm): ""
+*de.PageSize ZL/ZL (120 x 230 mm): ""
+*de.PageSize Legal/Legal (8,5 x 14 Zoll): ""
+*de.PageSize Big32K/Big 32K (135 x 195 mm): ""
+*de.PageSize Big16K/Big 16K (195 x 270 mm): ""
+*de.PageSize 32K/32K (130 x 185 mm): ""
+*de.PageSize 16K/16K (185 x 260 mm): ""
+*de.PageSize Yougata4/Yougata4 (105 x 235mm): ""
+*de.PageSize JapanesePostcard/Postkarte (148 x 200mm): ""
+*de.PageSize Younaga3/Younaga3 (120 x 235mm): ""
+*de.PageSize Nagagata3/Nagagata3 (120 x 235mm): ""
+*de.PageSize Yougata2/Yougata2 (114 x 162mm): ""
+*de.CustomPageSize True/Standard:""
+
+*% === Duplex ===
+*de.Translation Duplex/Duplex : ""
+*de.Duplex None/Kein (Simplex): ""
+*de.Duplex DuplexNoTumble/Lange Kante: ""
+*de.Duplex DuplexTumble/Kurze Kante: ""
+
+*% === MediaType ===
+*de.Translation MediaType/Medien: ""
+*de.MediaType Plain/Einfaches Papier: ""
+*de.MediaType Thick/Dickes Papier: ""
+*de.MediaType Envelope/Briefhülle: ""
+*de.MediaType Transparency/Transparent: ""
+*de.MediaType Cardstock/Karton: ""
+*de.MediaType Label/Etikett: ""
+*de.MediaType Kleenex/Dünn: ""
+
+*%=== ptInputSlot ===
+*de.Translation ptInputSlot/Papierquelle: ""
+*de.ptInputSlot AutoSelect/Automatische Auswahl: ""
+*de.ptInputSlot ManualFeed/Manuelle Papierzufuhr: ""
+*de.ptInputSlot AutoFeed/Fach für automatischen Einzug: ""
+
+*% FeedEdge ===============
+*de.Translation FeedEdge/Einzugsausrichtung: ""
+*de.FeedEdge ShortEdge/Kurze Kante: ""
+*de.FeedEdge LongEdge/Lange Kante: ""
+
+*% Booklet ===============
+*de.Translation Booklet/Broschüre: ""
+*de.Booklet True/Ein: ""
+*de.Booklet False/Aus: ""
+
+*% Contrast ===============
+*de.Translation Contrast/Kontrast: ""
+*de.Contrast False/Aus: ""
+*de.Contrast Level1/Ebene 1: ""
+*de.Contrast Level2/Ebene 2: ""
+*de.Contrast Level3/Ebene 3: ""
+*de.Contrast Level4/Ebene 4: ""
+*de.Contrast Level5/Ebene 5: ""
+
+*% Saturations ===============
+*de.Translation Saturations/Sättigungsfähigkeit: ""
+*de.Saturations False/Aus: ""
+*de.Saturations Level1/Ebene 1: ""
+*de.Saturations Level2/Ebene 2: ""
+*de.Saturations Level3/Ebene 3: ""
+*de.Saturations Level4/Ebene 4: ""
+*de.Saturations Level5/Ebene 5: ""
+
+*% Lightness ===============
+*de.Translation Lightness/Helligkeit: ""
+*de.Lightness False/Aus: ""
+*de.Lightness Level1/Ebene 1: ""
+*de.Lightness Level2/Ebene 2: ""
+*de.Lightness Level3/Ebene 3: ""
+*de.Lightness Level4/Ebene 4: ""
+*de.Lightness Level5/Ebene 5: ""
+
+*% RGBCorrection ===============
+*de.Translation RGBCorrection/RGB-Korrektur: ""
+*de.RGBCorrection PrinterS/Drucker-Einrichtung: ""
+*de.RGBCorrection Manual/Manuell: ""
+
+*% Colorbalance ===============
+*de.Translation Colorbalance/Farbabgleich: ""
+*de.Colorbalance PrinterS/Drucker-Einrichtung: ""
+*de.Colorbalance Manual/Manuell: ""
+
+*% Cyan ===============
+*de.Translation Cyan/Zyan-Abgleich: ""
+*de.Cyan False/Aus: ""
+*de.Cyan Level1/Ebene 1: ""
+*de.Cyan Level2/Ebene 2: ""
+*de.Cyan Level3/Ebene 3: ""
+*de.Cyan Level4/Ebene 4: ""
+*de.Cyan Level5/Ebene 5: ""
+
+*% Magenta ===============
+*de.Translation Magenta/Magenta-Abgleich: ""
+*de.Magenta False/Aus: ""
+*de.Magenta Level1/Ebene 1: ""
+*de.Magenta Level2/Ebene 2: ""
+*de.Magenta Level3/Ebene 3: ""
+*de.Magenta Level4/Ebene 4: ""
+*de.Magenta Level5/Ebene 5: ""
+
+*% Yellow ===============
+*de.Translation Yellow/Gelb-Abgleich: ""
+*de.Yellow False/Aus: ""
+*de.Yellow Level1/Ebene 1: ""
+*de.Yellow Level2/Ebene 2: ""
+*de.Yellow Level3/Ebene 3: ""
+*de.Yellow Level4/Ebene 4: ""
+*de.Yellow Level5/Ebene 5: ""
+
+*% Black ===============
+*de.Translation Black/Schwarz-Abgleich: ""
+*de.Black False/Aus: ""
+*de.Black Level1/Ebene 1: ""
+*de.Black Level2/Ebene 2: ""
+*de.Black Level3/Ebene 3: ""
+*de.Black Level4/Ebene 4: ""
+*de.Black Level5/Ebene 5: ""
+
+*% === Turkish ===
+*tr.Translation Graphics/Temel: ""
+*tr.Translation PaperGroup/Kağıt: ""
+*tr.Translation ColorGroup/Renkli: ""
+
+*% === Resolution ===
+*tr.Translation Resolution/Çözünürlük: ""
+*tr.Resolution 600dpi/600 dpi: ""
+*tr.Resolution 1200dpi/1200 dpi: ""
+
+*% === ColorModel ===
+*tr.Translation ColorModel/Renk Modu: ""
+*tr.ColorModel Color/Renkli yazdırma: ""
+*tr.ColorModel GrayScale/Siyah & beyaz yazdırma: ""
+
+*% === PrintModel ===
+*tr.Translation PrintModel/Baskı Modu: ""
+*tr.PrintModel Model1/Mod 1: ""
+*tr.PrintModel Model2/Mod 2: ""
+*tr.PrintModel Model3/Mod 3: ""
+
+*% === Density ===
+*tr.Translation Density/Yoğunluk: ""
+*tr.Density PrinterS/Yazıcı Kurulumu: ""
+*tr.Density Dark/Koyu: ""
+*tr.Density Normal/Normal: ""
+*tr.Density Light/Açık: ""
+
+*% === Toner Save ===
+*tr.Translation TonerMode/Toner Tasarrufu: ""
+*tr.TonerMode False/Kapalı: ""
+*tr.TonerMode True/Açık: ""
+
+*% Paper Handling ===================
+*tr.Translation PageSize/Kağıt Boyutu: ""
+*tr.PageSize Letter/Letter (8,5 x 11): ""
+*tr.PageSize A4/A4 (210 x 297mm): ""
+*tr.PageSize A5/A5 (148 x 210mm): ""
+*tr.PageSize A6/A6 (105 x 148mm): ""
+*tr.PageSize B5/JIS B5 (182 x 257mm): ""
+*tr.PageSize ISOB5/ISO B5 (176 x 250mm): ""
+*tr.PageSize B6/B6 (125 x 176mm): ""
+*tr.PageSize Executive/Executive (7,25 x 10,5): ""
+*tr.PageSize Statement/Statement (5,5 x 8,5): ""
+*tr.PageSize Folio/Folio (8,5 x 13): ""
+*tr.PageSize Oficio/Oficio (216 x 343mm): ""
+*tr.PageSize Postcard/Japanese Postcard (100x148mm): ""
+*tr.PageSize EnvMonarch/Monarch Zarf (3,875 x 7,5): ""
+*tr.PageSize EnvDL/DL Zarf (110 x 220mm): ""
+*tr.PageSize EnvC5/C5 Zarf (162 x 229mm): ""
+*tr.PageSize Com10Envelope/No.10 Zarf (4,125 x 9,5): ""
+*tr.PageSize EnvC6/C6 Zarf (114 x 162mm): ""
+*tr.PageSize ZL/ZL (120 x 230mm): ""
+*tr.PageSize Legal/Legal (8,5 x 14): ""
+*tr.PageSize Big32K/Big 32K (135 x 195mm): ""
+*tr.PageSize Big16K/Big 16K (195 x 270mm): ""
+*tr.PageSize 32K/32K (130 x 185mm): ""
+*tr.PageSize 16K/16K (185 x 260mm): ""
+*tr.PageSize Yougata4/Yougata4 (105 x 235mm): ""
+*tr.PageSize JapanesePostcard/Kartpostal (148 x 200mm): ""
+*tr.PageSize Younaga3/Younaga3 (120 x 235mm): ""
+*tr.PageSize Nagagata3/Nagagata3 (120 x 235mm): ""
+*tr.PageSize Yougata2/Yougata2 (114 x 162mm): ""
+*tr.CustomPageSize True/Özel:""
+
+*% === Duplex ===
+*tr.Translation Duplex/Çift yönlü: ""
+*tr.Duplex None/Yok (Tek yönlü): ""
+*tr.Duplex DuplexNoTumble/Uzun Kenar: ""
+*tr.Duplex DuplexTumble/Kısa Kenar: ""
+
+*% === MediaType ===
+*tr.Translation MediaType/Medya: ""
+*tr.MediaType Plain/Düz: ""
+*tr.MediaType Thick/Kalın: ""
+*tr.MediaType Envelope/Zarf: ""
+*tr.MediaType Transparency/Saydam: ""
+*tr.MediaType Cardstock/Cardstock: ""
+*tr.MediaType Label/Etiket: ""
+*tr.MediaType Kleenex/İnce kağıt: ""
+
+*%=== ptInputSlot ===
+*tr.Translation ptInputSlot/Kağıt Kaynağı: ""
+*tr.ptInputSlot AutoSelect/Otomatik Seçim: ""
+*tr.ptInputSlot ManualFeed/Manuel Besleme Tepsisi: ""
+*tr.ptInputSlot AutoFeed/Otomatik Besleme Tepsisi: ""
+
+*% FeedEdge ===============
+*tr.Translation FeedEdge/Besleme Yönü: ""
+*tr.FeedEdge ShortEdge/Kısa Kenar: ""
+*tr.FeedEdge LongEdge/Uzun Kenar: ""
+
+*% Booklet ===============
+*tr.Translation Booklet/Kitapçık: ""
+*tr.Booklet True/Açık: ""
+*tr.Booklet False/Kapalı: ""
+
+*% Contrast ===============
+*tr.Translation Contrast/Kontrast: ""
+*tr.Contrast False/Kapalı: ""
+*tr.Contrast Level1/Seviye 1: ""
+*tr.Contrast Level2/Seviye 2: ""
+*tr.Contrast Level3/Seviye 3: ""
+*tr.Contrast Level4/Seviye 4: ""
+*tr.Contrast Level5/Seviye 5: ""
+
+*% Saturations ===============
+*tr.Translation Saturations/Doygunluk: ""
+*tr.Saturations False/Kapalı: ""
+*tr.Saturations Level1/Seviye 1: ""
+*tr.Saturations Level2/Seviye 2: ""
+*tr.Saturations Level3/Seviye 3: ""
+*tr.Saturations Level4/Seviye 4: ""
+*tr.Saturations Level5/Seviye 5: ""
+
+*% Lightness ===============
+*tr.Translation Lightness/Parlaklık: ""
+*tr.Lightness False/Kapalı: ""
+*tr.Lightness Level1/Seviye 1: ""
+*tr.Lightness Level2/Seviye 2: ""
+*tr.Lightness Level3/Seviye 3: ""
+*tr.Lightness Level4/Seviye 4: ""
+*tr.Lightness Level5/Seviye 5: ""
+
+*% RGBCorrection ===============
+*tr.Translation RGBCorrection/RGB düzeltme: ""
+*tr.RGBCorrection PrinterS/Yazıcı Kurulumu: ""
+*tr.RGBCorrection Manual/Manuel: ""
+
+*% Colorbalance ===============
+*tr.Translation Colorbalance/Renk dengesi: ""
+*tr.Colorbalance PrinterS/Yazıcı Kurulumu: ""
+*tr.Colorbalance Manual/Manuel: ""
+
+*% Cyan ===============
+*tr.Translation Cyan/Camgöbeği Dengesi: ""
+*tr.Cyan False/Kapalı: ""
+*tr.Cyan Level1/Seviye 1: ""
+*tr.Cyan Level2/Seviye 2: ""
+*tr.Cyan Level3/Seviye 3: ""
+*tr.Cyan Level4/Seviye 4: ""
+*tr.Cyan Level5/Seviye 5: ""
+
+*% Magenta ===============
+*tr.Translation Magenta/Eflatun Dengesi: ""
+*tr.Magenta False/Kapalı: ""
+*tr.Magenta Level1/Seviye 1: ""
+*tr.Magenta Level2/Seviye 2: ""
+*tr.Magenta Level3/Seviye 3: ""
+*tr.Magenta Level4/Seviye 4: ""
+*tr.Magenta Level5/Seviye 5: ""
+
+*% Yellow ===============
+*tr.Translation Yellow/Sarı Dengesi: ""
+*tr.Yellow False/Kapalı: ""
+*tr.Yellow Level1/Seviye 1: ""
+*tr.Yellow Level2/Seviye 2: ""
+*tr.Yellow Level3/Seviye 3: ""
+*tr.Yellow Level4/Seviye 4: ""
+*tr.Yellow Level5/Seviye 5: ""
+
+*% Black ===============
+*tr.Translation Black/Siyah Dengesi: ""
+*tr.Black False/Kapalı: ""
+*tr.Black Level1/Seviye 1: ""
+*tr.Black Level2/Seviye 2: ""
+*tr.Black Level3/Seviye 3: ""
+*tr.Black Level4/Seviye 4: ""
+*tr.Black Level5/Seviye 5: ""
+
+*% === Polish ===
+*pl.Translation Graphics/Podstawowy: ""
+*pl.Translation PaperGroup/Papier: ""
+
+*% === Resolution ===
+*pl.Translation Resolution/Rozdzielczość: ""
+*pl.Resolution 600dpi/600 dpi: ""
+*pl.Resolution 1200dpi/1200 dpi: ""
+
+*% === Density ===
+*pl.Translation Density/Nasycenie: ""
+*pl.Density Dark/Ciemniejszy: ""
+*pl.Density Normal/Normalny: ""
+*pl.Density Light/Zapalniczka: ""
+
+*% === Toner Save ===
+*pl.Translation TonerMode/Oszczędzanie tonera: ""
+*pl.TonerMode False/Nie: ""
+*pl.TonerMode True/Mieć: ""
+
+*% Paper Handling ===================
+*pl.Translation PageSize/Rozmiar papieru: ""
+*pl.PageSize Letter/Letter (8.5 x 11): ""
+*pl.PageSize A4/A4 (210 x 297mm): ""
+*pl.PageSize A5/A5 (148 x 210mm): ""
+*pl.PageSize A6/A6 (105 x 148mm): ""
+*pl.PageSize B5/JIS B5 (182 x 257mm): ""
+*pl.PageSize ISOB5/ISO B5 (176 x 250mm): ""
+*pl.PageSize B6/B6 (125 x 176mm): ""
+*pl.PageSize Executive/Executive (7.25 x 10.5): ""
+*pl.PageSize Statement/Statement (5.5 x 8.5): ""
+*pl.PageSize Folio/Folio (8.5 x 13): ""
+*pl.PageSize Oficio/Oficio (216 x 343mm): ""
+*pl.PageSize Postcard/Japanese Postcard (100x148mm): ""
+*pl.PageSize EnvMonarch/Monarch Env (3.875 x 7.5): ""
+*pl.PageSize EnvDL/DL Env (110 x 220mm): ""
+*pl.PageSize EnvC5/C5 Env (162 x 229mm): ""
+*pl.PageSize Com10Envelope/No.10 Env (4.125 x 9.5): ""
+*pl.PageSize EnvC6/C6 Env (114 x 162mm): ""
+*pl.PageSize ZL/ZL (120 x 230mm): ""
+*pl.PageSize Legal/Legal (8.5 x 14): ""
+*pl.PageSize Big32K/Big 32K (135 x 195mm): ""
+*pl.PageSize Big16K/Big 16K (195 x 270mm): ""
+*pl.PageSize 32K/32K (130 x 185mm): ""
+*pl.PageSize 16K/16K (185 x 260mm): ""
+*pl.PageSize Yougata4/Yougata4 (105 x 235mm): ""
+*pl.PageSize JapanesePostcard/Postcard (148 x 200mm): ""
+*pl.PageSize Younaga3/Younaga3 (120 x 235mm): ""
+*pl.PageSize Nagagata3/Nagagata3 (120 x 235mm): ""
+*pl.PageSize Yougata2/Yougata2 (114 x 162mm): ""
+*pl.CustomPageSize True/Dostosuj: ""
+
+*% === Duplex ===
+*pl.Translation Duplex/Druk podwójny: ""
+*pl.Duplex None/Nie (jedna strona): ""
+*pl.Duplex DuplexNoTumble/Długa krawędź: ""
+*pl.Duplex DuplexTumble/Krótka krawędź: ""
+
+*% === MediaType ===
+*pl.Translation MediaType/Medium: ""
+*pl.MediaType Plain/Zwykły papier: ""
+*pl.MediaType Thick/Gruby papier: ""
+*pl.MediaType Envelope/Koperta: ""
+*pl.MediaType Transparency/Folia: ""
+*pl.MediaType Cardstock/Brystol: ""
+*pl.MediaType Label/Etykieta: ""
+*pl.MediaType Kleenex/Cienki papier: ""
+
+*%=== ptInputSlot ===
+*pl.Translation ptInputSlot/Źródło papieru: ""
+*pl.ptInputSlot AutoSelect/Drukarka wybór automatyczny: ""
+*pl.ptInputSlot ManualFeed/Podajnik ręczny: ""
+*pl.ptInputSlot AutoFeed/Podajnik automatyczny: ""
+
+*% FeedEdge ===============
+*pl.Translation FeedEdge/Orientacja podawania: ""
+*pl.FeedEdge ShortEdge/Krótka krawędź: ""
+*pl.FeedEdge LongEdge/Długa krawędź: ""
+
+
+*% === Hebrew ===
+*he.Translation Graphics/בסיסי: ""
+*he.Translation PaperGroup/נייר: ""
+*he.Translation ColorGroup/צבע: ""
+
+*% === Resolution ===
+*he.Translation Resolution/צפיפות: ""
+*he.Resolution 600dpi/600 dpi: ""
+*he.Resolution 1200dpi/1200 dpi: ""
+
+*% === ColorModel ===
+*he.Translation ColorModel/מצב צבע: ""
+*he.ColorModel Color/הדפסה בצבע: ""
+*he.ColorModel GrayScale/הדפסה בשחור לבן: ""
+
+*% === PrintModel ===
+*he.Translation PrintModel/מצב הדפסה: ""
+*he.PrintModel Model1/מצב 1: ""
+*he.PrintModel Model2/מצב 2: ""
+*he.PrintModel Model3/מצב 3: ""
+
+*% === Density ===
+*he.Translation Density/ריכוז: ""
+*he.Density PrinterS/הגדרות הדפסה: ""
+*he.Density Dark/כהה: ""
+*he.Density Normal/רגיל: ""
+*he.Density Light/בהיר: ""
+
+*% === Toner Save ===
+*he.Translation TonerMode/חיסכון בטונר: ""
+*he.TonerMode False/כיבוי: ""
+*he.TonerMode True/הפעלה: ""
+
+*% Paper Handling ===================
+*he.Translation PageSize/גודל נייר: ""
+*he.PageSize Letter/Letter (8.5 x 11): ""
+*he.PageSize A4/A4 (210 x 297mm): ""
+*he.PageSize A5/A5 (148 x 210mm): ""
+*he.PageSize A6/A6 (105 x 148mm): ""
+*he.PageSize B5/JIS B5 (182 x 257mm): ""
+*he.PageSize ISOB5/ISO B5 (176 x 250mm): ""
+*he.PageSize B6/B6 (125 x 176mm): ""
+*he.PageSize Executive/Executive (7.25 x 10.5): ""
+*he.PageSize Statement/Statement (5.5 x 8.5): ""
+*he.PageSize Folio/Folio (8.5 x 13): ""
+*he.PageSize Oficio/Oficio (216 x 343mm): ""
+*he.PageSize Postcard/Japanese Postcard (100x148mm): ""
+*he.PageSize EnvMonarch/Monarch Env (3.875 x 7.5): ""
+*he.PageSize EnvDL/DL Env (110 x 220mm): ""
+*he.PageSize EnvC5/C5 Env (162 x 229mm): ""
+*he.PageSize Com10Envelope/No.10 Env (4.125 x 9.5): ""
+*he.PageSize EnvC6/C6 Env (114 x 162mm): ""
+*he.PageSize ZL/ZL (120 x 230mm): ""
+*he.PageSize Legal/Legal (8.5 x 14): ""
+*he.PageSize Big32K/Big 32K (135 x 195mm): ""
+*he.PageSize Big16K/Big 16K (195 x 270mm): ""
+*he.PageSize 32K/32K (130 x 185mm): ""
+*he.PageSize 16K/16K (185 x 260mm): ""
+*he.PageSize Yougata4/Yougata4 (105 x 235mm): ""
+*he.PageSize JapanesePostcard/Postcard (148 x 200mm): ""
+*he.PageSize Younaga3/Younaga3 (120 x 235mm): ""
+*he.PageSize Nagagata3/Nagagata3 (120 x 235mm): ""
+*he.PageSize Yougata2/Yougata2 (114 x 162mm): ""
+*he.CustomPageSize True/מוגדר אישית: ""
+
+*% === Duplex ===
+*he.Translation Duplex/דו צדדי: ""
+*he.Duplex None/ללא (צד אחד): ""
+*he.Duplex DuplexNoTumble/קצה ארוך: ""
+*he.Duplex DuplexTumble/צד קצר: ""
+
+*% === MediaType ===
+*he.Translation MediaType/כְּלֵי תִקְשׁוֹרֶת: ""
+*he.MediaType Plain/נייר רגיל: ""
+*he.MediaType Thick/עבה: ""
+*he.MediaType Envelope/מעטפה: ""
+*he.MediaType Transparency/שקף: ""
+*he.MediaType Cardstock/קרטון כרטיסיה: ""
+*he.MediaType Label/מדבקה: ""
+*he.MediaType Kleenex/דק: ""
+
+*%=== ptInputSlot ===
+*he.Translation ptInputSlot/מקור הנייר: ""
+*he.ptInputSlot AutoSelect/בחירה אוטומטית: ""
+*he.ptInputSlot ManualFeed/מגש ידני: ""
+*he.ptInputSlot AutoFeed/מגש אוטומטי: ""
+
+*% FeedEdge ===============
+*he.Translation FeedEdge/כיוון ההזנה: ""
+*he.FeedEdge ShortEdge/קצה קצר: ""
+*he.FeedEdge LongEdge/קצה ארוך: ""
+
+*% Booklet ===============
+*he.Translation Booklet/חוברת: ""
+*he.Booklet True/מופעל: ""
+*he.Booklet False/מכובה: ""
+
+*% Contrast ===============
+*he.Translation Contrast/ניגודיות: ""
+*he.Contrast False/כבוי: ""
+*he.Contrast Level1/שלב 1: ""
+*he.Contrast Level2/שלב 2: ""
+*he.Contrast Level3/שלב 3: ""
+*he.Contrast Level4/שלב 4: ""
+*he.Contrast Level5/שלב 5: ""
+
+*% Saturations ===============
+*he.Translation Saturations/רוויה: ""
+*he.Saturations False/כבוי: ""
+*he.Saturations Level1/שלב 1: ""
+*he.Saturations Level2/שלב 2: ""
+*he.Saturations Level3/שלב 3: ""
+*he.Saturations Level4/שלב 4: ""
+*he.Saturations Level5/שלב 5: ""
+
+*% Lightness ===============
+*he.Translation Lightness/בהירות: ""
+*he.Lightness False/כבוי: ""
+*he.Lightness Level1/שלב 1: ""
+*he.Lightness Level2/שלב 2: ""
+*he.Lightness Level3/שלב 3: ""
+*he.Lightness Level4/שלב 4: ""
+*he.Lightness Level5/שלב 5: ""
+
+*% RGBCorrection ===============
+*he.Translation RGBCorrection/תיקון RGB: ""
+*he.RGBCorrection PrinterS/הגדרות הדפסה: ""
+*he.RGBCorrection Manual/מדריך ל: ""
+
+*% Colorbalance ===============
+*he.Translation Colorbalance/איזון צבע: ""
+*he.Colorbalance PrinterS/הגדרות הדפסה: ""
+*he.Colorbalance Manual/מדריך ל: ""
+
+*% Cyan ===============
+*he.Translation Cyan/איזון ציאן: ""
+*he.Cyan False/כבוי: ""
+*he.Cyan Level1/שלב 1: ""
+*he.Cyan Level2/שלב 2: ""
+*he.Cyan Level3/שלב 3: ""
+*he.Cyan Level4/שלב 4: ""
+*he.Cyan Level5/שלב 5: ""
+
+*% Magenta ===============
+*he.Translation Magenta/איזון מגנטה: ""
+*he.Magenta False/כבוי: ""
+*he.Magenta Level1/שלב 1: ""
+*he.Magenta Level2/שלב 2: ""
+*he.Magenta Level3/שלב 3: ""
+*he.Magenta Level4/שלב 4: ""
+*he.Magenta Level5/שלב 5: ""
+
+*% Yellow ===============
+*he.Translation Yellow/איזון צהוב: ""
+*he.Yellow False/כבוי: ""
+*he.Yellow Level1/שלב 1: ""
+*he.Yellow Level2/שלב 2: ""
+*he.Yellow Level3/שלב 3: ""
+*he.Yellow Level4/שלב 4: ""
+*he.Yellow Level5/שלב 5: ""
+
+*% Black ===============
+*he.Translation Black/איזון שחור: ""
+*he.Black False/כבוי: ""
+*he.Black Level1/שלב 1: ""
+*he.Black Level2/שלב 2: ""
+*he.Black Level3/שלב 3: ""
+*he.Black Level4/שלב 4: ""
+*he.Black Level5/שלב 5: ""
+
+
+*% === Portuguese ===
+*pt.Translation Graphics/Básico: ""
+*pt.Translation PaperGroup/Papel: ""
+*pt.Translation ColorGroup/Cor: ""
+
+*% === Resolution ===
+*pt.Translation Resolution/Resolução: ""
+*pt.Resolution 600dpi/600 dpi: ""
+*pt.Resolution 1200dpi/1200 dpi: ""
+
+*% === ColorModel ===
+*pt.Translation ColorModel/Modo Colorido: ""
+*pt.ColorModel Color/Impressão colorida: ""
+*pt.ColorModel GrayScale/Impressão em Preto e Branco: ""
+
+*% === PrintModel ===
+*pt.Translation PrintModel/Modo Imprimir: ""
+*pt.PrintModel Model1/Modo 1: ""
+*pt.PrintModel Model2/Modo 2: ""
+*pt.PrintModel Model3/Modo 3: ""
+
+*% === Density ===
+*pt.Translation Density/Concentração: ""
+*pt.Density PrinterS/Configuração da Impressora: ""
+*pt.Density Dark/Escuro: ""
+*pt.Density Normal/Normal: ""
+*pt.Density Light/Luz: ""
+
+*% === Toner Mode =====
+*pt.Translation TonerMode/Poupar tinta: ""
+*pt.TonerMode False/Não há: ""
+*pt.TonerMode True/Há: ""
+
+*% Paper Handling ===================
+*pt.Translation PageSize/Tamanho de papel: ""
+*pt.PageSize Letter/Letter (8.5 x 11): ""
+*pt.PageSize A4/A4 (210 x 297mm): ""
+*pt.PageSize A5/A5 (148 x 210mm): ""
+*pt.PageSize A6/A6 (105 x 148mm): ""
+*pt.PageSize JISB5/JIS B5 (182 x 257mm): ""
+*pt.PageSize ISOB5/ISO B5 (176 x 250mm): ""
+*pt.PageSize B6/B6 (125 x 176mm): ""
+*pt.PageSize Executive/Executive (7.25 x 10.5): ""
+*pt.PageSize Statement/Statement (5.5 x 8.5): ""
+*pt.PageSize Folio/Folio (8.5 x 13): ""
+*pt.PageSize Oficio/Oficio (216 x 343mm): ""
+*pt.PageSize Postcard/Postcard (100x148mm): ""
+*pt.PageSize EnvMonarch/Monarch Env (3.875 x 7.5): ""
+*pt.PageSize EnvDL/DL Env (110 x 220mm): ""
+*pt.PageSize EnvC5/C5 Env (162 x 229mm): ""
+*pt.PageSize Com10Envelope/No.10 Env (4.125 x 9.5): ""
+*pt.PageSize EnvC6/C6 Env (114 x 162mm): ""
+*pt.PageSize ZL/ZL (120 x 230mm): ""
+*pt.PageSize Legal/Legal (8.5 x 14): ""
+*pt.PageSize Big32K/Big 32K (135 x 195mm): ""
+*pt.PageSize Big16K/Big 16K (195 x 270mm): ""
+*pt.PageSize 32K/32K (130 x 185mm): ""
+*pt.PageSize 16K/16K (185 x 260mm): ""
+*pt.PageSize Yougata4/Yougata4 (105 x 235mm): ""
+*pt.PageSize JapanesePostcard/Postcard (148 x 200mm): ""
+*pt.PageSize Younaga3/Younaga3 (120 x 235mm): ""
+*pt.PageSize Nagagata3/Nagagata3 (120 x 235mm): ""
+*pt.PageSize Yougata2/Yougata2 (114 x 162mm): ""
+*pt.CustomPageSize True/Personalizado: ""
+
+*% === Duplex ===
+*pt.Translation Duplex/Duplex: ""
+*pt.Duplex None/Sem (unifacial): ""
+*pt.Duplex DuplexNoTumble/Lado comprido: ""
+*pt.Duplex DuplexTumble/Lado curto: ""
+
+*%=== MediaType ====
+*pt.Translation MediaType/Mídia: ""
+*pt.MediaType Plain/Papel comum: ""
+*pt.MediaType Thick/Papel grosso: ""
+*pt.MediaType Envelope/Envelope : ""
+*pt.MediaType Transparency/Filme transparente: ""
+*pt.MediaType Cardstock/Papel para cartão: ""
+*pt.MediaType Label/Papel de etiqueta: ""
+*pt.MediaType Kleenex/Lenço de papel: ""
+
+*%=== ptInputSlot ===
+*pt.Translation ptInputSlot/Origem de papel: ""
+*pt.ptInputSlot AutoSelect/Auto Selecionar: ""
+*pt.ptInputSlot ManualFeed/Bandeja alimentadora manual: ""
+*pt.ptInputSlot AutoFeed/Bandeja alimentadora automática: ""
+
+*% FeedEdge ===============
+*pt.Translation FeedEdge/Direção de alimentação: ""
+*pt.FeedEdge ShortEdge/Lado curto: ""
+*pt.FeedEdge LongEdge/Lado comprido: ""
+
+*% Booklet ===============
+*pt.Translation Booklet/Manual: ""
+*pt.Booklet True/Ligar: ""
+*pt.Booklet False/Desligar: ""
+
+*% Contrast ===============
+*pt.Translation Contrast/Contraste: ""
+*pt.Contrast False/Desligar: ""
+*pt.Contrast Level1/Nível 1: ""
+*pt.Contrast Level2/Nível 2: ""
+*pt.Contrast Level3/Nível 3: ""
+*pt.Contrast Level4/Nível 4: ""
+*pt.Contrast Level5/Nível 5: ""
+
+*% Saturations ===============
+*pt.Translation Saturations/Saturável: ""
+*pt.Saturations False/Desligar: ""
+*pt.Saturations Level1/Nível 1: ""
+*pt.Saturations Level2/Nível 2: ""
+*pt.Saturations Level3/Nível 3: ""
+*pt.Saturations Level4/Nível 4: ""
+*pt.Saturations Level5/Nível 5: ""
+
+*% Lightness ===============
+*pt.Translation Lightness/Brilho: ""
+*pt.Lightness False/Desligar: ""
+*pt.Lightness Level1/Nível 1: ""
+*pt.Lightness Level2/Nível 2: ""
+*pt.Lightness Level3/Nível 3: ""
+*pt.Lightness Level4/Nível 4: ""
+*pt.Lightness Level5/Nível 5: ""
+
+*% RGBCorrection ===============
+*pt.Translation RGBCorrection/Correção RGB: ""
+*pt.RGBCorrection PrinterS/Configuração da Impressora: ""
+*pt.RGBCorrection Manual/Manual: ""
+
+*% Colorbalance ===============
+*pt.Translation Colorbalance/Equilíbrio de cor: ""
+*pt.Colorbalance PrinterS/Configuração da Impressora: ""
+*pt.Colorbalance Manual/Manual: ""
+
+*% Cyan ===============
+*pt.Translation Cyan/Equilíbrio de Ciano: ""
+*pt.Cyan False/Desligar: ""
+*pt.Cyan Level1/Nível 1: ""
+*pt.Cyan Level2/Nível 2: ""
+*pt.Cyan Level3/Nível 3: ""
+*pt.Cyan Level4/Nível 4: ""
+*pt.Cyan Level5/Nível 5: ""
+
+*% Magenta ===============
+*pt.Translation Magenta/Equilíbrio de Magenta: ""
+*pt.Magenta False/Desligar: ""
+*pt.Magenta Level1/Nível 1: ""
+*pt.Magenta Level2/Nível 2: ""
+*pt.Magenta Level3/Nível 3: ""
+*pt.Magenta Level4/Nível 4: ""
+*pt.Magenta Level5/Nível 5: ""
+
+*% Yellow ===============
+*pt.Translation Yellow/Equilíbrio de Amarelo: ""
+*pt.Yellow False/Desligar: ""
+*pt.Yellow Level1/Nível 1: ""
+*pt.Yellow Level2/Nível 2: ""
+*pt.Yellow Level3/Nível 3: ""
+*pt.Yellow Level4/Nível 4: ""
+*pt.Yellow Level5/Nível 5: ""
+
+*% Black ===============
+*pt.Translation Black/Equilíbrio de Preto: ""
+*pt.Black False/Desligar: ""
+*pt.Black Level1/Nível 1: ""
+*pt.Black Level2/Nível 2: ""
+*pt.Black Level3/Nível 3: ""
+*pt.Black Level4/Nível 4: ""
+*pt.Black Level5/Nível 5: ""

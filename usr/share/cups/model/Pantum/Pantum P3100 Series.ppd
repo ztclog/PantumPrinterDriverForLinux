@@ -1,0 +1,899 @@
+*PPD-Adobe: "4.3"
+*% Adobe Systems PostScript(R) Printer Description File
+*% Copyright 1987-1996 Adobe Systems Incorporated.
+*% All Rights Reserved.
+*% Permission is granted for redistribution of this file as
+*% long as this copyright notice is intact and the contents
+*% of the file is not altered in any way from its original form.
+*% End of Copyright statement
+*FileVersion: "3.0"
+*FormatVersion: "4.3"
+*LanguageEncoding: ISOLatin1
+*LanguageVersion: English
+*Manufacturer: "Pantum"
+*PCFileName: "P3100.PPD"
+*Product: "(Pantum P3100 Series)"
+*PSVersion: "(3015.103) 1"
+*ShortNickName: "P3000 Series"
+*ModelName: "Pantum P3000 Series"
+*NickName: "Pantum P3000 Series"
+*cupsFilter:	"application/vnd.cups-raster 0 pt3100Filter"
+
+*% == Constraints (PageSize vs. Paper Source) ==
+*UIConstraints: *PageSize Postcard *InputSlot AutoFeed
+*UIConstraints: *PageSize EnvMonarch *InputSlot AutoFeed
+*UIConstraints: *PageSize EnvDL *InputSlot AutoFeed
+*UIConstraints: *PageSize EnvC5 *InputSlot AutoFeed
+*UIConstraints: *PageSize Com10Envelope *InputSlot AutoFeed
+*UIConstraints: *PageSize EnvC6 *InputSlot AutoFeed
+*UIConstraints: *PageSize ZL *InputSlot AutoFeed
+
+*% == Constraints (Paper Source vs. PageSize) ==
+*UIConstraints: *InputSlot AutoFeed *PageSize Postcard
+*UIConstraints: *InputSlot AutoFeed *PageSize EnvMonarch
+*UIConstraints: *InputSlot AutoFeed *PageSize EnvDL
+*UIConstraints: *InputSlot AutoFeed *PageSize EnvC5
+*UIConstraints: *InputSlot AutoFeed *PageSize Com10Envelope
+*UIConstraints: *InputSlot AutoFeed *PageSize EnvC6
+*UIConstraints: *InputSlot AutoFeed *PageSize ZL
+
+
+*% == Constraints (MediaType vs. Paper Source) ==
+*UIConstraints: *MediaType Thick *InputSlot AutoFeed
+*UIConstraints: *MediaType Envelope *InputSlot AutoFeed
+*UIConstraints: *MediaType Transparency *InputSlot AutoFeed
+*UIConstraints: *MediaType Cardstock *InputSlot AutoFeed
+*UIConstraints: *MediaType Label *InputSlot AutoFeed
+
+*% == Constraints (Paper Source vs. MediaType) ==
+*UIConstraints: *InputSlot AutoFeed *MediaType Thick
+*UIConstraints: *InputSlot AutoFeed *MediaType Envelope
+*UIConstraints: *InputSlot AutoFeed *MediaType Transparency
+*UIConstraints: *InputSlot AutoFeed *MediaType Cardstock
+*UIConstraints: *InputSlot AutoFeed *MediaType Label
+
+
+*% == Constraints (PageSize vs. Duplex) ==
+*UIConstraints: *PageSize A5 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize A6 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize B5 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize ISOB5 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize B6 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Executive *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Statement *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Big32K *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Big16K *Duplex DuplexNoTumble
+*UIConstraints: *PageSize 32K *Duplex DuplexNoTumble
+*UIConstraints: *PageSize 16K *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Postcard *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvMonarch *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvDL *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvC5 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Com10Envelope *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvC6 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize ZL *Duplex DuplexNoTumble
+
+*% == Constraints (Duplex vs. PageSize) ==
+*UIConstraints: *Duplex DuplexNoTumble *PageSize A5
+*UIConstraints: *Duplex DuplexNoTumble *PageSize A6
+*UIConstraints: *Duplex DuplexNoTumble *PageSize B5
+*UIConstraints: *Duplex DuplexNoTumble *PageSize ISOB5
+*UIConstraints: *Duplex DuplexNoTumble *PageSize B6
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Executive
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Statement
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Big32K
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Big16K
+*UIConstraints: *Duplex DuplexNoTumble *PageSize 32K
+*UIConstraints: *Duplex DuplexNoTumble *PageSize 16K
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Postcard
+*UIConstraints: *Duplex DuplexNoTumble *PageSize EnvMonarch
+*UIConstraints: *Duplex DuplexNoTumble *PageSize EnvDL
+*UIConstraints: *Duplex DuplexNoTumble *PageSize EnvC5
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Com10Envelope
+*UIConstraints: *Duplex DuplexNoTumble *PageSize EnvC6
+*UIConstraints: *Duplex DuplexNoTumble *PageSize ZL
+
+*% == Constraints (MediaType vs. Duplex) ==
+*UIConstraints: *MediaType Thick *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Envelope *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Transparency *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Cardstock *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Label *Duplex DuplexNoTumble
+
+*% == Constraints (Duplex vs. MediaType) ==
+*UIConstraints: *Duplex DuplexNoTumble *MediaType Thick
+*UIConstraints: *Duplex DuplexNoTumble *MediaType Envelope
+*UIConstraints: *Duplex DuplexNoTumble *MediaType Transparency
+*UIConstraints: *Duplex DuplexNoTumble *MediaType Cardstock
+*UIConstraints: *Duplex DuplexNoTumble *MediaType Label
+
+*% == Constraints (PageSize vs. Duplex) ==
+*UIConstraints: *PageSize A5 *Duplex DuplexTumble
+*UIConstraints: *PageSize A6 *Duplex DuplexTumble
+*UIConstraints: *PageSize B5 *Duplex DuplexTumble
+*UIConstraints: *PageSize ISOB5 *Duplex DuplexTumble
+*UIConstraints: *PageSize B6 *Duplex DuplexTumble
+*UIConstraints: *PageSize Executive *Duplex DuplexTumble
+*UIConstraints: *PageSize Statement *Duplex DuplexTumble
+*UIConstraints: *PageSize Big32K *Duplex DuplexTumble
+*UIConstraints: *PageSize Big16K *Duplex DuplexTumble
+*UIConstraints: *PageSize 32K *Duplex DuplexTumble
+*UIConstraints: *PageSize 16K *Duplex DuplexTumble
+*UIConstraints: *PageSize Postcard *Duplex DuplexTumble
+*UIConstraints: *PageSize EnvMonarch *Duplex DuplexTumble
+*UIConstraints: *PageSize EnvDL *Duplex DuplexTumble
+*UIConstraints: *PageSize EnvC5 *Duplex DuplexTumble
+*UIConstraints: *PageSize Com10Envelope *Duplex DuplexTumble
+*UIConstraints: *PageSize EnvC6 *Duplex DuplexTumble
+*UIConstraints: *PageSize ZL *Duplex DuplexTumble
+
+*% == Constraints (Duplex vs. PageSize) ==
+*UIConstraints: *Duplex DuplexTumble *PageSize A5
+*UIConstraints: *Duplex DuplexTumble *PageSize A6
+*UIConstraints: *Duplex DuplexTumble *PageSize B5
+*UIConstraints: *Duplex DuplexTumble *PageSize ISOB5
+*UIConstraints: *Duplex DuplexTumble *PageSize B6
+*UIConstraints: *Duplex DuplexTumble *PageSize Executive
+*UIConstraints: *Duplex DuplexTumble *PageSize Statement
+*UIConstraints: *Duplex DuplexTumble *PageSize Big32K
+*UIConstraints: *Duplex DuplexTumble *PageSize Big16K
+*UIConstraints: *Duplex DuplexTumble *PageSize 32K
+*UIConstraints: *Duplex DuplexTumble *PageSize 16K
+*UIConstraints: *Duplex DuplexTumble *PageSize Postcard
+*UIConstraints: *Duplex DuplexTumble *PageSize EnvMonarch
+*UIConstraints: *Duplex DuplexTumble *PageSize EnvDL
+*UIConstraints: *Duplex DuplexTumble *PageSize EnvC5
+*UIConstraints: *Duplex DuplexTumble *PageSize Com10Envelope
+*UIConstraints: *Duplex DuplexTumble *PageSize EnvC6
+*UIConstraints: *Duplex DuplexTumble *PageSize ZL
+
+*% == Constraints (MediaType vs. Duplex) ==
+*UIConstraints: *MediaType Thick *Duplex DuplexTumble
+*UIConstraints: *MediaType Envelope *Duplex DuplexTumble
+*UIConstraints: *MediaType Transparency *Duplex DuplexTumble
+*UIConstraints: *MediaType Cardstock *Duplex DuplexTumble
+*UIConstraints: *MediaType Label *Duplex DuplexTumble
+
+*% == Constraints (Duplex vs. MediaType) ==
+*UIConstraints: *Duplex DuplexTumble *MediaType Thick
+*UIConstraints: *Duplex DuplexTumble *MediaType Envelope
+*UIConstraints: *Duplex DuplexTumble *MediaType Transparency
+*UIConstraints: *Duplex DuplexTumble *MediaType Cardstock
+*UIConstraints: *Duplex DuplexTumble *MediaType Label
+
+
+*% == Constraints (FeedLongEdge vs. PageSize) ==
+*UIConstraints: *FeedLongEdge True *PageSize Letter
+*UIConstraints: *FeedLongEdge True *PageSize A4
+*UIConstraints: *FeedLongEdge True *PageSize A6
+*UIConstraints: *FeedLongEdge True *PageSize B5
+*UIConstraints: *FeedLongEdge True *PageSize ISOB5
+*UIConstraints: *FeedLongEdge True *PageSize B6
+*UIConstraints: *FeedLongEdge True *PageSize Executive
+*UIConstraints: *FeedLongEdge True *PageSize Statement
+*UIConstraints: *FeedLongEdge True *PageSize Folio
+*UIConstraints: *FeedLongEdge True *PageSize Oficio
+*UIConstraints: *FeedLongEdge True *PageSize Postcard
+*UIConstraints: *FeedLongEdge True *PageSize EnvMonarch
+*UIConstraints: *FeedLongEdge True *PageSize EnvDL
+*UIConstraints: *FeedLongEdge True *PageSize EnvC5
+*UIConstraints: *FeedLongEdge True *PageSize Com10Envelope
+*UIConstraints: *FeedLongEdge True *PageSize EnvC6
+*UIConstraints: *FeedLongEdge True *PageSize ZL
+*UIConstraints: *FeedLongEdge True *PageSize Legal
+*UIConstraints: *FeedLongEdge True *PageSize Big32K
+*UIConstraints: *FeedLongEdge True *PageSize Big16K
+*UIConstraints: *FeedLongEdge True *PageSize 32K
+*UIConstraints: *FeedLongEdge True *PageSize 16K
+
+
+*% == Constraints (PageSize vs. FeedLongEdge) ==
+*UIConstraints: *PageSize Letter *FeedLongEdge True
+*UIConstraints: *PageSize A4 *FeedLongEdge True
+*UIConstraints: *PageSize A6 *FeedLongEdge True
+*UIConstraints: *PageSize B5 *FeedLongEdge True
+*UIConstraints: *PageSize ISOB5 *FeedLongEdge True
+*UIConstraints: *PageSize B6 *FeedLongEdge True
+*UIConstraints: *PageSize Executive *FeedLongEdge True
+*UIConstraints: *PageSize Statement *FeedLongEdge True
+*UIConstraints: *PageSize Folio *FeedLongEdge True
+*UIConstraints: *PageSize Oficio *FeedLongEdge True
+*UIConstraints: *PageSize Postcard *FeedLongEdge True
+*UIConstraints: *PageSize EnvMonarch *FeedLongEdge True
+*UIConstraints: *PageSize EnvDL *FeedLongEdge True
+*UIConstraints: *PageSize EnvC5 *FeedLongEdge True
+*UIConstraints: *PageSize Com10Envelope *FeedLongEdge True
+*UIConstraints: *PageSize EnvC6 *FeedLongEdge True
+*UIConstraints: *PageSize ZL *FeedLongEdge True
+*UIConstraints: *PageSize Legal *FeedLongEdge True
+*UIConstraints: *PageSize Big32K *FeedLongEdge True
+*UIConstraints: *PageSize Big16K *FeedLongEdge True
+*UIConstraints: *PageSize 32K *FeedLongEdge True
+*UIConstraints: *PageSize 16K *FeedLongEdge True
+
+*% == Constraints (NegativePrint vs. TonerMode) ==
+*UIConstraints: *NegativePrint True *TonerMode True
+
+*% == Constraints (TonerMode vs. NegativePrint) ==
+*UIConstraints: *TonerMode True *NegativePrint True
+
+
+*% == Constraints (CustomPageSize vs. Duplex) ==
+*NonUIConstraints: *CustomPageSize True            *Duplex DuplexNoTumble
+*NonUIConstraints: *CustomPageSize True            *Duplex DuplexTumble
+
+*% == Constraints (Duplex vs. CustomPageSize) ==
+*NonUIConstraints: *Duplex DuplexNoTumble          *CustomPageSize True
+*NonUIConstraints: *Duplex DuplexTumble            *CustomPageSize True
+
+
+*% == Constraints (CustomPageSize vs. PaperType) ==
+*NonUIConstraints: *CustomPageSize True	    	*MediaType Envelope
+
+*% == Constraints (PaperType vs. CustomPageSize) ==
+*NonUIConstraints: *MediaType Envelope	*CustomPageSize True
+
+
+*% == Constraints (CustomPageSize vs. FeedLongEdge) ==
+*NonUIConstraints: *CustomPageSize True *FeedLongEdge True
+
+*% == Constraints (FeedLongEdge vs. CustomPageSize) ==
+*NonUIConstraints: *FeedLongEdge True *CustomPageSize True
+
+
+*% ==== Device Capabilities ===============
+*LanguageLevel: "3"
+*Protocols: TBCP
+*1284Modes Parallel: Compat Nibble ECP
+*1284DeviceID: "MFG:Pantum;MDL:P3000 Series;"
+*End
+
+*ColorDevice:	False
+*DefaultColorSpace: Gray
+*VariablePaperSize: True
+*LandscapeOrientation: Plus90
+*TTRasterizer: Type42
+*?TTRasterizer: "
+save
+    42 /FontType resourcestatus
+    {pop pop (Type42)}{(No Type42)} ifelse = flush
+restore
+"
+*End
+*FileSystem: True
+*?FileSystem: "
+  save false
+   (%disk?%)
+   { currentdevparams dup /Writeable known
+      { /Writeable get {pop true} if }  { pop } ifelse
+    } 10 string /IODevice resourceforall
+    {(True)}{(False)} ifelse = flush
+ restore
+"
+*End
+
+*Throughput: "30"
+*Password: "()"
+*ExitServer: "
+ count 0 eq
+ { false } { true exch startjob } ifelse
+ not {
+     (WARNING: Cannot modify initial VM.) =
+     (Missing or invalid password.) =
+     (Please contact the author of this software.) = flush quit
+     } if
+"
+*End
+*Reset: "
+ count 0 eq
+ { false } { true exch startjob } ifelse
+ not {
+    (WARNING: Cannot reset printer.) =
+    (Missing or invalid password.) =
+    (Please contact the author of this software.) = flush quit
+    } if
+ systemdict /quit get exec
+ (WARNING : Printer Reset Failed.) = flush
+"
+*End
+
+*AccurateScreensSupport: True
+*SuggestedJobTimeout: "0"
+*SuggestedWaitTimeout: "300"
+*PrintPSErrors: True
+
+
+*% The following entries provide information about specific paper keywords.
+*DefaultImageableArea: A4
+*ImageableArea Letter/Letter (8.5 x 11): "14.17 14.17 597.83 777.83"
+*ImageableArea A4/A4 (210 x 297mm): "14.17 14.17 580.83 827.83"
+*ImageableArea A5/A5 (148 x 210mm): "14.17 14.17 405.83 580.83"
+*ImageableArea A6/A6 (105 x 148mm): "14.17 14.17 283.83 405.83"
+*ImageableArea B5/JIS B5 (182 x 257mm): "14.17 14.17 501.83 714.83"
+*ImageableArea ISOB5/ISO B5 (176 x 250mm): "14.17 14.17 484.83 694.83"
+*ImageableArea B6/B6 (125 x 176mm): "14.17 14.17 339.83 484.83"
+*ImageableArea Executive/Executive (7.25 x 10.5): "14.17 14.17 507.83 741.83"
+*ImageableArea Statement/Statement (5.5 x 8.5): "14.17 14.17 381.83 597.83"
+*ImageableArea Folio/Folio (8.5 x 13): "14.17 14.17 597.83 921.83"
+*ImageableArea Oficio/Oficio (216 x 343mm): "14.17 14.17 597.83 957.83"
+*ImageableArea Postcard/Postcard (100 x 148mm): "14.17 14.17 268.83 405.83"
+*ImageableArea EnvMonarch/Monarch Env (3.875 x 7.5): "14.17 14.17 264.83 525.83"
+*ImageableArea EnvDL/DL Env (110 x 220mm): "14.17 14.17 297.83 609.83"
+*ImageableArea EnvC5/C5 Env (162 x 229mm): "14.17 14.17 444.83 634.83"
+*ImageableArea Com10Envelope/No.10 Env (4.125 x 9.5): "14.17 14.17 282.83 669.83"
+*ImageableArea EnvC6/C6 Env (114 x 162mm): "14.17 14.17 308.83 444.83"
+*ImageableArea ZL/ZL (120 x 230mm): "14.17 14.17 325.83 637.83"
+*ImageableArea Legal/Legal (8.5 x 14): "14.17 14.17 597.83 993.83"
+*ImageableArea Big32K/Big 32K (135 x 195mm): "14.17 14.17 368.83 538.83"
+*ImageableArea Big16K/Big 16K (195 x 270mm): "14.17 14.17 538.83 750.83"
+*ImageableArea 32K/32K (130 x 185mm): "14.17 14.17 354.83 509.83"
+*ImageableArea 16K/16K (185 x 260mm): "14.17 14.17 509.83 722.83"
+
+
+*% These provide the physical dimensions of the paper (by keyword)
+*DefaultPaperDimension: A4
+*PaperDimension Letter/Letter (8.5 x 11): "612 792"
+*PaperDimension A4/A4 (210 x 297mm): "595 842"
+*PaperDimension A5/A5 (148 x 210mm): "420 595"
+*PaperDimension A6/A6 (105 x 148mm): "298 420"
+*PaperDimension B5/JIS B5 (182 x 257mm): "516 729"
+*PaperDimension ISOB5/ISO B5 (176 x 250mm): "499 709"
+*PaperDimension B6/B6 (125 x 176mm): "354 499"
+*PaperDimension Executive/Executive (7.25 x 10.5): "522 756"
+*PaperDimension Statement/Statement (5.5 x 8.5): "396 612"
+*PaperDimension Folio/Folio (8.5 x 13): "612 936"
+*PaperDimension Oficio/Oficio (216 x 343mm): "612 972"
+*PaperDimension Postcard/Postcard (100 x 148mm): "283 420"
+*PaperDimension EnvMonarch/Monarch Env (3.875 x 7.5"): "279 540"
+*PaperDimension EnvDL/DL Env (110 x 220mm): "312 624"
+*PaperDimension EnvC5/C5 Env (162 x 229mm): "459 649"
+*PaperDimension Com10Envelope/No.10 Env (4.125 x 9.5): "297 684"
+*PaperDimension EnvC6/C6 Env (114 x 162mm): "323 459"
+*PaperDimension ZL/ZL (120 x 230mm): "340 652"
+*PaperDimension Legal/Legal (8.5 x 14): "612 1008"
+*PaperDimension Big32K/Big 32K (135 x 195mm): "383 553"
+*PaperDimension Big16K/Big 16K (195 x 270mm): "553 765"
+*PaperDimension 32K/32K (130 x 185mm): "369 524"
+*PaperDimension 16K/16K (185 x 260mm): "524 737"
+
+
+*HWMargins: 14.17 14.17 14.17 14.17
+*LeadingEdge Short: ""
+*DefaultLeadingEdge: Short
+*MaxMediaWidth: "618"
+*MaxMediaHeight: "1021"
+
+
+*OpenGroup: Graphics/Basic
+*% OutputMode Information ===================
+*DefaultResolution: 600dpi
+*?Resolution: "
+save
+    currentpagedevice /HWResolution get dup aload pop eq
+    {0 get cvi 9 string cvs print}
+    {aload pop exch cvi 9 string cvs print (x) print cvi 9 string cvs print}
+    ifelse (dpi) =
+restore
+"
+*End
+
+*AccurateScreensSupport: True
+*% Resolution ===============
+*OpenUI *DPI1200/Resolution: PickOne
+*OrderDependency: 10 AnySetup *DPI1200
+*DefaultDPI1200: False
+*DPI1200 False/600 DPI: "<</HWResolution [600 600]>>setpagedevice"
+*DPI1200 True/1200 DPI: "<</HWResolution [600 600]>>setpagedevice"
+*CloseUI: *DPI1200
+
+*% Collate ===============
+*%%OpenUI *Collate/Collated: Boolean
+*%OrderDependency: 15.0 AnySetup *Collate
+*%DefaultCollate: True
+*%Collate False/Off: "<</Collate false>>setpagedevice"
+*%Collate True/On: "<</Collate true>>setpagedevice"
+*%CloseUI: *Collate
+*CloseGroup: Graphics
+
+
+*OpenGroup: PaperGroup/Paper
+*% Paper Handling ===================
+*OpenUI *PageSize/Paper Size: PickOne
+*OrderDependency: 60.0 AnySetup *PageSize
+*DefaultPageSize: A4
+*PageSize Letter/Letter (8.5 x 11): "<</PageSize [612 792]/ImagingBBox null>>setpagedevice"
+*PageSize A4/A4 (210 x 297mm): "<</PageSize [595 842]/ImagingBBox null>>setpagedevice"
+*PageSize A5/A5 (148 x 210mm): "<</PageSize [420 595]/ImagingBBox null>>setpagedevice"
+*PageSize A6/A6 (105 x 148mm): "<</PageSize [298 420]/ImagingBBox null>>setpagedevice"
+*PageSize B5/JIS B5 (182 x 257mm): "<</PageSize [516 729]/ImagingBBox null>>setpagedevice"
+*PageSize ISOB5/ISO B5 (176 x 250mm): "<</PageSize [499 709]/ImagingBBox null>>setpagedevice"
+*PageSize B6/B6 (125 x 176mm): "<</PageSize [354 499]/ImagingBBox null>>setpagedevice"
+*PageSize Executive/Executive (7.25 x 10.5): "<</PageSize [522 756]/ImagingBBox null>>setpagedevice"
+*PageSize Statement/Statement (5.5 x 8.5): "<</PageSize [396 612]/ImagingBBox null>>setpagedevice"
+*PageSize Folio/Folio (8.5 x 13): "<</PageSize [612 936]/ImagingBBox null>>setpagedevice"
+*PageSize Oficio/Oficio (216 x 343mm): "<</PageSize [612 972]/ImagingBBox null>>setpagedevice"
+*PageSize Postcard/Postcard (100x148mm): "<</PageSize [283 420]/ImagingBBox null>>setpagedevice"
+*PageSize EnvMonarch/Monarch Env (3.875 x 7.5): "<</PageSize [279 540]/ImagingBBox null>>setpagedevice"
+*PageSize EnvDL/DL Env (110 x 220mm): "<</PageSize [312 624]/ImagingBBox null>>setpagedevice"
+*PageSize EnvC5/C5 Env (162 x 229mm): "<</PageSize [459 649]/ImagingBBox null>>setpagedevice"
+*PageSize Com10Envelope/No.10 Env (4.125 x 9.5): "<</PageSize [297 684]/ImagingBBox null>>setpagedevice"
+*PageSize EnvC6/C6 Env (114 x 162mm): "<</PageSize [323 459]/ImagingBBox null>>setpagedevice"
+*PageSize ZL/ZL (120 x 230mm): "<</PageSize [340 652]/ImagingBBox null>>setpagedevice"
+*PageSize Legal/Legal (8.5 x 14): "<</PageSize [612 1008]/ImagingBBox null>>setpagedevice"
+*PageSize Big32K/Big 32K (135 x 195mm): "<</PageSize [383 553]/ImagingBBox null>>setpagedevice"
+*PageSize Big16K/Big 16K (195 x 270mm): "<</PageSize [553 765]/ImagingBBox null>>setpagedevice"
+*PageSize 32K/32K (130 x 185mm): "<</PageSize [369 524]/ImagingBBox null>>setpagedevice"
+*PageSize 16K/16K (185 x 260mm): "<</PageSize [524 737]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion:  PickOne
+*OrderDependency: 80.0 AnySetup *PageRegion
+*DefaultPageRegion: A4
+*PageRegion Letter/Letter (8.5 x 11): "<</PageRegion [612 792]/ImagingBBox null>>setpagedevice"
+*PageRegion A4/A4 (210 x 297mm): "<</PageRegion [595 842]/ImagingBBox null>>setpagedevice"
+*PageRegion A5/A5 (148 x 210mm): "<</PageRegion [420 595]/ImagingBBox null>>setpagedevice"
+*PageRegion A6/A6 (105 x 148mm): "<</PageRegion [298 420]/ImagingBBox null>>setpagedevice"
+*PageRegion B5/JIS B5 (182 x 257mm): "<</PageRegion [516 729]/ImagingBBox null>>setpagedevice"
+*PageRegion ISOB5/ISO B5 (176 x 250mm): "<</PageRegion [499 709]/ImagingBBox null>>setpagedevice"
+*PageRegion B6/B6 (125 x 176mm): "<</PageRegion [354 499]/ImagingBBox null>>setpagedevice"
+*PageRegion Executive/Executive (7.25 x 10.5): "<</PageRegion [522 756]/ImagingBBox null>>setpagedevice"
+*PageRegion Statement/Statement (5.5 x 8.5): "<</PageRegion [396 612]/ImagingBBox null>>setpagedevice"
+*PageRegion Folio/Folio (8.5 x 13): "<</PageRegion [612 936]/ImagingBBox null>>setpagedevice"
+*PageRegion Oficio/Oficio (216 x 343mm): "<</PageRegion [612 972]/ImagingBBox null>>setpagedevice"
+*PageRegion Postcard/Postcard (100 x 148mm): "<</PageRegion [283 420]/ImagingBBox null>>setpagedevice"
+*PageRegion EnvMonarch/Monarch Env (3.875 x 7.5): "<</PageRegion [279 540]/ImagingBBox null>>setpagedevice"
+*PageRegion EnvDL/DL Env (110 x 220mm): "<</PageRegion [312 624]/ImagingBBox null>>setpagedevice"
+*PageRegion EnvC5/C5 Env (162 x 229mm): "<</PageRegion [459 649]/ImagingBBox null>>setpagedevice"
+*PageRegion Com10Envelope/No.10 Env (4.125 x 9.5): "<</PageRegion [297 684]/ImagingBBox null>>setpagedevice"
+*PageRegion EnvC6/C6 Env (114 x 162mm): "<</PageRegion [323 459]/ImagingBBox null>>setpagedevice"
+*PageRegion ZL/ZL (120 x 230mm): "<</PageRegion [340 652]/ImagingBBox null>>setpagedevice"
+*PageRegion Legal/Legal (8.5 x 14): "<</PageRegion [612 1008]/ImagingBBox null>>setpagedevice"
+*PageRegion Big32K/Big 32K (135 x 195mm): "<</PageRegion [383 553]/ImagingBBox null>>setpagedevice"
+*PageRegion Big16K/Big 16K (195 x 270mm): "<</PageRegion [553 765]/ImagingBBox null>>setpagedevice"
+*PageRegion 32K/32K (130 x 185mm): "<</PageRegion [369 524]/ImagingBBox null>>setpagedevice"
+*PageRegion 16K/16K (185 x 260mm): "<</PageSize [524 737]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+
+*% CustomPage ===============
+*CustomPageSize True: "pop pop pop <</PageSize [5 -2 roll] /ImagingBBox null>> setpagedevice"
+*ParamCustomPageSize Width:  1 points 212 618
+*ParamCustomPageSize Height: 2 points 419 1021
+*ParamCustomPageSize WidthOffset: 3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation: 5 int 1 1
+
+*% Duplex ===============
+*OpenUI *Duplex/Two-Sided: PickOne
+*OrderDependency: 40 AnySetup *Duplex
+*DefaultDuplex: None
+*Duplex None/Off: "<</Duplex false>>setpagedevice"
+*Duplex DuplexNoTumble/Long Edge: "<</Duplex true/Tumble false>>setpagedevice"
+*Duplex DuplexTumble/Short Edge: "<</Duplex true/Tumble true>>setpagedevice"
+*CloseUI: *Duplex
+
+*% MediaType ===============
+*OpenUI *MediaType/Paper Type: PickOne
+*OrderDependency: 10 AnySetup *MediaType
+*DefaultMediaType: Plain
+*MediaType Plain/Plain:	"<</MediaType(Plain)/cupsMediaType 0>>setpagedevice"
+*MediaType Thick/Thick:	"<</MediaType(Thick)/cupsMediaType 1>>setpagedevice"
+*MediaType Envelope/Envelope: "<</MediaType(Envelope)/cupsMediaType 2>>setpagedevice"
+*MediaType Transparency/Transparency: "<</MediaType(Transparency)/cupsMediaType 3>>setpagedevice"
+*MediaType Cardstock/Cardstock: "<</MediaType(Card)/cupsMediaType 4>>setpagedevice"
+*MediaType Label/Label: "<</MediaType(Labels)/cupsMediaType 6>>setpagedevice"
+*CloseUI: *MediaType
+
+*% FeedLongEdge ===============
+*OpenUI *FeedLongEdge/Feed Orientation: PickOne
+*OrderDependency: 15.0 AnySetup *FeedLongEdge
+*DefaultFeedLongEdge: False
+*FeedLongEdge False/Short Edge: "<</FeedLongEdge false>>setpagedevice"
+*FeedLongEdge True/Long Edge: "<</FeedLongEdge true>>setpagedevice"
+*CloseUI: *FeedLongEdge
+
+*% Paper Source ===============
+*OpenUI *InputSlot/Paper Source: PickOne
+*OrderDependency: 10 AnySetup *InputSlot
+*DefaultInputSlot: Auto
+*InputSlot Auto/Printer Auto Select: "<</InputSlot 0>>setpagedevice"
+*InputSlot ManualFeed/Manual Feeder Tray: "<</InputSlot 1>>setpagedevice"
+*InputSlot AutoFeed/Automatic Feeder Tray: "<</InputSlot 2>>setpagedevice"
+*CloseUI: *InputSlot
+*CloseGroup: PaperGroup
+
+
+*OpenGroup: AdvancedMedia/Layout
+*% NegativePrint ===============
+*OpenUI *NegativePrint/Negative Film: Boolean
+*OrderDependency: 15.0 AnySetup *NegativePrint
+*DefaultNegativePrint: False
+*NegativePrint False/Off: "<</NegativePrint false>>setpagedevice"
+*NegativePrint True/On: "<</NegativePrint true>>setpagedevice"
+*CloseUI: *NegativePrint
+
+*% Toner Mode ===============
+*OpenUI *TonerMode/Toner Save: Boolean
+*OrderDependency: 15.0 AnySetup *TonerMode
+*DefaultTonerMode: False
+*TonerMode False/Off: "<</TonerMode false/cupsBitsPerPixel 8/cupsBitsPerColor 8/cupsColorSpace 0>>setpagedevice"
+*TonerMode True/On: "<</TonerMode true/cupsBitsPerPixel 8/cupsBitsPerColor 8/cupsColorSpace 0>>setpagedevice"
+*CloseUI: *TonerMode
+
+*% Image Rotation ===============
+*OpenUI *ImageRotation/Rotate 180 degree: Boolean
+*OrderDependency: 15.0 AnySetup *ImageRotation
+*DefaultImageRotation: False
+*ImageRotation False/Off: "<</ImageRotation false>>setpagedevice"
+*ImageRotation True/On: "<</ImageRotation true>>setpagedevice"
+*CloseUI: *ImageRotation
+
+*% Density ===============
+*OpenUI *Density/Density: PickOne
+*OrderDependency: 50.0 AnySetup *Density
+*DefaultDensity: 2
+*Density 4/Darker: "/Black/4/Custom/ProcSet"
+*Density 2/Normal: "/Black/2/Custom/ProcSet"
+*Density 0/Lighter: "/Black/0/Custom/ProcSet"
+*CloseUI: *Density
+*CloseGroup: AdvancedMedia
+
+
+*% Input Sources (format: %%[ status: <stat>; source: <one of these> ]%% )
+*Source: "USB"
+*Source: "EtherTalk"
+*cupsLanguages: "en zh_CN ru ja"
+
+
+*% === English ===
+*en.Translation Graphics/Basic: ""
+*en.Translation PaperGroup/Paper: ""
+*en.Translation AdvancedMedia/Layout: ""
+
+*% Resolution ===============
+*en.Translation DPI1200/Resolution: ""
+*en.DPI1200 False/600 DPI: ""
+*en.DPI1200 True/1200 DPI: ""
+
+*% Collate ===============
+*en.Translation Collate/Collated: ""
+*en.Collate False/Off: ""
+*en.Collate True/On: ""
+
+*% Paper Handling ===================
+*en.Translation PageSize/Paper Size: ""
+*en.PageSize Letter/Letter (8.5 x 11): ""
+*en.PageSize A4/A4 (210 x 297mm): ""
+*en.PageSize A5/A5 (148 x 210mm): ""
+*en.PageSize A6/A6 (105 x 148mm): ""
+*en.PageSize B5/JIS B5 (182 x 257mm): ""
+*en.PageSize ISOB5/ISO B5 (176 x 250mm): ""
+*en.PageSize B6/B6 (125 x 176mm): ""
+*en.PageSize Executive/Executive (7.25 x 10.5): ""
+*en.PageSize Statement/Statement (5.5 x 8.5): ""
+*en.PageSize Folio/Folio (8.5 x 13): ""
+*en.PageSize Oficio/Oficio (216 x 343mm): ""
+*en.PageSize Postcard/Postcard (100x148mm): ""
+*en.PageSize EnvMonarch/Monarch Env (3.875 x 7.5): ""
+*en.PageSize EnvDL/DL Env (110 x 220mm): ""
+*en.PageSize EnvC5/C5 Env (162 x 229mm): ""
+*en.PageSize Com10Envelope/No.10 Env (4.125 x 9.5): ""
+*en.PageSize EnvC6/C6 Env (114 x 162mm): ""
+*en.PageSize ZL/ZL (120 x 230mm): ""
+*en.PageSize Legal/Legal (8.5 x 14): ""
+*en.PageSize Big32K/Big 32K (135 x 195mm): ""
+*en.PageSize Big16K/Big 16K (195 x 270mm): ""
+*en.PageSize 32K/32K (130 x 185mm): ""
+*en.PageSize 16K/16K (185 x 260mm): ""
+
+*% Duplex ===============
+*en.Translation Duplex/Two-Sided: ""
+*en.Duplex None/Off: ""
+*en.Duplex DuplexNoTumble/Long Edge: ""
+*en.Duplex DuplexTumble/Short Edge: ""
+
+*% MediaType ===============
+*en.Translation MediaType/Paper Type: ""
+*en.MediaType Plain/Plain: ""
+*en.MediaType Thick/Thick: ""
+*en.MediaType Envelope/Envelope: ""
+*en.MediaType Transparency/Transparency: ""
+*en.MediaType Cardstock/Cardstock: ""
+*en.MediaType Label/Label: ""
+
+*% FeedLongEdge ===============
+*en.Translation FeedLongEdge/Feed Orientation: ""
+*en.FeedLongEdge False/Short Edge: ""
+*en.FeedLongEdge True/Long Edge: ""
+
+*% Paper Source ===============
+*en.Translation InputSlot/Paper Source: ""
+*en.InputSlot Auto/Printer Auto Select: ""
+*en.InputSlot ManualFeed/Manual Feeder Tray: ""
+*en.InputSlot AutoFeed/Automatic Feeder Tray: ""
+
+*% NegativePrint ===============
+*en.Translation NegativePrint/Negative Film: ""
+*en.NegativePrint False/Off: ""
+*en.NegativePrint True/On: ""
+
+*% Toner Mode ===============
+*en.Translation TonerMode/Toner Save: ""
+*en.TonerMode False/Off: ""
+*en.TonerMode True/On: ""
+
+*% Image Rotation ===============
+*en.Translation ImageRotation/Rotate 180 degree: ""
+*en.ImageRotation False/Off: ""
+*en.ImageRotation True/On: ""
+
+*% Density ===============
+*en.Translation Density/Density: ""
+*en.Density 4/Dark: ""
+*en.Density 2/Normal: ""
+*en.Density 0/Light: ""
+
+
+*% === Chinese ===
+*zh_CN.Translation Graphics/基本: ""
+*zh_CN.Translation PaperGroup/纸张: ""
+*zh_CN.Translation AdvancedMedia/版面: ""
+
+*% Resolution ===============
+*zh_CN.Translation DPI1200/分辨率: ""
+*zh_CN.DPI1200 False/600 DPI: ""
+*zh_CN.DPI1200 True/1200 DPI: ""
+
+*% Collate ===============
+*zh_CN.Translation Collate/逐份: ""
+*zh_CN.Collate False/无: ""
+*zh_CN.Collate True/有: ""
+
+*% Paper Handling ===================
+*zh_CN.Translation PageSize/纸张大小: ""
+*zh_CN.PageSize Letter/Letter (8.5 x 11): ""
+*zh_CN.PageSize A4/A4 (210 x 297mm): ""
+*zh_CN.PageSize A5/A5 (148 x 210mm): ""
+*zh_CN.PageSize A6/A6 (105 x 148mm): ""
+*zh_CN.PageSize B5/JIS B5 (182 x 257mm): ""
+*zh_CN.PageSize ISOB5/ISO B5 (176 x 250mm): ""
+*zh_CN.PageSize B6/B6 (125 x 176mm): ""
+*zh_CN.PageSize Executive/Executive (7.25 x 10.5): ""
+*zh_CN.PageSize Statement/Statement (5.5 x 8.5): ""
+*zh_CN.PageSize Folio/Folio (8.5 x 13): ""
+*zh_CN.PageSize Oficio/Oficio (216 x 343mm): ""
+*zh_CN.PageSize Postcard/Postcard (100x148mm): ""
+*zh_CN.PageSize EnvMonarch/Monarch Env (3.875 x 7.5): ""
+*zh_CN.PageSize EnvDL/DL Env (110 x 220mm): ""
+*zh_CN.PageSize EnvC5/C5 Env (162 x 229mm): ""
+*zh_CN.PageSize Com10Envelope/No.10 Env (4.125 x 9.5): ""
+*zh_CN.PageSize EnvC6/C6 Env (114 x 162mm): ""
+*zh_CN.PageSize ZL/ZL (120 x 230mm): ""
+*zh_CN.PageSize Legal/Legal (8.5 x 14): ""
+*zh_CN.PageSize Big32K/Big 32K (135 x 195mm): ""
+*zh_CN.PageSize Big16K/Big 16K (195 x 270mm): ""
+*zh_CN.PageSize 32K/32K (130 x 185mm): ""
+*zh_CN.PageSize 16K/16K (185 x 260mm): ""
+
+*% Duplex ===============
+*zh_CN.Translation Duplex/双面打印: ""
+*zh_CN.Duplex None/无: ""
+*zh_CN.Duplex DuplexNoTumble/长边: ""
+*zh_CN.Duplex DuplexTumble/短边: ""
+
+*% MediaType ===============
+*zh_CN.Translation MediaType/介质: ""
+*zh_CN.MediaType Plain/普通纸: ""
+*zh_CN.MediaType Thick/厚纸: ""
+*zh_CN.MediaType Envelope/信封: ""
+*zh_CN.MediaType Transparency/透明胶片: ""
+*zh_CN.MediaType Cardstock/卡片纸: ""
+*zh_CN.MediaType Label/标签纸: ""
+
+*% FeedLongEdge ===============
+*zh_CN.Translation FeedLongEdge/进纸方向: ""
+*zh_CN.FeedLongEdge False/短边: ""
+*zh_CN.FeedLongEdge True/长边: ""
+
+*% Paper Source ===============
+*zh_CN.Translation InputSlot/纸张来源: ""
+*zh_CN.InputSlot Auto/打印机自动选择: ""
+*zh_CN.InputSlot ManualFeed/手动进纸盒: ""
+*zh_CN.InputSlot AutoFeed/自动进纸盒: ""
+
+*% NegativePrint ===============
+*zh_CN.Translation NegativePrint/负片: ""
+*zh_CN.NegativePrint False/无: ""
+*zh_CN.NegativePrint True/有: ""
+
+*% Toner Mode ===============
+*zh_CN.Translation TonerMode/省墨: ""
+*zh_CN.TonerMode False/无: ""
+*zh_CN.TonerMode True/有: ""
+
+*% Image Rotation ===============
+*zh_CN.Translation ImageRotation/旋转180度: ""
+*zh_CN.ImageRotation False/无: ""
+*zh_CN.ImageRotation True/有: ""
+
+*% Density ===============
+*zh_CN.Translation Density/浓度: ""
+*zh_CN.Density 4/较浓: ""
+*zh_CN.Density 2/正常: ""
+*zh_CN.Density 0/较淡: ""
+
+*% === Russian ===
+*ru.Translation Graphics/Базовые: ""
+*ru.Translation PaperGroup/Бумага: ""
+*ru.Translation AdvancedMedia/Макет: ""
+
+*% Resolution ===============
+*ru.Translation DPI1200/Разрешение: ""
+*ru.DPI1200 False/600 DPI: ""
+*ru.DPI1200 True/1200 DPI: ""
+
+*% Collate ===============
+*ru.Translation Collate/С разбором по копиям: ""
+*ru.Collate False/Выкл: ""
+*ru.Collate True/Вкл: ""
+
+*% Paper Handling ===================
+*ru.Translation PageSize/Размер бумаги: ""
+*ru.PageSize Letter/Letter (8,5 x 11): ""
+*ru.PageSize A4/A4 (210 x 297 мм): ""
+*ru.PageSize A5/A5 (148 x 210 мм): ""
+*ru.PageSize A6/A6 (105 x 148 мм): ""
+*ru.PageSize B5/JIS B5 (182 x 257 мм): ""
+*ru.PageSize ISOB5/ISO B5 (176 x 250 мм): ""
+*ru.PageSize B6/B6 (125 x 176 мм): ""
+*ru.PageSize Executive/Executive (7,25 x 10,5): ""
+*ru.PageSize Statement/Statement (5,5 x 8,5): ""
+*ru.PageSize Folio/Folio (8,5 x 13): ""
+*ru.PageSize Oficio/Oficio (216 x 343 мм): ""
+*ru.PageSize Postcard/Открытка (100x148 мм): ""
+*ru.PageSize EnvMonarch/Конверт Monarch (3,875 x 7,5): ""
+*ru.PageSize EnvDL/Конверт DL (110 x 220 мм): ""
+*ru.PageSize EnvC5/Конверт C5 (162 x 229 мм): ""
+*ru.PageSize Com10Envelope/Конверт №10 (4,125 x 9,5): ""
+*ru.PageSize EnvC6/Конверт C6 (114 x 162 мм): ""
+*ru.PageSize ZL/ZL (120 x 230 мм): ""
+*ru.PageSize Legal/Legal (8,5 x 14): ""
+*ru.PageSize Big32K/Большой 32K (135 x 195 мм): ""
+*ru.PageSize Big16K/Большой 16K (195 x 270 мм): ""
+*ru.PageSize 32K/32K (130 x 185 мм): ""
+*ru.PageSize 16K/16K (185 x 260 мм): ""
+
+*% Duplex ===============
+*ru.Translation Duplex/Двусторонняя: ""
+*ru.Duplex None/Выкл: ""
+*ru.Duplex DuplexNoTumble/Длинным краем: ""
+*ru.Duplex DuplexTumble/Коротким краем: ""
+
+*% MediaType ===============
+*ru.Translation MediaType/Тип бумаги: ""
+*ru.MediaType Plain/Обычная: ""
+*ru.MediaType Thick/Толщина: ""
+*ru.MediaType Envelope/Конверт: ""
+*ru.MediaType Transparency/Прозрачная пленка: ""
+*ru.MediaType Cardstock/Открытка: ""
+*ru.MediaType Label/Этикетка: ""
+
+*% FeedLongEdge ===============
+*ru.Translation FeedLongEdge/Ориентация подачи: ""
+*ru.FeedLongEdge False/Коротким краем: ""
+*ru.FeedLongEdge True/Длинным краем: ""
+
+*% Paper Source ===============
+*ru.Translation InputSlot/Источник бумаги: ""
+*ru.InputSlot Auto/Автоматический выбор принтера: ""
+*ru.InputSlot ManualFeed/Лоток ручной подачи: ""
+*ru.InputSlot AutoFeed/Лоток автоматической подачи: ""
+
+*% NegativePrint ===============
+*ru.Translation NegativePrint/Негативная пленка: ""
+*ru.NegativePrint False/Выкл: ""
+*ru.NegativePrint True/Вкл: ""
+
+*% Toner Mode ===============
+*ru.Translation TonerMode/Экономия тонера: ""
+*ru.TonerMode False/Выкл: ""
+*ru.TonerMode True/Вкл: ""
+
+*% Image Rotation ===============
+*ru.Translation ImageRotation/Повернуть на 180 градусов: ""
+*ru.ImageRotation False/Выкл: ""
+*ru.ImageRotation True/Вкл: ""
+
+*% Density ===============
+*ru.Translation Density/Плотность: ""
+*ru.Density 4/Темный: ""
+*ru.Density 2/Нормальный: ""
+*ru.Density 0/Светлый: ""
+
+*% === Japanese ===
+*ja.Translation Graphics/基本: ""
+*ja.Translation PaperGroup/用紙: ""
+*ja.Translation AdvancedMedia/レイアウト: ""
+
+*% Resolution ===============
+*ja.Translation DPI1200/解像度: ""
+*ja.DPI1200 False/600 DPI: ""
+*ja.DPI1200 True/1200 DPI: ""
+
+*% Collate ===============
+*ja.Translation Collate/ページ揃え済み: ""
+*ja.Collate False/オフ: ""
+*ja.Collate True/オン: ""
+
+*% Paper Handling ===================
+*ja.Translation PageSize/用紙サイズ: ""
+*ja.PageSize Letter/レター (8.5 x 11): ""
+*ja.PageSize A4/A4 (210 x 297mm): ""
+*ja.PageSize A5/A5 (148 x 210mm): ""
+*ja.PageSize A6/A6 (105 x 148mm): ""
+*ja.PageSize B5/JIS B5 (182 x 257mm): ""
+*ja.PageSize ISOB5/ISO B5 (176 x 250mm): ""
+*ja.PageSize B6/B6 (125 x 176mm): ""
+*ja.PageSize Executive/エグゼクティブ (7.25 x 10.5): ""
+*ja.PageSize Statement/ステートメント (5.5 x 8.5): ""
+*ja.PageSize Folio/フォリオ (8.5 x 13): ""
+*ja.PageSize Oficio/オフィシオ (216 x 343mm): ""
+*ja.PageSize Postcard/ポストカード (100x148mm): ""
+*ja.PageSize EnvMonarch/Monarch 封筒 (3.875 x 7.5): ""
+*ja.PageSize EnvDL/DL 封筒 (110 x 220mm): ""
+*ja.PageSize EnvC5/C5 封筒 (162 x 229mm): ""
+*ja.PageSize Com10Envelope/No.10 封筒 (4.125 x 9.5): ""
+*ja.PageSize EnvC6/C6 封筒 (114 x 162mm): ""
+*ja.PageSize ZL/ZL (120 x 230mm): ""
+*ja.PageSize Legal/リーガル (8.5 x 14): ""
+*ja.PageSize Big32K/Big 32K (135 x 195mm): ""
+*ja.PageSize Big16K/Big 16K (195 x 270mm): ""
+*ja.PageSize 32K/32K (130 x 185mm): ""
+*ja.PageSize 16K/16K (185 x 260mm): ""
+
+*% Duplex ===============
+*ja.Translation Duplex/両面: ""
+*ja.Duplex None/オフ: ""
+*ja.Duplex DuplexNoTumble/長辺: ""
+*ja.Duplex DuplexTumble/短辺: ""
+
+*% MediaType ===============
+*ja.Translation MediaType/用紙の種類: ""
+*ja.MediaType Plain/普通紙: ""
+*ja.MediaType Thick/厚紙: ""
+*ja.MediaType Envelope/封筒: ""
+*ja.MediaType Transparency/透明度: ""
+*ja.MediaType Cardstock/カードストック: ""
+*ja.MediaType Label/ラベル: ""
+
+*% FeedLongEdge ===============
+*ja.Translation FeedLongEdge/給紙の向き: ""
+*ja.FeedLongEdge False/短辺: ""
+*ja.FeedLongEdge True/長辺: ""
+
+*% Paper Source ===============
+*ja.Translation InputSlot/給紙方法: ""
+*ja.InputSlot Auto/プリンター自動選択: ""
+*ja.InputSlot ManualFeed/手差し用紙トレイ: ""
+*ja.InputSlot AutoFeed/自動用紙トレイ: ""
+
+*% NegativePrint ===============
+*ja.Translation NegativePrint/ネガ フィルム: ""
+*ja.NegativePrint False/オフ: ""
+*ja.NegativePrint True/オン: ""
+
+*% Toner Mode ===============
+*ja.Translation TonerMode/トナー節約: ""
+*ja.TonerMode False/オフ: ""
+*ja.TonerMode True/オン: ""
+
+*% Image Rotation ===============
+*ja.Translation ImageRotation/180 度回転: ""
+*ja.ImageRotation False/オフ: ""
+*ja.ImageRotation True/オン: ""
+
+*% Density ===============
+*ja.Translation Density/濃度: ""
+*ja.Density 4/濃い: ""
+*ja.Density 2/標準: ""
+*ja.Density 0/薄い: ""
+

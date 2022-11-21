@@ -1,0 +1,964 @@
+*PPD-Adobe: "4.3"
+*% Adobe Systems PostScript(R) Printer Description File
+*% Copyright 1987-1996 Adobe Systems Incorporated.
+*% All Rights Reserved.
+*% Permission is granted for redistribution of this file as
+*% long as this copyright notice is intact and the contents
+*% of the file is not altered in any way from its original form.
+*% End of Copyright statement
+*FileVersion: "1.0"
+*FormatVersion: "4.3"
+*LanguageEncoding: ISOLatin1
+*LanguageVersion: English
+*Manufacturer: "Seine"
+*PCFileName: "P3000.PPD"
+*Product: "(Seine)"
+*PSVersion: "(3015.103) 1"
+*ShortNickName: "P3000 Series PCL"
+*ModelName: "Pantum P3000 Series PCL"
+*NickName: "Pantum P3000 Series PCL"
+*cupsFilter: "application/vnd.cups-raster 50 rastertoPantumPCL"
+
+*% == Constraints (PageSize vs. Paper Source) ==
+*UIConstraints: *PageSize Postcard         *InputSlot AutoFeed
+*UIConstraints: *PageSize EnvMonarch       *InputSlot AutoFeed
+*UIConstraints: *PageSize EnvDL            *InputSlot AutoFeed
+*UIConstraints: *PageSize EnvC5            *InputSlot AutoFeed
+*UIConstraints: *PageSize Com10Envelope    *InputSlot AutoFeed
+*UIConstraints: *PageSize EnvC6            *InputSlot AutoFeed
+*UIConstraints: *PageSize ZL               *InputSlot AutoFeed
+
+*% == Constraints (Paper Source vs. PageSize) ==
+*UIConstraints: *InputSlot AutoFeed *PageSize Postcard
+*UIConstraints: *InputSlot AutoFeed *PageSize EnvMonarch
+*UIConstraints: *InputSlot AutoFeed *PageSize EnvDL
+*UIConstraints: *InputSlot AutoFeed *PageSize EnvC5
+*UIConstraints: *InputSlot AutoFeed *PageSize Com10Envelope
+*UIConstraints: *InputSlot AutoFeed *PageSize EnvC6
+*UIConstraints: *InputSlot AutoFeed *PageSize ZL
+
+*% == Constraints (PageSize vs. Duplex) ==
+*UIConstraints: *PageSize A5               *Duplex DuplexNoTumble
+*UIConstraints: *PageSize A6               *Duplex DuplexNoTumble
+*UIConstraints: *PageSize B5            *Duplex DuplexNoTumble
+*UIConstraints: *PageSize IS0B5            *Duplex DuplexNoTumble
+*UIConstraints: *PageSize B6               *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Executive        *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Statement        *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Big32K           *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Big16K           *Duplex DuplexNoTumble
+*UIConstraints: *PageSize 32K              *Duplex DuplexNoTumble
+*UIConstraints: *PageSize 16K              *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Postcard         *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvMonarch       *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvDL            *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvC5            *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Com10Envelope    *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvC6            *Duplex DuplexNoTumble
+*UIConstraints: *PageSize ZL               *Duplex DuplexNoTumble
+
+*% == Constraints (Duplex vs. PageSize) ==
+*UIConstraints: *Duplex DuplexNoTumble *PageSize A5
+*UIConstraints: *Duplex DuplexNoTumble *PageSize A6
+*UIConstraints: *Duplex DuplexNoTumble *PageSize B5
+*UIConstraints: *Duplex DuplexNoTumble *PageSize IS0B5
+*UIConstraints: *Duplex DuplexNoTumble *PageSize B6
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Executive
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Statement
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Big32K
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Big16K
+*UIConstraints: *Duplex DuplexNoTumble *PageSize 32K
+*UIConstraints: *Duplex DuplexNoTumble *PageSize 16K
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Postcard
+*UIConstraints: *Duplex DuplexNoTumble *PageSize EnvMonarch
+*UIConstraints: *Duplex DuplexNoTumble *PageSize EnvDL
+*UIConstraints: *Duplex DuplexNoTumble *PageSize EnvC5
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Com10Envelope
+*UIConstraints: *Duplex DuplexNoTumble *PageSize EnvC6
+*UIConstraints: *Duplex DuplexNoTumble *PageSize ZL
+
+*% == Constraints (PageSize vs. Duplex) ==
+*UIConstraints: *PageSize A5               *Duplex DuplexTumble
+*UIConstraints: *PageSize A6               *Duplex DuplexTumble
+*UIConstraints: *PageSize B5            *Duplex DuplexTumble
+*UIConstraints: *PageSize IS0B5            *Duplex DuplexTumble
+*UIConstraints: *PageSize B6               *Duplex DuplexTumble
+*UIConstraints: *PageSize Executive        *Duplex DuplexTumble
+*UIConstraints: *PageSize Statement        *Duplex DuplexTumble
+*UIConstraints: *PageSize Big32K           *Duplex DuplexTumble
+*UIConstraints: *PageSize Big16K           *Duplex DuplexTumble
+*UIConstraints: *PageSize 32K              *Duplex DuplexTumble
+*UIConstraints: *PageSize 16K              *Duplex DuplexTumble
+*UIConstraints: *PageSize Postcard         *Duplex DuplexTumble
+*UIConstraints: *PageSize EnvMonarch       *Duplex DuplexTumble
+*UIConstraints: *PageSize EnvDL            *Duplex DuplexTumble
+*UIConstraints: *PageSize EnvC5            *Duplex DuplexTumble
+*UIConstraints: *PageSize Com10Envelope    *Duplex DuplexTumble
+*UIConstraints: *PageSize EnvC6            *Duplex DuplexTumble
+*UIConstraints: *PageSize ZL               *Duplex DuplexTumble
+
+*% == Constraints (Duplex vs. PageSize) ==
+*UIConstraints: *Duplex DuplexTumble *PageSize A5
+*UIConstraints: *Duplex DuplexTumble *PageSize A6
+*UIConstraints: *Duplex DuplexTumble *PageSize B5
+*UIConstraints: *Duplex DuplexTumble *PageSize IS0B5
+*UIConstraints: *Duplex DuplexTumble *PageSize B6
+*UIConstraints: *Duplex DuplexTumble *PageSize Executive
+*UIConstraints: *Duplex DuplexTumble *PageSize Statement
+*UIConstraints: *Duplex DuplexTumble *PageSize Big32K
+*UIConstraints: *Duplex DuplexTumble *PageSize Big16K
+*UIConstraints: *Duplex DuplexTumble *PageSize 32K
+*UIConstraints: *Duplex DuplexTumble *PageSize 16K
+*UIConstraints: *Duplex DuplexTumble *PageSize Postcard
+*UIConstraints: *Duplex DuplexTumble *PageSize EnvMonarch
+*UIConstraints: *Duplex DuplexTumble *PageSize EnvDL
+*UIConstraints: *Duplex DuplexTumble *PageSize EnvC5
+*UIConstraints: *Duplex DuplexTumble *PageSize Com10Envelope
+*UIConstraints: *Duplex DuplexTumble *PageSize EnvC6
+*UIConstraints: *Duplex DuplexTumble *PageSize ZL
+
+*% == Constraints (CustomPageSize vs. Duplex) ==
+*NonUIConstraints: *CustomPageSize True            *Duplex DuplexNoTumble
+*NonUIConstraints: *CustomPageSize True            *Duplex DuplexTumble
+
+*% == Constraints (Duplex vs. CustomPageSize) ==
+*NonUIConstraints: *Duplex DuplexNoTumble          *CustomPageSize True
+*NonUIConstraints: *Duplex DuplexTumble            *CustomPageSize True
+
+
+*% ==== Device Capabilities ===============
+*LanguageLevel: "3"
+*Protocols: TBCP PJL
+*1284Modes Parallel: Compat Nibble ECP
+*1284DeviceID: "CMD:PCL;MFG:Pantum;MDL:P3000 Series PCL;"
+*End
+
+*ColorDevice:	False
+*DefaultColorSpace: Gray
+*VariablePaperSize: True
+*LandscapeOrientation: Plus90
+*TTRasterizer: Type42
+*FileSystem: False
+
+*Throughput: "30"
+
+*AccurateScreensSupport: True
+*SuggestedJobTimeout: "0"
+*SuggestedWaitTimeout: "300"
+*PrintPSErrors: True
+
+*% Paper Handling ===================
+*OpenUI *PageSize/Paper Size: PickOne
+*OrderDependency: 60.0 AnySetup *PageSize
+*DefaultPageSize: A4
+*PageSize Letter/Letter (8.5 x 11): "<</DeferredMediaSelection true/PageSize [612 792]/ImagingBBox null>>setpagedevice"
+*PageSize A4/A4 (210 x 297mm): "<</DeferredMediaSelection true/PageSize [595 842]/ImagingBBox null>>setpagedevice"
+*PageSize A5/A5 (148 x 210mm): "<</DeferredMediaSelection true/PageSize [420 595]/ImagingBBox null>>setpagedevice"
+*PageSize A6/A6 (105 x 148mm): "<</DeferredMediaSelection true/PageSize [298 420]/ImagingBBox null>>setpagedevice"
+*PageSize B5/JIS B5 (182 x 257mm): "<</DeferredMediaSelection true/PageSize [516 729]/ImagingBBox null>>setpagedevice"
+*PageSize IS0B5/IS0 B5 (176 x 250mm): "<</DeferredMediaSelection true/PageSize [499 709]/ImagingBBox null>>setpagedevice"
+*PageSize B6/B6 (125 x 176mm): "<</DeferredMediaSelection true/PageSize [354 499]/ImagingBBox null>>setpagedevice"
+*PageSize Executive/Executive (7.25 x 10.5): "<</DeferredMediaSelection true/PageSize [522 756]/ImagingBBox null>>setpagedevice"
+*PageSize Statement/Statement (5.5 x 8.5): "<</DeferredMediaSelection true/PageSize [396 612]/ImagingBBox null>>setpagedevice"
+*PageSize Folio/Folio (8.5 x 13): "<</DeferredMediaSelection true/PageSize [612 936]/ImagingBBox null>>setpagedevice"
+*PageSize Oficio/Oficio (216 x 343mm): "<</DeferredMediaSelection true/PageSize [612 964]/ImagingBBox null>>setpagedevice"
+*PageSize Postcard/Postcard (100x148mm): "<</DeferredMediaSelection true/PageSize [283 420]/ImagingBBox null>>setpagedevice"
+*PageSize EnvMonarch/Monarch Env (3.875 x 7.5): "<</DeferredMediaSelection true/PageSize [279 540]/ImagingBBox null>>setpagedevice"
+*PageSize EnvDL/DL Env (110 x 220mm): "<</DeferredMediaSelection true/PageSize [312 624]/ImagingBBox null>>setpagedevice"
+*PageSize EnvC5/C5 Env (162 x 229mm): "<</DeferredMediaSelection true/PageSize [459 649]/ImagingBBox null>>setpagedevice"
+*PageSize Com10Envelope/No.10 Env (4.125 x 9.5): "<</DeferredMediaSelection true/PageSize [297 684]/ImagingBBox null>>setpagedevice"
+*PageSize EnvC6/C6 Env (114 x 162mm): "<</DeferredMediaSelection true/PageSize [323 459]/ImagingBBox null>>setpagedevice"
+*PageSize ZL/ZL (120 x 230mm): "<</DeferredMediaSelection true/PageSize [340 652]/ImagingBBox null>>setpagedevice"
+*PageSize Legal/Legal (8.5 x 14): "<</DeferredMediaSelection true/PageSize [612 1008]/ImagingBBox null>>setpagedevice"
+*PageSize Big32K/Big 32K (135 x 195mm): "<</DeferredMediaSelection true/PageSize [383 553]/ImagingBBox null>>setpagedevice"
+*PageSize Big16K/Big 16K (195 x 270mm): "<</DeferredMediaSelection true/PageSize [553 765]/ImagingBBox null>>setpagedevice"
+*PageSize 32K/32K (130 x 185mm): "<</DeferredMediaSelection true/PageSize [369 524]/ImagingBBox null>>setpagedevice"
+*PageSize 16K/16K (185 x 260mm): "<</DeferredMediaSelection true/PageSize [524 737]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion:  PickOne
+*OrderDependency: 80.0 AnySetup *PageRegion
+*DefaultPageRegion: A4
+*PageRegion Letter/Letter (8.5 x 11): "<</DeferredMediaSelection true/PageSize [612 792]/ImagingBBox null>>setpagedevice"
+*PageRegion A4/A4 (210 x 297mm): "<</DeferredMediaSelection true/PageSize [595 842]/ImagingBBox null>>setpagedevice"
+*PageRegion A5/A5 (148 x 210mm): "<</DeferredMediaSelection true/PageSize [420 595]/ImagingBBox null>>setpagedevice"
+*PageRegion A6/A6 (105 x 148mm): "<</DeferredMediaSelection true/PageSize [298 420]/ImagingBBox null>>setpagedevice"
+*PageRegion B5/JIS B5 (182 x 257mm): "<</DeferredMediaSelection true/PageSize [516 729]/ImagingBBox null>>setpagedevice"
+*PageRegion IS0B5/IS0 B5 (176 x 250mm): "<</DeferredMediaSelection true/PageSize [499 709]/ImagingBBox null>>setpagedevice"
+*PageRegion B6/B6 (125 x 176mm): "<</DeferredMediaSelection true/PageSize [354 499]/ImagingBBox null>>setpagedevice"
+*PageRegion Executive/Executive (7.25 x 10.5): "<</DeferredMediaSelection true/PageSize [522 756]/ImagingBBox null>>setpagedevice"
+*PageRegion Statement/Statement (5.5 x 8.5): "<</DeferredMediaSelection true/PageSize [396 612]/ImagingBBox null>>setpagedevice"
+*PageRegion Folio/Folio (8.5 x 13): "<</DeferredMediaSelection true/PageSize [612 936]/ImagingBBox null>>setpagedevice"
+*PageRegion Oficio/Oficio (216 x 343mm): "<</DeferredMediaSelection true/PageSize [612 964]/ImagingBBox null>>setpagedevice"
+*PageRegion Postcard/Postcard (100 x 148mm): "<</DeferredMediaSelection true/PageSize [283 420]/ImagingBBox null>>setpagedevice"
+*PageRegion EnvMonarch/Monarch Env (3.875 x 7.5): "<</DeferredMediaSelection true/PageSize [279 540]/ImagingBBox null>>setpagedevice"
+*PageRegion EnvDL/DL Env (110 x 220mm): "<</DeferredMediaSelection true/PageSize [312 624]/ImagingBBox null>>setpagedevice"
+*PageRegion EnvC5/C5 Env (162 x 229mm): "<</DeferredMediaSelection true/PageSize [459 649]/ImagingBBox null>>setpagedevice"
+*PageRegion Com10Envelope/No.10 Env (4.125 x 9.5): "<</DeferredMediaSelection true/PageSize [297 684]/ImagingBBox null>>setpagedevice"
+*PageRegion EnvC6/C6 Env (114 x 162mm): "<</DeferredMediaSelection true/PageSize [323 459]/ImagingBBox null>>setpagedevice"
+*PageRegion ZL/ZL (120 x 230mm): "<</DeferredMediaSelection true/PageSize [340 652]/ImagingBBox null>>setpagedevice"
+*PageRegion Legal/Legal (8.5 x 14): "<</DeferredMediaSelection true/PageSize [612 1008]/ImagingBBox null>>setpagedevice"
+*PageRegion Big32K/Big 32K (135 x 195mm): "<</DeferredMediaSelection true/PageSize [383 553]/ImagingBBox null>>setpagedevice"
+*PageRegion Big16K/Big 16K (195 x 270mm): "<</DeferredMediaSelection true/PageSize [553 765]/ImagingBBox null>>setpagedevice"
+*PageRegion 32K/32K (130 x 185mm): "<</DeferredMediaSelection true/PageSize [369 524]/ImagingBBox null>>setpagedevice"
+*PageRegion 16K/16K (185 x 260mm): "<</DeferredMediaSelection true/PageSize [524 737]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+
+*% The following entries provide information about specific paper keywords.
+*DefaultImageableArea: A4
+*ImageableArea Letter/Letter (8.5 x 11): "14.17 14.17 597.83 777.83"
+*ImageableArea A4/A4 (210 x 297mm): "14.17 14.17 580.83 827.83"
+*ImageableArea A5/A5 (148 x 210mm): "14.17 14.17 405.83 580.83"
+*ImageableArea A6/A6 (105 x 148mm): "14.17 14.17 283.83 405.83"
+*ImageableArea B5/JIS B5 (182 x 257mm): "14.17 14.17 501.83 714.83"
+*ImageableArea IS0B5/IS0 B5 (176 x 250mm): "14.17 14.17 484.83 694.83"
+*ImageableArea B6/B6 (125 x 176mm): "14.17 14.17 339.83 484.83"
+*ImageableArea Executive/Executive (7.25 x 10.5): "14.17 14.17 507.83 741.83"
+*ImageableArea Statement/Statement (5.5 x 8.5): "14.17 14.17 381.83 597.83"
+*ImageableArea Folio/Folio (8.5 x 13): "14.17 14.17 597.83 921.83"
+*ImageableArea Oficio/Oficio (216 x 343mm): "14.17 14.17 597.83 949.83"
+*ImageableArea Postcard/Postcard (100 x 148mm): "14.17 14.17 268.83 405.83"
+*ImageableArea EnvMonarch/Monarch Env (3.875 x 7.5): "14.17 14.17 264.83 525.83"
+*ImageableArea EnvDL/DL Env (110 x 220mm): "14.17 14.17 297.83 609.83"
+*ImageableArea EnvC5/C5 Env (162 x 229mm): "14.17 14.17 444.83 634.83"
+*ImageableArea Com10Envelope/No.10 Env (4.125 x 9.5): "14.17 14.17 282.83 669.83"
+*ImageableArea EnvC6/C6 Env (114 x 162mm): "14.17 14.17 308.83 444.83"
+*ImageableArea ZL/ZL (120 x 230mm): "14.17 14.17 325.83 637.83"
+*ImageableArea Legal/Legal (8.5 x 14): "14.17 14.17 597.83 993.83"
+*ImageableArea Big32K/Big 32K (135 x 195mm): "14.17 14.17 368.83 538.83"
+*ImageableArea Big16K/Big 16K (195 x 270mm): "14.17 14.17 538.83 750.83"
+*ImageableArea 32K/32K (130 x 185mm): "14.17 14.17 354.83 509.83"
+*ImageableArea 16K/16K (185 x 260mm): "14.17 14.17 509.83 722.83"
+
+*% These provide the physical dimensions of the paper (by keyword)
+*DefaultPaperDimension: A4
+*PaperDimension Letter/Letter (8.5 x 11): "612 792"
+*PaperDimension A4/A4 (210 x 297mm): "595 842"
+*PaperDimension A5/A5 (148 x 210mm): "420 595"
+*PaperDimension A6/A6 (105 x 148mm): "298 420"
+*PaperDimension B5/JIS B5 (182 x 257mm): "516 729"
+*PaperDimension IS0B5/IS0 B5 (176 x 250mm): "499 709"
+*PaperDimension B6/B6 (125 x 176mm): "354 499"
+*PaperDimension Executive/Executive (7.25 x 10.5): "522 756"
+*PaperDimension Statement/Statement (5.5 x 8.5): "396 612"
+*PaperDimension Folio/Folio (8.5 x 13): "612 936"
+*PaperDimension Oficio/Oficio (216 x 343mm): "612 964"
+*PaperDimension Postcard/Postcard (100 x 148mm): "283 420"
+*PaperDimension EnvMonarch/Monarch Env (3.875 x 7.5"): "279 540"
+*PaperDimension EnvDL/DL Env (110 x 220mm): "312 624"
+*PaperDimension EnvC5/C5 Env (162 x 229mm): "459 649"
+*PaperDimension Com10Envelope/No.10 Env (4.125 x 9.5): "297 684"
+*PaperDimension EnvC6/C6 Env (114 x 162mm): "323 459"
+*PaperDimension ZL/ZL (120 x 230mm): "340 652"
+*PaperDimension Legal/Legal (8.5 x 14): "612 1008"
+*PaperDimension Big32K/Big 32K (135 x 195mm): "383 553"
+*PaperDimension Big16K/Big 16K (195 x 270mm): "553 765"
+*PaperDimension 32K/32K (130 x 185mm): "369 524"
+*PaperDimension 16K/16K (185 x 260mm): "524 737"
+
+*HWMargins: 14.17 14.17 14.17 14.17
+*LeadingEdge Short: ""
+*DefaultLeadingEdge: Short
+*MaxMediaWidth: "618"
+*MaxMediaHeight: "1021"
+
+*CustomPageSize True: "pop pop pop <</PageSize [5 -2 roll] /ImagingBBox null>> setpagedevice"
+*ParamCustomPageSize Width:  1 points 212 618
+*ParamCustomPageSize Height: 2 points 419 1021
+*ParamCustomPageSize WidthOffset: 3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation: 5 int 1 1
+
+*RequiresPageRegion All: True
+
+*OpenGroup: Graphics/Basic
+
+*OpenUI *Resolution/Resolution: PickOne
+*OrderDependency: 10 AnySetup *Resolution
+*DefaultResolution: 600dpi
+*Resolution 600dpi/600 dpi: "<</HWResolution[600 600]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+*Resolution 1200dpi/1200 dpi: "<</HWResolution[600 600]/cupsBitsPerColor 1/cupsRowCount 0/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+*CloseUI: *Resolution
+*CloseGroup: Graphics
+
+*OpenGroup: PaperGroup/Paper
+
+*OpenUI *Duplex/Two-Sided: PickOne
+*OrderDependency: 10 AnySetup *Duplex
+*DefaultDuplex: None
+*Duplex None/Off: "<</Duplex false>>setpagedevice"
+*Duplex DuplexNoTumble/Long Edge: "<</Duplex true /Tumble false>>setpagedevice"
+*Duplex DuplexTumble/Short Edge: "<</Duplex true /Tumble true>>setpagedevice"
+*CloseUI: *Duplex
+
+*% Media Input Source
+*OpenUI *InputSlot/Paper Source: PickOne
+*OrderDependency: 20 AnySetup *InputSlot
+*DefaultInputSlot: AutoSelect
+*InputSlot AutoSelect/Auto-selected by the printer: "<</MediaPosition 7>>setpagedevice"
+*InputSlot ManualFeed/Manual Feeder Tray: "<</MediaPosition 4>>setpagedevice"
+*InputSlot AutoFeed/Automatic Feeder Tray: "<</MediaPosition 1>>setpagedevice" 
+*CloseUI: *InputSlot
+*CloseGroup: PaperGroup
+
+*DefaultFont: Courier
+*Font CourierHP: Standard "(001.006S)" Standard ROM
+*Font CGTimes: Standard "(001.006S)" Standard ROM
+*Font CGTimes-Bold: Standard "(001.007S)" Standard ROM
+*Font CGTimes-Italic: Standard "(001.007S)" Standard ROM
+*Font CGTimes-BoldItalic: Standard "(001.003S)" Standard ROM
+*Font CGOmega: Standard "(001.003S)" Standard ROM
+*Font CGOmega-Bold: Standard "(001.003S)" Standard ROM
+*Font CGOmega-Italic: Standard "(001.003S)" Standard ROM
+*Font CGOmega-BOLDItalic: Standard "(002.004S)" Standard ROM
+*Font Coronet: Standard "(002.004S)" Standard ROM
+*Font Clarendon-Condensed-Bold: Standard "(002.004S)" Standard ROM
+*Font Univers-Medium: Standard "(002.004S)" Standard ROM
+*Font Univers-Bold: Standard "(001.006S)" Standard ROM
+*Font Univers-MediumItalic: Standard "(001.007S)" Standard ROM
+*Font Univers-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font Univers-Condensed-Medium: Standard "(001.006S)" Standard ROM
+*Font Univers-Condensed-Bold: Standard "(001.006S)" Standard ROM
+*Font Univers-Condensed-MediumItalic: Standard "(001.007S)" Standard ROM
+*Font Univers-Condensed-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font AntiqueOlive: Standard "(001.006S)" Standard ROM
+*Font AntiqueOlive-Bold: Standard "(001.009S)" Standard ROM
+*Font AntiqueOlive-Italic: Standard "(001.007S)" Standard ROM
+*Font Garamond-Antiqua: Standard "(001.006S)" Standard ROM
+*Font Garamond-Halbfett: Standard "(001.007S)" Standard ROM
+*Font Garamond-Kursiv: Standard "(001.005S)" Standard ROM
+*Font Garamond-KursivHalbfett: Standard "(001.005S)" Standard ROM
+*Font Marigold: Standard "(001.005S)" Standard ROM
+*Font Albertus-Medium: Standard "(001.005S)" Standard ROM
+*Font Albertus-ExtraBold: Special "(001.007S)" Special ROM
+*Font Ryadh: Standard "(001.007S)" Standard ROM
+*Font Ryadh-Bold: Standard "(001.009S)" Standard ROM
+*Font Malka: Standard "(001.007S)" Standard ROM
+*Font Malka-Bold: Standard "(001.007S)" Standard ROM
+*Font Malka-Italic: Standard "(001.007S)" Standard ROM
+*Font Dorit: Standard "(001.006S)" Standard ROM
+*Font Dorit-Bold: Standard "(001.006S)" Standard ROM
+*Font Naamit: Standard "(001.007S)" Standard ROM
+*Font Naamit-Bold: Standard "(001.007S)" Standard ROM
+*Font Arial: Standard "(001.003S)" Standard ROM
+*Font Arial-Bold: Standard "(001.003S)" Standard ROM
+*Font Arial-Italic: Standard "(001.003S)" Standard ROM
+*Font Arial-BoldItalic: Standard "(001.003S)" Standard ROM
+*Font TimesNewRoman: Standard "(002.004S)" Standard ROM
+*Font TimesNewRoman-Bold: Standard "(002.004S)" Standard ROM
+*Font TimesNewRoman-Italic: Standard "(002.004S)" Standard ROM
+*Font TimesNewRoman-BoldItalic: Standard "(002.004S)" Standard ROM
+*Font Symbol: Standard "(001.006S)" Standard ROM
+*Font Palatino-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font Palatino-Roman: Standard "(001.007S)" Standard ROM
+*Font Palatino-Bold: Standard "(001.006S)" Standard ROM
+*Font Palatino-Italic: Standard "(001.006S)" Standard ROM
+*Font Bookman-LightItalic: Standard "(001.007S)" Standard ROM
+*Font Bookman-Light: Standard "(001.007S)" Standard ROM
+*Font Bookman-Demi: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(001.009S)" Standard ROM
+*Font NewCenturySchlbk-Italic: Standard "(001.007S)" Standard ROM
+*Font NewCenturySchlbk-Roman: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Bold: Standard "(001.007S)" Standard ROM
+*Font Times-Roman: Standard "(001.005S)" Standard ROM
+*Font Times-Bold: Standard "(001.005S)" Standard ROM
+*Font Times-Italic: Standard "(001.005S)" Standard ROM
+*Font Times-BoldItalic: Standard "(001.005S)" Standard ROM
+*Font Helvetica: Special "(001.007S)" Special ROM
+*Font Helvetica-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Oblique: Standard "(001.009S)" Standard ROM
+*Font Helvetica-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Bookman-DemiItalic: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-Oblique: Standard "(001.007S)" Standard ROM
+*Font Helbetica-Narrow: Standard "(001.005S)" Standard ROM
+*Font Helbetica-Narrow-Bold: Standard "(001.005S)" Standard ROM
+*Font AvantGarde-Book: Standard "(001.005S)" Standard ROM
+*Font AvantGarde-Demi: Special "(001.007S)" Special ROM
+*Font AvantGarde-BookOblique: Standard "(001.007S)" Standard ROM
+*Font AvantGarde-DemiOblique: Standard "(001.009S)" Standard ROM
+*Font ZapfChancery-MediumItalic: Standard "(001.007S)" Standard ROM
+*Font SymbolMT: Standard "(001.007S)" Standard ROM
+*Font NewCenturySchlbk-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font Wingdings-Regular: Standard "(001.007S)" Standard ROM
+*Font ZapfDingbats: Standard "(001.007S)" Standard ROM
+*Font CourierHP-Bold: Standard "(001.007S)" Standard ROM
+*Font CourierHP-Italic: Standard "(001.007S)" Standard ROM
+*Font CourierHP-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font LetterGothic: Standard "(001.007S)" Standard ROM
+*Font LetterGothic-Italic: Standard "(001.007S)" Standard ROM
+*Font LetterGothic-Bold: Standard "(001.007S)" Standard ROM
+*Font Naskh: Standard "(001.007S)" Standard ROM
+*Font Naskh-Bold: Standard "(001.007S)" Standard ROM
+*Font Koufi: Standard "(001.007S)" Standard ROM
+*Font Koufi-Bold: Standard "(001.007S)" Standard ROM
+*Font Courier: Standard "(001.007S)" Standard ROM
+*Font Courier-Bold: Standard "(001.007S)" Standard ROM
+*Font Courier-Oblique: Standard "(001.007S)" Standard ROM
+*Font Courier-BoldOblique: Standard "(001.007S)" Standard ROM
+
+*cupsLanguages: "en zh_CN ru fr es it ar no sv ja"
+
+*% === English ===
+*en.Translation Graphics/Basic: ""
+*en.Translation PaperGroup/Paper: ""
+
+*% === Resolution ===
+*en.Translation Resolution/Resolution: ""
+*en.Resolution 600dpi/600 dpi: ""
+*en.Resolution 1200dpi/1200 dpi: ""
+
+*% Paper Handling ===================
+*en.Translation PageSize/Paper Size: ""
+*en.PageSize Letter/Letter (8.5 x 11): ""
+*en.PageSize A4/A4 (210 x 297mm): ""
+*en.PageSize A5/A5 (148 x 210mm): ""
+*en.PageSize A6/A6 (105 x 148mm): ""
+*en.PageSize B5/JIS B5 (182 x 257mm): ""
+*en.PageSize IS0B5/IS0 B5 (176 x 250mm): ""
+*en.PageSize B6/B6 (125 x 176mm): ""
+*en.PageSize Executive/Executive (7.25 x 10.5): ""
+*en.PageSize Statement/Statement (5.5 x 8.5): ""
+*en.PageSize Folio/Folio (8.5 x 13): ""
+*en.PageSize Oficio/Oficio (216 x 343mm): ""
+*en.PageSize Postcard/Postcard (100x148mm): ""
+*en.PageSize EnvMonarch/Monarch Env (3.875 x 7.5): ""
+*en.PageSize EnvDL/DL Env (110 x 220mm): ""
+*en.PageSize EnvC5/C5 Env (162 x 229mm): ""
+*en.PageSize Com10Envelope/No.10 Env (4.125 x 9.5): ""
+*en.PageSize EnvC6/C6 Env (114 x 162mm): ""
+*en.PageSize ZL/ZL (120 x 230mm): ""
+*en.PageSize Legal/Legal (8.5 x 14): ""
+*en.PageSize Big32K/Big 32K (135 x 195mm): ""
+*en.PageSize Big16K/Big 16K (195 x 270mm): ""
+*en.PageSize 32K/32K (130 x 185mm): ""
+*en.PageSize 16K/16K (185 x 260mm): ""
+
+*% === Duplex ===
+*en.Translation Duplex/Duplex: ""
+*en.Duplex None/None (Simplex): ""
+*en.Duplex DuplexNoTumble/Long Edge: ""
+*en.Duplex DuplexTumble/Short Edge: ""
+
+*% === MediaType ===
+*en.Translation MediaType/Paper Type: ""
+*en.MediaType Plain/Plain: ""
+*en.MediaType Thick/Thick: ""
+*en.MediaType Envelope/Envelope: ""
+*en.MediaType Transparency/Transparency: ""
+*en.MediaType Cardstock/Cardstock: ""
+*en.MediaType Label/Label: ""
+
+*%=== InputSlot ===
+*en.Translation InputSlot/Paper Source: ""
+*en.InputSlot AutoSelect/Auto-selected by the printer: ""
+*en.InputSlot ManualFeed/Manual Feeder Tray: ""
+*en.InputSlot AutoFeed/Automatic Feeder Tray: ""
+
+*% === Chinese ===
+*zh_CN.Translation Graphics/基本: ""
+*zh_CN.Translation PaperGroup/纸张: ""
+
+*% === Resolution ===
+*zh_CN.Translation Resolution/分辨率: ""
+*zh_CN.Resolution 600dpi/600 dpi: ""
+*zh_CN.Resolution 1200dpi/1200 dpi: ""
+
+*% Paper Handling ===================
+*zh_CN.Translation PageSize/纸张大小: ""
+*zh_CN.PageSize Letter/Letter (8.5 x 11): ""
+*zh_CN.PageSize A4/A4 (210 x 297mm): ""
+*zh_CN.PageSize A5/A5 (148 x 210mm): ""
+*zh_CN.PageSize A6/A6 (105 x 148mm): ""
+*zh_CN.PageSize B5/JIS B5 (182 x 257mm): ""
+*zh_CN.PageSize IS0B5/IS0 B5 (176 x 250mm): ""
+*zh_CN.PageSize B6/B6 (125 x 176mm): ""
+*zh_CN.PageSize Executive/Executive (7.25 x 10.5): ""
+*zh_CN.PageSize Statement/Statement (5.5 x 8.5): ""
+*zh_CN.PageSize Folio/Folio (8.5 x 13): ""
+*zh_CN.PageSize Oficio/Oficio (216 x 343mm): ""
+*zh_CN.PageSize Postcard/Postcard (100x148mm): ""
+*zh_CN.PageSize EnvMonarch/Monarch Env (3.875 x 7.5): ""
+*zh_CN.PageSize EnvDL/DL Env (110 x 220mm): ""
+*zh_CN.PageSize EnvC5/C5 Env (162 x 229mm): ""
+*zh_CN.PageSize Com10Envelope/No.10 Env (4.125 x 9.5): ""
+*zh_CN.PageSize EnvC6/C6 Env (114 x 162mm): ""
+*zh_CN.PageSize ZL/ZL (120 x 230mm): ""
+*zh_CN.PageSize Legal/Legal (8.5 x 14): ""
+*zh_CN.PageSize Big32K/Big 32K (135 x 195mm): ""
+*zh_CN.PageSize Big16K/Big 16K (195 x 270mm): ""
+*zh_CN.PageSize 32K/32K (130 x 185mm): ""
+*zh_CN.PageSize 16K/16K (185 x 260mm): ""
+
+*% === Duplex ===
+*zh_CN.Translation Duplex/双面打印: ""
+*zh_CN.Duplex None/无（单面）: ""
+*zh_CN.Duplex DuplexNoTumble/长边: ""
+*zh_CN.Duplex DuplexTumble/短边: ""
+
+*% === MediaType ===
+*zh_CN.Translation MediaType/纸张类型: ""
+*zh_CN.MediaType Plain/普通纸: ""
+*zh_CN.MediaType Thick/厚纸: ""
+*zh_CN.MediaType Envelope/信封纸: ""
+*zh_CN.MediaType Transparency/透明胶片: ""
+*zh_CN.MediaType Cardstock/卡片纸: ""
+*zh_CN.MediaType Label/标签纸: ""
+
+*%=== InputSlot ===
+*zh_CN.Translation InputSlot/纸张来源: ""
+*zh_CN.InputSlot AutoSelect/打印机自动选择: ""
+*zh_CN.InputSlot ManualFeed/手动进纸盒: ""
+*zh_CN.InputSlot AutoFeed/自动进纸盒: ""
+
+*% === Russian ===
+*ru.Translation Graphics/Базовые: ""
+*ru.Translation PaperGroup/Бумага: ""
+
+*% === Resolution ===
+*ru.Translation Resolution/Разрешение: ""
+*ru.Resolution 600dpi/600 DPI: ""
+*ru.Resolution 1200dpi/1200 DPI: ""
+
+*% Paper Handling ===================
+*ru.Translation PageSize/Размер бумаги: ""
+*ru.PageSize Letter/Letter (8,5 x 11): ""
+*ru.PageSize A4/A4 (210 x 297 мм): ""
+*ru.PageSize A5/A5 (148 x 210 мм): ""
+*ru.PageSize A6/A6 (105 x 148 мм): ""
+*ru.PageSize B5/JIS B5 (182 x 257 мм): ""
+*ru.PageSize IS0B5/IS0 B5 (176 x 250 мм): ""
+*ru.PageSize B6/B6 (125 x 176 мм): ""
+*ru.PageSize Executive/Executive (7,25 x 10,5): ""
+*ru.PageSize Statement/Statement (5,5 x 8,5): ""
+*ru.PageSize Folio/Folio (8,5 x 13): ""
+*ru.PageSize Oficio/Oficio (216 x 343 мм): ""
+*ru.PageSize Postcard/Открытка (100x148 мм): ""
+*ru.PageSize EnvMonarch/Конверт Monarch (3,875 x 7,5): ""
+*ru.PageSize EnvDL/Конверт DL (110 x 220 мм): ""
+*ru.PageSize EnvC5/Конверт C5 (162 x 229 мм): ""
+*ru.PageSize Com10Envelope/Конверт №10 (4,125 x 9,5): ""
+*ru.PageSize EnvC6/Конверт C6 (114 x 162 мм): ""
+*ru.PageSize ZL/ZL (120 x 230 мм): ""
+*ru.PageSize Legal/Legal (8,5 x 14): ""
+*ru.PageSize Big32K/Большой 32K (135 x 195 мм): ""
+*ru.PageSize Big16K/Большой 16K (195 x 270 мм): ""
+*ru.PageSize 32K/32K (130 x 185 мм): ""
+*ru.PageSize 16K/16K (185 x 260 мм): ""
+
+*% === Duplex ===
+*ru.Translation Duplex/Двусторонняя: ""
+*ru.Duplex None/Нет (односторонняя): ""
+*ru.Duplex DuplexNoTumble/Длинным краем: ""
+*ru.Duplex DuplexTumble/Коротким краем: ""
+
+*% === MediaType ===
+*ru.Translation MediaType/Тип бумаги: ""
+*ru.MediaType Plain/Обычная: ""
+*ru.MediaType Thick/Плотная: ""
+*ru.MediaType Envelope/Конверт: ""
+*ru.MediaType Transparency/Прозрачная пленка: ""
+*ru.MediaType Cardstock/Открытка: ""
+*ru.MediaType Label/Этикетка: ""
+
+*%=== InputSlot ===
+*ru.Translation InputSlot/Источник бумаги: ""
+*ru.InputSlot AutoSelect/Выбрано принтером автоматически: ""
+*ru.InputSlot ManualFeed/Лоток ручной подачи: ""
+*ru.InputSlot AutoFeed/Лоток автоматической подачи: ""
+
+*% === French ===
+*fr.Translation Graphics/Basique: ""
+*fr.Translation PaperGroup/Papier: ""
+
+*% === Resolution ===
+*fr.Translation Resolution/Résolution : ""
+*fr.Resolution 600dpi/600 PPP: ""
+*fr.Resolution 1200dpi/1200 PPP: ""
+
+*% Paper Handling ===================
+*fr.Translation PageSize/Format de papier: ""
+*fr.PageSize Letter/Lettre (8,5 x 11): ""
+*fr.PageSize A4/A4 (210 x 297 mm): ""
+*fr.PageSize A5/A5 (148 x 210 mm): ""
+*fr.PageSize A6/A6 (105 x 148 mm): ""
+*fr.PageSize B5/JIS B5 (182 x 257 mm): ""
+*fr.PageSize IS0B5/IS0 B5 (176 x 250 mm): ""
+*fr.PageSize B6/B6 (125 x 176 mm): ""
+*fr.PageSize Executive/Executive (7,25 x 10,5): ""
+*fr.PageSize Statement/Statement (5,5 x 8,5): ""
+*fr.PageSize Folio/Folio (8,5 x 13): ""
+*fr.PageSize Oficio/Oficio (216 x 343 mm): ""
+*fr.PageSize Postcard/Carte postale (100 x 148 mm): ""
+*fr.PageSize EnvMonarch/Env. Monarch (3,875 x 7,5): ""
+*fr.PageSize EnvDL/Env. DL (110 x 220 mm): ""
+*fr.PageSize EnvC5/Env. C5 (162 x 229 mm): ""
+*fr.PageSize Com10Envelope/Env. N° 10 (4,125 x 9,5): ""
+*fr.PageSize EnvC6/Env. C6 (114 x 162 mm): ""
+*fr.PageSize ZL/ZL (120 x 230 mm): ""
+*fr.PageSize Legal/Légal (8,5 x 14): ""
+*fr.PageSize Big32K/Big 32K (135 x 195 mm): ""
+*fr.PageSize Big16K/Big 16K (195 x 270 mm): ""
+*fr.PageSize 32K/32K (130 x 185 mm): ""
+*fr.PageSize 16K/16K (185 x 260 mm): ""
+
+*% === Duplex ===
+*fr.Translation Duplex/Recto verso : ""
+*fr.Duplex None/Aucun (recto): ""
+*fr.Duplex DuplexNoTumble/Bord long: ""
+*fr.Duplex DuplexTumble/Bord court: ""
+
+*% === MediaType ===
+*fr.Translation MediaType/Type de papier : ""
+*fr.MediaType Plain/Normal: ""
+*fr.MediaType Thick/Épais: ""
+*fr.MediaType Envelope/Enveloppe: ""
+*fr.MediaType Transparency/Transparent: ""
+*fr.MediaType Cardstock/Bristol: ""
+*fr.MediaType Label/Étiquette: ""
+
+*%=== InputSlot ===
+*fr.Translation InputSlot/Source papier : ""
+*fr.InputSlot AutoSelect/Sélection automatique par l'imprimante: ""
+*fr.InputSlot ManualFeed/Bac de chargement manuel: ""
+*fr.InputSlot AutoFeed/Bac de chargement automatique: ""
+
+*% === Spanish ===
+*es.Translation Graphics/Opciones básicas: ""
+*es.Translation PaperGroup/Papel: ""
+
+*% === Resolution ===
+*es.Translation Resolution/Resolución: ""
+*es.Resolution 600dpi/600 DPI: ""
+*es.Resolution 1200dpi/1200 DPI: ""
+
+*% Paper Handling ===================
+*es.Translation PageSize/Tamaño papel: ""
+*es.PageSize Letter/Carta (8.5 x 11): ""
+*es.PageSize A4/A4 (210 x 297 mm): ""
+*es.PageSize A5/A5 (148 x 210 mm): ""
+*es.PageSize A6/A6 (105 x 148 mm): ""
+*es.PageSize B5/JIS B5 (182 x 257 mm): ""
+*es.PageSize IS0B5/IS0 B5 (176 x 250 mm): ""
+*es.PageSize B6/B6 (125 x 176 mm): ""
+*es.PageSize Executive/Ejecutivo (7.25 x 10.5): ""
+*es.PageSize Statement/Declaración (5.5 x 8.5): ""
+*es.PageSize Folio/Folio (8.5 x 13): ""
+*es.PageSize Oficio/Oficio (216 x 343 mm): ""
+*es.PageSize Postcard/Postal (100 x 148 mm): ""
+*es.PageSize EnvMonarch/Sobre Monarca (3.875 x 7.5): ""
+*es.PageSize EnvDL/Sobre DL (110 x 220 mm): ""
+*es.PageSize EnvC5/Sobre C5 (162 x 229 mm): ""
+*es.PageSize Com10Envelope/Sobre n.º 10 (4.125 x 9.5): ""
+*es.PageSize EnvC6/Sobre C6 (114 x 162 mm): ""
+*es.PageSize ZL/Sobre ZL (120 x 230 mm): ""
+*es.PageSize Legal/Legal (8.5 x 14): ""
+*es.PageSize Big32K/32K grande (135 x 195 mm): ""
+*es.PageSize Big16K/16K grande (195 x 270 mm): ""
+*es.PageSize 32K/32K (130 x 185 mm): ""
+*es.PageSize 16K/16 K (185 x 260 mm): ""
+
+*% === Duplex ===
+*es.Translation Duplex/Doble cara: ""
+*es.Duplex None/Ninguna (una cara): ""
+*es.Duplex DuplexNoTumble/Por el lado más largo: ""
+*es.Duplex DuplexTumble/Por el lado más corto: ""
+
+*% === MediaType ===
+*es.Translation MediaType/Tipo de papel: ""
+*es.MediaType Plain/Normal: ""
+*es.MediaType Thick/Grueso: ""
+*es.MediaType Envelope/Sobre: ""
+*es.MediaType Transparency/Transparencia: ""
+*es.MediaType Cardstock/Cartulina: ""
+*es.MediaType Label/Etiqueta: ""
+
+*%=== InputSlot ===
+*es.Translation InputSlot/Origen del papel: ""
+*es.InputSlot AutoSelect/Seleccionado automáticamente por la impresora: ""
+*es.InputSlot ManualFeed/Bandeja de alimentación manual: ""
+*es.InputSlot AutoFeed/Bandeja de alimentación automática: ""
+
+*% === Italy ===
+*it.Translation Graphics/Di base: ""
+*it.Translation PaperGroup/Carta: ""
+
+*% === Resolution ===
+*it.Translation Resolution/Risoluzione: ""
+*it.Resolution 600dpi/600 DPI: ""
+*it.Resolution 1200dpi/1200 DPI: ""
+
+
+*% Paper Handling ===================
+*it.Translation PageSize/Formato carta: ""
+*it.PageSize Letter/Lettera (215,9 x 279,4 mm): ""
+*it.PageSize A4/A4 (210 x 297 mm): ""
+*it.PageSize A5/A5 (148 x 210 mm): ""
+*it.PageSize A6/A6 (105 x 148 mm): ""
+*it.PageSize B5/JIS B5 (182 x 257 mm): ""
+*it.PageSize IS0B5/ISO B5 (176 x 250 mm): ""
+*it.PageSize B6/B6 (125 x 176 mm): ""
+*it.PageSize Executive/Executive (184,2 x 266,7 mm): ""
+*it.PageSize Statement/Statement (139,7 x 215,9 mm): ""
+*it.PageSize Folio/Folio (216 x 330 mm): ""
+*it.PageSize Oficio/Oficio (216 x 343 mm): ""
+*it.PageSize Postcard/Cartolina (100 x 148 mm): ""
+*it.PageSize EnvMonarch/Busta Monarch (98,3 x 190,5 mm): ""
+*it.PageSize EnvDL/Busta DL (110 x 220 mm): ""
+*it.PageSize EnvC5/Busta C5 (162 x 229 mm): ""
+*it.PageSize Com10Envelope/Busta n.10 (147,8 x 241,3 mm): ""
+*it.PageSize EnvC6/Busta C6 (114 x 162 mm): ""
+*it.PageSize ZL/ZL (120 x 230 mm): ""
+*it.PageSize Legal/Legale (215,9 x 355,6 mm): ""
+*it.PageSize Big32K/32K grande (135 x 195 mm): ""
+*it.PageSize Big16K/16K grande (195 x 270 mm): ""
+*it.PageSize 32K/32K (130 x 185 mm): ""
+*it.PageSize 16K/16K (185 x 260 mm): ""
+
+*% === Duplex ===
+*it.Translation Duplex/Fronte/retro: ""
+*it.Duplex None/Nessuno (facciata singola): ""
+*it.Duplex DuplexNoTumble/Lato lungo: ""
+*it.Duplex DuplexTumble/Lato corto: ""
+
+*% === MediaType ===
+*it.Translation MediaType/Tipo di carta: ""
+*it.MediaType Plain/Carta comune: ""
+*it.MediaType Thick/Spessa: ""
+*it.MediaType Envelope/Busta: ""
+*it.MediaType Transparency/Trasparenza: ""
+*it.MediaType Cardstock/Cartoncino: ""
+*it.MediaType Label/Etichetta: ""
+
+*%=== InputSlot ===
+*it.Translation InputSlot/Alimentazione carta: ""
+*it.InputSlot AutoSelect/Selezionato automaticamente dalla stampante: ""
+*it.InputSlot ManualFeed/Vassoio di alimentazione manuale: ""
+*it.InputSlot AutoFeed/Vassoio di alimentazione automatico: ""
+
+*% === Arabic ===
+*ar.Translation Graphics/أساسي: ""
+*ar.Translation PaperGroup/ورق: ""
+
+*% === Resolution ===
+*ar.Translation Resolution/الدقة: ""
+*ar.Resolution 600dpi/600 DPI: ""
+*ar.Resolution 1200dpi/1200 DPI: ""
+
+
+*% Paper Handling ===================
+*ar.Translation PageSize/حجم الورقة: ""
+*ar.PageSize Letter/Letter (8.5 × 11): ""
+*ar.PageSize A4/A4 (210 × 297mm): ""
+*ar.PageSize A5/A5 (148 × 210mm): ""
+*ar.PageSize A6/A6 (105 × 148mm): ""
+*ar.PageSize B5/JIS B5 (182 × 257mm): ""
+*ar.PageSize IS0B5/IS0 B5 (176 × 250mm): ""
+*ar.PageSize B6/B6 (125 × 176mm): ""
+*ar.PageSize Executive/Executive (7.25 × 10.5): ""
+*ar.PageSize Statement/Statement (5.5 × 8.5): ""
+*ar.PageSize Folio/Folio (8.5 × 13): ""
+*ar.PageSize Oficio/Oficio (216 × 343mm): ""
+*ar.PageSize Postcard/Postcard (100×148mm): ""
+*ar.PageSize EnvMonarch/Monarch Env (3.875 × 7.5): ""
+*ar.PageSize EnvDL/DL Env (110 × 220mm): ""
+*ar.PageSize EnvC5/C5 Env (162 × 229mm): ""
+*ar.PageSize Com10Envelope/No.10 Env (4.125 × 9.5): ""
+*ar.PageSize EnvC6/C6 Env (114 × 162mm): ""
+*ar.PageSize ZL/ZL (120 × 230mm): ""
+*ar.PageSize Legal/Legal (8.5 × 14): ""
+*ar.PageSize Big32K/Big 32K (135 × 195mm): ""
+*ar.PageSize Big16K/Big 16K (195 × 270mm): ""
+*ar.PageSize 32K/32K (130 × 185mm): ""
+*ar.PageSize 16K/16K (185 × 260mm): ""
+
+*% === Duplex ===
+*ar.Translation Duplex/طباعة على الوجهين: ""
+*ar.Duplex None/(بدون (مفرد): ""
+*ar.Duplex DuplexNoTumble/حافة طويلة: ""
+*ar.Duplex DuplexTumble/حافة قصيرة: ""
+
+*% === MediaType ===
+*ar.Translation MediaType/نوع الورق: ""
+*ar.MediaType Plain/سادة: ""
+*ar.MediaType Thick/سميك: ""
+*ar.MediaType Envelope/Envelope: ""
+*ar.MediaType Transparency/شفاف: ""
+*ar.MediaType Cardstock/Cardstock: ""
+*ar.MediaType Label/Label: ""
+
+*%=== InputSlot ===
+*ar.Translation InputSlot/مصدر الورق: ""
+*ar.InputSlot AutoSelect/محدد تلقائيًا بواسطة الطابعة: ""
+*ar.InputSlot ManualFeed/علبة مغذي يدوي: ""
+*ar.InputSlot AutoFeed/علبة مغذي تلقائي: ""
+
+*% === Norwegian (Bokmal) ===
+*no.Translation Graphics/Grunnleggende: ""
+*no.Translation PaperGroup/Papir: ""
+
+*% === Resolution ===
+*no.Translation Resolution/Oppløsning: ""
+*no.Resolution 600dpi/600 ppt: ""
+*no.Resolution 1200dpi/1200 ppt: ""
+
+
+*% Paper Handling ===================
+*no.Translation PageSize/Papirstørrelse: ""
+*no.PageSize Letter/Letter (8,5 x 11): ""
+*no.PageSize A4/A4 (210 x 297 mm): ""
+*no.PageSize A5/A5 (148 x 210 mm): ""
+*no.PageSize A6/A6 (105 x 148 mm): ""
+*no.PageSize B5/JIS B5 (182 x 257 mm): ""
+*no.PageSize IS0B5/IS0 B5 (176 x 250 mm): ""
+*no.PageSize B6/B6 (125 x 176 mm): ""
+*no.PageSize Executive/Executive (7,25 x 10,5): ""
+*no.PageSize Statement/Statement (5,5 x 8,5): ""
+*no.PageSize Folio/Folio (8,5 x 13): ""
+*no.PageSize Oficio/Oficio (216 x 343 mm): ""
+*no.PageSize Postcard/Postkort (100 x 148 mm): ""
+*no.PageSize EnvMonarch/Monarch-konvolutt (3,875 x 7,5): ""
+*no.PageSize EnvDL/DL-konvolutt (110 x 220 mm): ""
+*no.PageSize EnvC5/C5-konvolutt (162 x 229 mm): ""
+*no.PageSize Com10Envelope/No.10-konvolutt (4,125 x 9,5): ""
+*no.PageSize EnvC6/C6-konvolutt (114 x 162 mm): ""
+*no.PageSize ZL/ZL (120 x 230 mm): ""
+*no.PageSize Legal/Legal (8,5 x 14): ""
+*no.PageSize Big32K/Big 32K (135 x 195 mm): ""
+*no.PageSize Big16K/Big 16K (195 x 270 mm): ""
+*no.PageSize 32K/32K (130 x 185 mm): ""
+*no.PageSize 16K/16K (185 x 260 mm): ""
+
+*% === Duplex ===
+*no.Translation Duplex/Dupleks: ""
+*no.Duplex None/Ingen (simpleks): ""
+*no.Duplex DuplexNoTumble/Langside: ""
+*no.Duplex DuplexTumble/Kortside: ""
+
+*% === MediaType ===
+*no.Translation MediaType/Papirtype: ""
+*no.MediaType Plain/Vanlig: ""
+*no.MediaType Thick/Tykk: ""
+*no.MediaType Envelope/Envelope: ""
+*no.MediaType Transparency/Transparent: ""
+*no.MediaType Cardstock/Kartong: ""
+*no.MediaType Label/Etikett: ""
+
+*%=== InputSlot ===
+*no.Translation InputSlot/Papirkilde: ""
+*no.InputSlot AutoSelect/Velges automatisk av skriveren: ""
+*no.InputSlot ManualFeed/Skuff for manuell arkmating: ""
+*no.InputSlot AutoFeed/Skuff for automatisk arkmating: ""
+
+*% === Swedish ===
+*sv.Translation Graphics/Allmänt: ""
+*sv.Translation PaperGroup/Papper: ""
+
+*% === Resolution ===
+*sv.Translation Resolution/Upplösning: ""
+*sv.Resolution 600dpi/600 dpi: ""
+*sv.Resolution 1200dpi/1200 dpi: ""
+
+
+*% Paper Handling ===================
+*sv.Translation PageSize/Pappersformat: ""
+*sv.PageSize Letter/Letter (8,5 x 11): ""
+*sv.PageSize A4/A4 (210 x 297 mm): ""
+*sv.PageSize A5/A5 (148 x 210 mm): ""
+*sv.PageSize A6/A6 (105 x 148 mm): ""
+*sv.PageSize B5/JIS B5 (182 x 257 mm): ""
+*sv.PageSize IS0B5/IS0 B5 (176 x 250 mm): ""
+*sv.PageSize B6/B6 (125 x 176 mm): ""
+*sv.PageSize Executive/Executive (7,25 x 10,5): ""
+*sv.PageSize Statement/Statement (5,5 x 8,5): ""
+*sv.PageSize Folio/Folio (8,5 x 13): ""
+*sv.PageSize Oficio/Oficio (216 x 343 mm): ""
+*sv.PageSize Postcard/Vykort (100 x 148 mm): ""
+*sv.PageSize EnvMonarch/Monarch-kuvert (3,875 x 7,5): ""
+*sv.PageSize EnvDL/DL-kuvert (110 x 220 mm): ""
+*sv.PageSize EnvC5/C5-kuvert (162 x 229 mm): ""
+*sv.PageSize Com10Envelope/No.10-kuvert (4,125 x 9,5): ""
+*sv.PageSize EnvC6/C6-kuvert (114 x 162 mm): ""
+*sv.PageSize ZL/ZL (120 x 230 mm): ""
+*sv.PageSize Legal/Legal (8,5 x 14): ""
+*sv.PageSize Big32K/Big 32K (135 x 195 mm): ""
+*sv.PageSize Big16K/Big 16K (195 x 270 mm): ""
+*sv.PageSize 32K/32K (130 x 185 mm): ""
+*sv.PageSize 16K/16K (185 x 260 mm): ""
+
+*% === Duplex ===
+*sv.Translation Duplex/Dubbelsidig: ""
+*sv.Duplex None/Ingen (enkelsidig): ""
+*sv.Duplex DuplexNoTumble/Långsida: ""
+*sv.Duplex DuplexTumble/Kortsida: ""
+
+*% === MediaType ===
+*sv.Translation MediaType/Papperstyp: ""
+*sv.MediaType Plain/Vanligt: ""
+*sv.MediaType Thick/Tjockt: ""
+*sv.MediaType Envelope/Kuvert: ""
+*sv.MediaType Transparency/OH-film: ""
+*sv.MediaType Cardstock/Kartong: ""
+*sv.MediaType Label/Etikett: ""
+
+*%=== InputSlot ===
+*sv.Translation InputSlot/Papperskälla: ""
+*sv.InputSlot AutoSelect/Väljs automatiskt av skrivaren: ""
+*sv.InputSlot ManualFeed/Manuellt matningsfack: ""
+*sv.InputSlot AutoFeed/Automatiskt matningsfack: ""
+
+*% === Japanese ===
+*ja.Translation Graphics/基本: ""
+*ja.Translation PaperGroup/用紙: ""
+
+*% === Resolution ===
+*ja.Translation Resolution/解像度: ""
+*ja.Resolution 600dpi/600 DPI: ""
+*ja.Resolution 1200dpi/1200 DPI: ""
+
+
+*% Paper Handling ===================
+*ja.Translation PageSize/用紙サイズ: ""
+*ja.PageSize Letter/レター (8.5 x 11): ""
+*ja.PageSize A4/A4 (210 x 297mm): ""
+*ja.PageSize A5/A5 (148 x 210mm): ""
+*ja.PageSize A6/A6 (105 x 148mm): ""
+*ja.PageSize B5/JIS B5 (182 x 257mm): ""
+*ja.PageSize IS0B5/IS0 B5 (176 x 250mm): ""
+*ja.PageSize B6/B6 (125 x 176mm): ""
+*ja.PageSize Executive/エグゼクティブ (7.25 x 10.5): ""
+*ja.PageSize Statement/ステートメント (5.5 x 8.5): ""
+*ja.PageSize Folio/フォリオ (8.5 x 13): ""
+*ja.PageSize Oficio/オフィシオ (216 x 343mm): ""
+*ja.PageSize Postcard/ポストカード (100x148mm): ""
+*ja.PageSize EnvMonarch/Monarch 封筒 (3.875 x 7.5): ""
+*ja.PageSize EnvDL/DL 封筒 (110 x 220mm): ""
+*ja.PageSize EnvC5/C5 封筒 (162 x 229mm): ""
+*ja.PageSize Com10Envelope/No.10 封筒 (4.125 x 9.5): ""
+*ja.PageSize EnvC6/C6 封筒 (114 x 162mm): ""
+*ja.PageSize ZL/ZL (120 x 230mm): ""
+*ja.PageSize Legal/リーガル (8.5 x 14): ""
+*ja.PageSize Big32K/Big 32K (135 x 195mm): ""
+*ja.PageSize Big16K/Big 16K (195 x 270mm): ""
+*ja.PageSize 32K/32K (130 x 185mm): ""
+*ja.PageSize 16K/16K (185 x 260mm): ""
+
+*% === Duplex ===
+*ja.Translation Duplex/両面印刷: ""
+*ja.Duplex None/なし (片面印刷): ""
+*ja.Duplex DuplexNoTumble/長辺: ""
+*ja.Duplex DuplexTumble/短辺: ""
+
+*% === MediaType ===
+*ja.Translation MediaType/用紙の種類: ""
+*ja.MediaType Plain/普通紙: ""
+*ja.MediaType Thick/厚紙: ""
+*ja.MediaType Envelope/封筒: ""
+*ja.MediaType Transparency/OHP: ""
+*ja.MediaType Cardstock/カード: ""
+*ja.MediaType Label/ラベル: ""
+
+*%=== InputSlot ===
+*ja.Translation InputSlot/給紙方法: ""
+*ja.InputSlot AutoSelect/プリンターによって自動的に選択: ""
+*ja.InputSlot ManualFeed/手差し用紙トレイ: ""
+*ja.InputSlot AutoFeed/自動用紙トレイ: ""
